@@ -32,6 +32,21 @@ export default function Sidebar() {
         >
           🩺 Simulados
         </Link>
+
+        <Link
+          to="/revisao"
+          className="hover:text-blue-200"
+        >
+          🔁 Revisão
+        </Link>
+
+        <Link
+          to="/modo-prova"
+          className="hover:text-blue-200"
+       >
+          🧪 Modo Prova
+        </Link>
+        
       </nav>
     </div>
   )
