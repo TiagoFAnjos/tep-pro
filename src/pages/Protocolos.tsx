@@ -7,6 +7,7 @@ export default function Protocolos() {
   const [selected, setSelected] = useState<any | null>(null)
   const [loading, setLoading] = useState(true)
   const [filter, setFilter] = useState('Todos')
+  const [search, setSearch] = useState('')
 
   const temas = [
     'Todos',
@@ -14,6 +15,7 @@ export default function Protocolos() {
     'Emergência',
     'Pneumologia',
     'Infectologia',
+    'Vacinas',
     'Neurologia',
     'Endocrinologia',
     'Cardiologia',
@@ -31,7 +33,7 @@ export default function Protocolos() {
       .from('questions')
       .select('*')
       .order('tema', { ascending: true })
-      .limit(300)
+      .limit(500)
 
     if (error) {
       console.log(error)
@@ -43,9 +45,26 @@ export default function Protocolos() {
     setLoading(false)
   }
 
-  const filteredQuestions = questions.filter((q) =>
-    filter === 'Todos' ? true : q.tema === filter
-  )
+  const filteredQuestions = questions.filter((q) => {
+    const matchesTema =
+      filter === 'Todos' ? true : q.tema === filter
+
+    const searchText = `
+      ${q.title || ''}
+      ${q.tema || ''}
+      ${q.definicao || ''}
+      ${q.conduta || ''}
+      ${q.tratamento || ''}
+      ${q.pegadinhas || ''}
+      ${q.tags || ''}
+    `.toLowerCase()
+
+    const matchesSearch = searchText.includes(
+      search.toLowerCase()
+    )
+
+    return matchesTema && matchesSearch
+  })
 
   if (selected) {
     return (
@@ -107,7 +126,17 @@ export default function Protocolos() {
         <CsvImporter />
       </div>
 
-      <div className="flex flex-wrap gap-3 mt-10">
+      <div className="mt-8">
+        <input
+          type="text"
+          placeholder="🔎 Buscar por tema, conduta, doença, pegadinha..."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          className="w-full bg-white rounded-2xl shadow p-4 outline-none border focus:border-blue-500"
+        />
+      </div>
+
+      <div className="flex flex-wrap gap-3 mt-8">
         {temas.map((tema) => (
           <button
             key={tema}
