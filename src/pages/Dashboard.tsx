@@ -130,12 +130,13 @@ export default function Dashboard() {
               </p>
 
               <p>
-                🔜 Bloco 4: Neurologia + Hematologia + Reumatologia
+                ✅ Bloco 4: Neurologia + Hematologia + Reumatologia
               </p>
 
               <p>
-                🔜 Bloco 5: Desenvolvimento + Adolescência + Ambulatorial
+                ✅ Bloco 5: Desenvolvimento + Adolescência + Ambulatorial
               </p>
+              
             </div>
           </div>
         </>
