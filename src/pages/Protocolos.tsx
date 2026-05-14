@@ -11,6 +11,7 @@ export default function Protocolos() {
 
   const temas = [
     'Todos',
+    'Favoritos',
     'Neonatologia',
     'Emergência',
     'Pneumologia',
@@ -22,6 +23,7 @@ export default function Protocolos() {
     'Gastroenterologia',
     'Hematologia',
     'Nefrologia',
+    'Reumatologia',
   ]
 
   useEffect(() => {
@@ -33,7 +35,7 @@ export default function Protocolos() {
       .from('questions')
       .select('*')
       .order('tema', { ascending: true })
-      .limit(500)
+      .limit(700)
 
     if (error) {
       console.log(error)
@@ -45,9 +47,43 @@ export default function Protocolos() {
     setLoading(false)
   }
 
+  async function toggleFavorito(q: any) {
+    const novoValor = !q.favorito
+
+    const { error } = await supabase
+      .from('questions')
+      .update({ favorito: novoValor })
+      .eq('id', q.id)
+
+    if (error) {
+      console.log(error)
+      alert('Erro ao atualizar favorito')
+      return
+    }
+
+    setQuestions((prev) =>
+      prev.map((item) =>
+        item.id === q.id
+          ? { ...item, favorito: novoValor }
+          : item
+      )
+    )
+
+    if (selected?.id === q.id) {
+      setSelected({
+        ...selected,
+        favorito: novoValor,
+      })
+    }
+  }
+
   const filteredQuestions = questions.filter((q) => {
     const matchesTema =
-      filter === 'Todos' ? true : q.tema === filter
+      filter === 'Todos'
+        ? true
+        : filter === 'Favoritos'
+          ? q.favorito === true
+          : q.tema === filter
 
     const searchText = `
       ${q.title || ''}
@@ -57,6 +93,9 @@ export default function Protocolos() {
       ${q.tratamento || ''}
       ${q.pegadinhas || ''}
       ${q.tags || ''}
+      ${q.flashcards || ''}
+      ${q.mini_aula || ''}
+      ${q.simulado || ''}
     `.toLowerCase()
 
     const matchesSearch = searchText.includes(
@@ -77,14 +116,31 @@ export default function Protocolos() {
         </button>
 
         <div className="bg-white rounded-2xl shadow p-8">
-          <h1 className="text-3xl font-bold text-blue-700">
-            {selected.title}
-          </h1>
+          <div className="flex items-start justify-between gap-4">
+            <div>
+              <h1 className="text-3xl font-bold text-blue-700">
+                {selected.title}
+              </h1>
 
-          <p className="mt-2 text-gray-600">
-            Tema: {selected.tema} | Dificuldade:{' '}
-            {selected.dificuldade || '—'}
-          </p>
+              <p className="mt-2 text-gray-600">
+                Tema: {selected.tema} | Dificuldade:{' '}
+                {selected.dificuldade || '—'}
+              </p>
+            </div>
+
+            <button
+              onClick={() => toggleFavorito(selected)}
+              className={`px-5 py-3 rounded-xl font-semibold ${
+                selected.favorito
+                  ? 'bg-yellow-400 text-gray-900'
+                  : 'bg-gray-100 text-gray-700'
+              }`}
+            >
+              {selected.favorito
+                ? '⭐ Favorito'
+                : '☆ Favoritar'}
+            </button>
+          </div>
 
           <Section title="📚 Definição" content={selected.definicao} />
           <Section title="🔬 Fisiopatologia" content={selected.fisiopatologia} />
@@ -144,10 +200,12 @@ export default function Protocolos() {
             className={`px-4 py-2 rounded-xl ${
               filter === tema
                 ? 'bg-blue-600 text-white'
-                : 'bg-white text-gray-700'
+                : tema === 'Favoritos'
+                  ? 'bg-yellow-100 text-yellow-800'
+                  : 'bg-white text-gray-700'
             }`}
           >
-            {tema}
+            {tema === 'Favoritos' ? '⭐ Favoritos' : tema}
           </button>
         ))}
       </div>
@@ -164,25 +222,44 @@ export default function Protocolos() {
 
       <div className="grid gap-4">
         {filteredQuestions.map((q) => (
-          <button
+          <div
             key={q.id}
-            onClick={() => setSelected(q)}
-            className="bg-white rounded-2xl shadow p-6 text-left hover:bg-blue-50 transition"
+            className="bg-white rounded-2xl shadow p-6 hover:bg-blue-50 transition"
           >
-            <h3 className="text-xl font-bold">{q.title}</h3>
+            <div className="flex items-start justify-between gap-4">
+              <button
+                onClick={() => setSelected(q)}
+                className="text-left flex-1"
+              >
+                <h3 className="text-xl font-bold">
+                  {q.title}
+                </h3>
 
-            <p className="text-gray-600 mt-2">
-              Tema: {q.tema}
-            </p>
+                <p className="text-gray-600 mt-2">
+                  Tema: {q.tema}
+                </p>
 
-            <p className="text-gray-600">
-              Dificuldade: {q.dificuldade || '—'}
-            </p>
+                <p className="text-gray-600">
+                  Dificuldade: {q.dificuldade || '—'}
+                </p>
 
-            <p className="mt-3 text-blue-600 font-semibold">
-              Abrir protocolo →
-            </p>
-          </button>
+                <p className="mt-3 text-blue-600 font-semibold">
+                  Abrir protocolo →
+                </p>
+              </button>
+
+              <button
+                onClick={() => toggleFavorito(q)}
+                className={`px-4 py-2 rounded-xl font-semibold ${
+                  q.favorito
+                    ? 'bg-yellow-400 text-gray-900'
+                    : 'bg-gray-100 text-gray-700'
+                }`}
+              >
+                {q.favorito ? '⭐' : '☆'}
+              </button>
+            </div>
+          </div>
         ))}
       </div>
     </div>
