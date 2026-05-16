@@ -7,6 +7,7 @@ import Flashcards from './pages/Flashcards'
 import Simulados from './pages/Simulados'
 import Revisao from './pages/Revisao'
 import ModoProva from './pages/ModoProva'
+import MotorClinico from './pages/MotorClinico'
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
             <Route path="/simulados" element={<Simulados />} />
             <Route path="/revisao" element={<Revisao />} />
             <Route path="/modo-prova" element={<ModoProva />} />
+            <Route path="/motor-clinico" element={<MotorClinico />} />
           </Routes>
         </main>
       </div>

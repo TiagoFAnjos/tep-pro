@@ -43,10 +43,17 @@ export default function Sidebar() {
         <Link
           to="/modo-prova"
           className="hover:text-blue-200"
-       >
+        >
           🧪 Modo Prova
         </Link>
-        
+
+        <Link
+          to="/motor-clinico"
+          className="hover:text-blue-200"
+        >
+          🧠 Motor Clínico
+        </Link>
+
       </nav>
     </div>
   )
