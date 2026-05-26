@@ -47,7 +47,7 @@ export default function ModoProva() {
   if (!questions.length) {
     return (
       <div className="p-8">
-        <h1 className="text-3xl font-bold">
+        <h1 className="text-3xl font-bold text-slate-900">
           Carregando prova...
         </h1>
       </div>
@@ -61,46 +61,46 @@ export default function ModoProva() {
 
     return (
       <div className="p-8">
-        <h1 className="text-4xl font-bold text-blue-700">
-          🧪 Resultado Final
+        <h1 className="text-4xl font-bold text-slate-900">
+          Resultado Final
         </h1>
 
-        <div className="bg-white rounded-2xl shadow p-8 mt-8">
-          <h2 className="text-5xl font-bold text-green-600">
+        <section className="bg-white rounded-lg shadow-sm border p-8 mt-8">
+          <h2 className="text-5xl font-bold text-green-700">
             {percentual}%
           </h2>
 
-          <p className="mt-4 text-xl">
+          <p className="mt-4 text-xl text-slate-700">
             {score} acertos de {questions.length}
           </p>
 
           <div className="mt-8">
             {percentual >= 80 && (
               <p className="text-green-700 font-bold text-xl">
-                🔥 Excelente desempenho
+                Excelente desempenho
               </p>
             )}
 
             {percentual >= 60 && percentual < 80 && (
               <p className="text-yellow-700 font-bold text-xl">
-                ⚠️ Bom desempenho, mas revisar temas fracos
+                Bom desempenho, mas revisar temas fracos
               </p>
             )}
 
             {percentual < 60 && (
               <p className="text-red-700 font-bold text-xl">
-                🚨 Revisão intensiva recomendada
+                Revisão intensiva recomendada
               </p>
             )}
           </div>
 
           <button
             onClick={() => window.location.reload()}
-            className="mt-8 bg-blue-600 text-white px-6 py-4 rounded-xl"
+            className="mt-8 bg-blue-600 text-white px-6 py-4 rounded-lg font-semibold"
           >
-            🔁 Nova prova
+            Nova prova
           </button>
-        </div>
+        </section>
       </div>
     )
   }
@@ -109,33 +109,33 @@ export default function ModoProva() {
 
   return (
     <div className="p-8">
-      <div className="flex justify-between items-center">
-        <h1 className="text-4xl font-bold text-blue-700">
-          🧪 Modo Prova TEP
+      <div className="flex justify-between items-center gap-4">
+        <h1 className="text-4xl font-bold text-slate-900">
+          Modo Prova TEP
         </h1>
 
-        <div className="bg-white rounded-xl px-5 py-3 shadow">
+        <div className="bg-white rounded-lg px-5 py-3 shadow-sm border">
           Questão {current + 1}/{questions.length}
         </div>
       </div>
 
-      <div className="bg-white rounded-2xl shadow p-8 mt-8">
-        <h2 className="text-3xl font-bold">
+      <section className="bg-white rounded-lg shadow-sm border p-8 mt-8">
+        <h2 className="text-3xl font-bold text-slate-900">
           {q.title}
         </h2>
 
-        <p className="text-gray-600 mt-2">
+        <p className="text-slate-500 mt-2">
           Tema: {q.tema}
         </p>
 
         <div className="mt-8">
           <Section
-            title="🧪 Simulado"
+            title="Simulado"
             content={q.simulado}
           />
 
           <Section
-            title="💡 Dica TEP"
+            title="Dica TEP"
             content={q.dica_tep}
           />
         </div>
@@ -143,19 +143,19 @@ export default function ModoProva() {
         <div className="flex gap-4 mt-10">
           <button
             onClick={() => responder(false)}
-            className="bg-red-600 text-white px-6 py-4 rounded-xl"
+            className="bg-red-600 text-white px-6 py-4 rounded-lg font-semibold"
           >
-            ❌ Errei
+            Errei
           </button>
 
           <button
             onClick={() => responder(true)}
-            className="bg-green-600 text-white px-6 py-4 rounded-xl"
+            className="bg-green-700 text-white px-6 py-4 rounded-lg font-semibold"
           >
-            ✅ Acertei
+            Acertei
           </button>
         </div>
-      </div>
+      </section>
     </div>
   )
 }
@@ -170,12 +170,12 @@ function Section({
   if (!content) return null
 
   return (
-    <div className="mt-6 bg-gray-50 rounded-xl p-5 border">
-      <h2 className="text-xl font-bold mb-3">
+    <div className="mt-6 bg-slate-50 rounded-lg p-5 border">
+      <h2 className="text-xl font-bold mb-3 text-slate-900">
         {title}
       </h2>
 
-      <p className="text-gray-700 whitespace-pre-line leading-relaxed">
+      <p className="text-slate-700 whitespace-pre-line leading-relaxed">
         {content}
       </p>
     </div>

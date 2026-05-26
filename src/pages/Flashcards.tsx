@@ -40,8 +40,7 @@ export default function Flashcards() {
   ]
 
   const filtered = questions.filter((q) => {
-    const matchTema =
-      filter === 'Todos' ? true : q.tema === filter
+    const matchTema = filter === 'Todos' ? true : q.tema === filter
 
     const texto = `
       ${q.title || ''}
@@ -49,10 +48,7 @@ export default function Flashcards() {
       ${q.flashcards || ''}
     `.toLowerCase()
 
-    return (
-      matchTema &&
-      texto.includes(search.toLowerCase())
-    )
+    return matchTema && texto.includes(search.toLowerCase())
   })
 
   function parseFlashcards(text: string) {
@@ -72,33 +68,33 @@ export default function Flashcards() {
 
   return (
     <div className="p-8">
-      <h1 className="text-4xl font-bold text-blue-700">
-        🧠 Flashcards
+      <h1 className="text-4xl font-bold text-slate-900">
+        Flashcards
       </h1>
 
-      <p className="mt-2 text-gray-700">
+      <p className="mt-2 text-slate-600">
         Revisão rápida por perguntas e respostas dos protocolos.
       </p>
 
       <div className="mt-8">
         <input
           type="text"
-          placeholder="🔎 Buscar flashcard..."
+          placeholder="Buscar flashcard..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="w-full bg-white rounded-2xl shadow p-4 outline-none border focus:border-blue-500"
+          className="w-full bg-white rounded-lg shadow-sm p-4 outline-none border focus:border-blue-500"
         />
       </div>
 
-      <div className="flex flex-wrap gap-3 mt-8">
+      <div className="flex flex-wrap gap-3 mt-6">
         {temas.map((tema) => (
           <button
             key={tema}
             onClick={() => setFilter(tema)}
-            className={`px-4 py-2 rounded-xl ${
+            className={`px-4 py-2 rounded-lg text-sm font-medium ${
               filter === tema
                 ? 'bg-blue-600 text-white'
-                : 'bg-white text-gray-700'
+                : 'bg-white text-slate-700 border'
             }`}
           >
             {tema}
@@ -106,21 +102,21 @@ export default function Flashcards() {
         ))}
       </div>
 
-      <p className="text-gray-600 mt-6">
+      <p className="text-slate-600 mt-6">
         Exibindo {filtered.length} tema(s)
       </p>
 
-      <div className="grid gap-6 mt-8">
+      <div className="grid gap-5 mt-8">
         {filtered.map((q) => (
-          <div
+          <section
             key={q.id}
-            className="bg-white rounded-2xl shadow p-6"
+            className="bg-white rounded-lg shadow-sm border p-6"
           >
-            <h2 className="text-2xl font-bold text-blue-700">
+            <h2 className="text-2xl font-bold text-slate-900">
               {q.title}
             </h2>
 
-            <p className="text-gray-600 mt-1">
+            <p className="text-slate-500 mt-1">
               Tema: {q.tema}
             </p>
 
@@ -133,7 +129,7 @@ export default function Flashcards() {
                   return (
                     <div
                       key={cardId}
-                      className="border rounded-xl p-5 bg-gray-50"
+                      className="border rounded-lg p-5 bg-slate-50"
                     >
                       <button
                         onClick={() =>
@@ -141,11 +137,11 @@ export default function Flashcards() {
                         }
                         className="w-full text-left"
                       >
-                        <p className="font-bold text-lg">
+                        <p className="font-bold text-lg text-slate-900">
                           {card.pergunta}
                         </p>
 
-                        <p className="text-blue-600 mt-2">
+                        <p className="text-blue-600 mt-2 text-sm font-medium">
                           {isOpen
                             ? 'Ocultar resposta'
                             : 'Mostrar resposta'}
@@ -153,8 +149,8 @@ export default function Flashcards() {
                       </button>
 
                       {isOpen && (
-                        <div className="mt-4 bg-white rounded-xl p-4 border">
-                          <p className="text-gray-700 leading-relaxed">
+                        <div className="mt-4 bg-white rounded-lg p-4 border">
+                          <p className="text-slate-700 leading-relaxed">
                             {card.resposta}
                           </p>
                         </div>
@@ -164,7 +160,7 @@ export default function Flashcards() {
                 }
               )}
             </div>
-          </div>
+          </section>
         ))}
       </div>
     </div>

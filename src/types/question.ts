@@ -28,6 +28,7 @@ export type Question = {
   score_clinico?: string
   checklist?: string
   mini_aula?: string
+  fontes?: string
   flashcards?: string
   simulado?: string
   favorito?: boolean

@@ -71,58 +71,58 @@ export default function Revisao() {
       <div className="p-8">
         <button
           onClick={() => setSelected(null)}
-          className="mb-6 bg-blue-600 text-white px-5 py-3 rounded-xl"
+          className="mb-6 bg-blue-600 text-white px-5 py-3 rounded-lg font-semibold"
         >
-          ← Voltar
+          Voltar
         </button>
 
-        <div className="bg-white rounded-2xl shadow p-8">
-          <h1 className="text-3xl font-bold text-blue-700">
+        <section className="bg-white rounded-lg shadow-sm border p-8">
+          <h1 className="text-3xl font-bold text-slate-900">
             {selected.title}
           </h1>
 
-          <p className="mt-2 text-gray-600">
+          <p className="mt-2 text-slate-500">
             Tema: {selected.tema} | Domínio: {selected.nivel_dominio || 0}/5
           </p>
 
-          <Section title="📚 Definição" content={selected.definicao} />
-          <Section title="💊 Conduta" content={selected.conduta} />
-          <Section title="🎯 Pegadinhas TEP" content={selected.pegadinhas} />
-          <Section title="✅ Checklist" content={selected.checklist} />
-          <Section title="🧠 Flashcards" content={selected.flashcards} />
-          <Section title="🧪 Simulado" content={selected.simulado} />
+          <Section title="Definição" content={selected.definicao} />
+          <Section title="Conduta" content={selected.conduta} />
+          <Section title="Pegadinhas TEP" content={selected.pegadinhas} />
+          <Section title="Checklist" content={selected.checklist} />
+          <Section title="Flashcards" content={selected.flashcards} />
+          <Section title="Simulado" content={selected.simulado} />
 
           <div className="flex gap-4 mt-8">
             <button
               onClick={() => responder(selected, false)}
-              className="bg-red-600 text-white px-6 py-3 rounded-xl"
+              className="bg-red-600 text-white px-6 py-3 rounded-lg font-semibold"
             >
-              ❌ Errei
+              Errei
             </button>
 
             <button
               onClick={() => responder(selected, true)}
-              className="bg-green-600 text-white px-6 py-3 rounded-xl"
+              className="bg-green-700 text-white px-6 py-3 rounded-lg font-semibold"
             >
-              ✅ Acertei
+              Acertei
             </button>
           </div>
-        </div>
+        </section>
       </div>
     )
   }
 
   return (
     <div className="p-8">
-      <h1 className="text-4xl font-bold text-blue-700">
-        🔁 Revisão Adaptativa
+      <h1 className="text-4xl font-bold text-slate-900">
+        Revisão Adaptativa
       </h1>
 
-      <p className="mt-2 text-gray-700">
-        Temas vencidos ou ainda não revisados
+      <p className="mt-2 text-slate-600">
+        Temas vencidos ou ainda não revisados.
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
         <Card title="Revisões hoje" value={questions.length} />
         <Card
           title="Baixo domínio"
@@ -139,22 +139,22 @@ export default function Revisao() {
           <button
             key={q.id}
             onClick={() => setSelected(q)}
-            className="bg-white rounded-2xl shadow p-6 text-left hover:bg-blue-50 transition"
+            className="bg-white rounded-lg shadow-sm border p-6 text-left hover:bg-blue-50 transition"
           >
-            <h2 className="text-xl font-bold">
+            <h2 className="text-xl font-bold text-slate-900">
               {q.title}
             </h2>
 
-            <p className="text-gray-600 mt-2">
+            <p className="text-slate-500 mt-2">
               Tema: {q.tema}
             </p>
 
-            <p className="text-gray-600">
+            <p className="text-slate-500">
               Domínio: {q.nivel_dominio || 0}/5
             </p>
 
             <p className="mt-3 text-blue-600 font-semibold">
-              Revisar →
+              Revisar
             </p>
           </button>
         ))}
@@ -173,10 +173,10 @@ function Section({
   if (!content) return null
 
   return (
-    <div className="mt-6 bg-gray-50 rounded-xl p-5 border">
-      <h2 className="text-xl font-bold mb-3">{title}</h2>
+    <div className="mt-6 bg-slate-50 rounded-lg p-5 border">
+      <h2 className="text-xl font-bold mb-3 text-slate-900">{title}</h2>
 
-      <p className="text-gray-700 whitespace-pre-line leading-relaxed">
+      <p className="text-slate-700 whitespace-pre-line leading-relaxed">
         {content}
       </p>
     </div>
@@ -191,9 +191,9 @@ function Card({
   value: number
 }) {
   return (
-    <div className="bg-white rounded-2xl shadow p-6">
-      <p className="text-gray-500">{title}</p>
-      <h2 className="text-4xl font-bold text-blue-700 mt-3">
+    <div className="bg-white rounded-lg shadow-sm border p-5">
+      <p className="text-sm text-slate-500">{title}</p>
+      <h2 className="text-4xl font-bold text-slate-900 mt-3">
         {value}
       </h2>
     </div>

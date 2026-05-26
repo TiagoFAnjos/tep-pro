@@ -39,8 +39,7 @@ export default function Simulados() {
   ]
 
   const filtered = questions.filter((q) => {
-    const matchTema =
-      filter === 'Todos' ? true : q.tema === filter
+    const matchTema = filter === 'Todos' ? true : q.tema === filter
 
     const texto = `
       ${q.title || ''}
@@ -48,41 +47,38 @@ export default function Simulados() {
       ${q.simulado || ''}
     `.toLowerCase()
 
-    return (
-      matchTema &&
-      texto.includes(search.toLowerCase())
-    )
+    return matchTema && texto.includes(search.toLowerCase())
   })
 
   return (
     <div className="p-8">
-      <h1 className="text-4xl font-bold text-blue-700">
-        📝 Simulados
+      <h1 className="text-4xl font-bold text-slate-900">
+        Simulados
       </h1>
 
-      <p className="mt-2 text-gray-700">
+      <p className="mt-2 text-slate-600">
         Casos clínicos e questões estilo TEP.
       </p>
 
       <div className="mt-8">
         <input
           type="text"
-          placeholder="🔎 Buscar simulado..."
+          placeholder="Buscar simulado..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="w-full bg-white rounded-2xl shadow p-4 outline-none border focus:border-blue-500"
+          className="w-full bg-white rounded-lg shadow-sm p-4 outline-none border focus:border-blue-500"
         />
       </div>
 
-      <div className="flex flex-wrap gap-3 mt-8">
+      <div className="flex flex-wrap gap-3 mt-6">
         {temas.map((tema) => (
           <button
             key={tema}
             onClick={() => setFilter(tema)}
-            className={`px-4 py-2 rounded-xl ${
+            className={`px-4 py-2 rounded-lg text-sm font-medium ${
               filter === tema
                 ? 'bg-blue-600 text-white'
-                : 'bg-white text-gray-700'
+                : 'bg-white text-slate-700 border'
             }`}
           >
             {tema}
@@ -90,30 +86,30 @@ export default function Simulados() {
         ))}
       </div>
 
-      <p className="text-gray-600 mt-6">
+      <p className="text-slate-600 mt-6">
         Exibindo {filtered.length} simulado(s)
       </p>
 
-      <div className="grid gap-6 mt-8">
+      <div className="grid gap-5 mt-8">
         {filtered.map((q) => (
-          <div
+          <section
             key={q.id}
-            className="bg-white rounded-2xl shadow p-6"
+            className="bg-white rounded-lg shadow-sm border p-6"
           >
-            <h2 className="text-2xl font-bold text-blue-700">
+            <h2 className="text-2xl font-bold text-slate-900">
               {q.title}
             </h2>
 
-            <p className="text-gray-600 mt-1">
+            <p className="text-slate-500 mt-1">
               Tema: {q.tema}
             </p>
 
-            <div className="mt-6 bg-gray-50 rounded-xl border p-5">
-              <p className="text-gray-800 whitespace-pre-line leading-relaxed">
+            <div className="mt-6 bg-slate-50 rounded-lg border p-5">
+              <p className="text-slate-800 whitespace-pre-line leading-relaxed">
                 {q.simulado}
               </p>
             </div>
-          </div>
+          </section>
         ))}
       </div>
     </div>
