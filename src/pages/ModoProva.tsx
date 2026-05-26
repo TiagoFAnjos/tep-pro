@@ -1,20 +1,18 @@
 import { useEffect, useState } from 'react'
 import { supabase } from '../lib/supabase'
+import type { Question } from '../types/question'
 
 export default function ModoProva() {
-  const [questions, setQuestions] = useState<any[]>([])
+  const [questions, setQuestions] = useState<Question[]>([])
   const [current, setCurrent] = useState(0)
   const [finished, setFinished] = useState(false)
   const [score, setScore] = useState(0)
-
-  useEffect(() => {
-    fetchQuestions()
-  }, [])
 
   async function fetchQuestions() {
     const { data, error } = await supabase
       .from('questions')
       .select('*')
+      .not('simulado', 'is', null)
       .limit(20)
 
     if (error) {
@@ -22,12 +20,16 @@ export default function ModoProva() {
       return
     }
 
-    const shuffled = (data || []).sort(
+    const shuffled = [...((data || []) as Question[])].sort(
       () => Math.random() - 0.5
     )
 
     setQuestions(shuffled)
   }
+
+  useEffect(() => {
+    void Promise.resolve().then(fetchQuestions)
+  }, [])
 
   function responder(acertou: boolean) {
     if (acertou) {
@@ -163,7 +165,7 @@ function Section({
   content,
 }: {
   title: string
-  content: string
+  content?: string
 }) {
   if (!content) return null
 

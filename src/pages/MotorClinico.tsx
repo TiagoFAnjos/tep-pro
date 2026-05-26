@@ -1,14 +1,15 @@
 import { useEffect, useState } from 'react'
 import { supabase } from '../lib/supabase'
+import type { Question } from '../types/question'
+
+type ResultadoClinico = Question & {
+  pontos: number
+}
 
 export default function MotorClinico() {
-  const [questions, setQuestions] = useState<any[]>([])
+  const [questions, setQuestions] = useState<Question[]>([])
   const [caso, setCaso] = useState('')
-  const [resultados, setResultados] = useState<any[]>([])
-
-  useEffect(() => {
-    fetchQuestions()
-  }, [])
+  const [resultados, setResultados] = useState<ResultadoClinico[]>([])
 
   async function fetchQuestions() {
     const { data, error } = await supabase
@@ -22,8 +23,12 @@ export default function MotorClinico() {
       return
     }
 
-    setQuestions(data || [])
+    setQuestions((data || []) as Question[])
   }
+
+  useEffect(() => {
+    void Promise.resolve().then(fetchQuestions)
+  }, [])
 
   function analisarCaso() {
     const texto = caso.toLowerCase()
@@ -254,7 +259,7 @@ function Section({
   content,
 }: {
   title: string
-  content: string
+  content?: string
 }) {
   if (!content) return null
 

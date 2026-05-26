@@ -1,6 +1,8 @@
 import Papa from 'papaparse'
 import { supabase } from '../lib/supabase'
 
+type CsvRow = Record<string, string>
+
 export default function CsvImporter() {
   async function handleFile(
     event: React.ChangeEvent<HTMLInputElement>
@@ -13,8 +15,8 @@ export default function CsvImporter() {
       skipEmptyLines: true,
 
       complete: async (results) => {
-        const data = (results.data as any[]).filter(
-          (row) => row.title && row.title.trim() !== ''
+        const data = (results.data as CsvRow[]).filter(
+          (row) => row.title?.trim()
         )
 
         const { error } = await supabase

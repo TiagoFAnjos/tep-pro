@@ -1,13 +1,10 @@
 import { useEffect, useState } from 'react'
 import { supabase } from '../lib/supabase'
+import type { Question } from '../types/question'
 
 export default function Dashboard() {
-  const [questions, setQuestions] = useState<any[]>([])
+  const [questions, setQuestions] = useState<Question[]>([])
   const [loading, setLoading] = useState(true)
-
-  useEffect(() => {
-    fetchQuestions()
-  }, [])
 
   async function fetchQuestions() {
     const { data, error } = await supabase
@@ -21,9 +18,13 @@ export default function Dashboard() {
       return
     }
 
-    setQuestions(data || [])
+    setQuestions((data || []) as Question[])
     setLoading(false)
   }
+
+  useEffect(() => {
+    void Promise.resolve().then(fetchQuestions)
+  }, [])
 
   const total = questions.length
 
@@ -41,7 +42,11 @@ export default function Dashboard() {
   const basicos = total - completos
 
   const temas = Array.from(
-    new Set(questions.map((q) => q.tema).filter(Boolean))
+    new Set(
+      questions
+        .map((q) => q.tema)
+        .filter((tema): tema is string => Boolean(tema))
+    )
   )
 
   const porTema = temas.map((tema) => ({

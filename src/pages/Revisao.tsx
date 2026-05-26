@@ -1,13 +1,10 @@
 import { useEffect, useState } from 'react'
 import { supabase } from '../lib/supabase'
+import type { Question } from '../types/question'
 
 export default function Revisao() {
-  const [questions, setQuestions] = useState<any[]>([])
-  const [selected, setSelected] = useState<any | null>(null)
-
-  useEffect(() => {
-    fetchRevisoes()
-  }, [])
+  const [questions, setQuestions] = useState<Question[]>([])
+  const [selected, setSelected] = useState<Question | null>(null)
 
   async function fetchRevisoes() {
     const hoje = new Date().toISOString()
@@ -25,10 +22,10 @@ export default function Revisao() {
       return
     }
 
-    setQuestions(data || [])
+    setQuestions((data || []) as Question[])
   }
 
-  async function responder(q: any, acertou: boolean) {
+  async function responder(q: Question, acertou: boolean) {
     const acertos = acertou ? (q.acertos || 0) + 1 : q.acertos || 0
     const erros = acertou ? q.erros || 0 : (q.erros || 0) + 1
 
@@ -64,6 +61,10 @@ export default function Revisao() {
     setSelected(null)
     fetchRevisoes()
   }
+
+  useEffect(() => {
+    void Promise.resolve().then(fetchRevisoes)
+  }, [])
 
   if (selected) {
     return (
@@ -167,7 +168,7 @@ function Section({
   content,
 }: {
   title: string
-  content: string
+  content?: string
 }) {
   if (!content) return null
 
