@@ -52,18 +52,38 @@ export default function Flashcards() {
   })
 
   function parseFlashcards(text: string) {
-    return text
-      .split('|')
-      .map((item) => item.trim())
-      .filter(Boolean)
-      .map((item) => {
-        const [pergunta, resposta] = item.split('::')
+    const cards: Array<{ pergunta: string; resposta: string }> = []
 
-        return {
-          pergunta: pergunta?.trim() || item,
-          resposta: resposta?.trim() || 'Sem resposta cadastrada',
-        }
-      })
+    for (const rawPart of text.split('|')) {
+      const part = rawPart.trim()
+      if (!part) continue
+
+      const separatorIndex = part.indexOf('::')
+
+      if (separatorIndex >= 0) {
+        cards.push({
+          pergunta: part.slice(0, separatorIndex).trim(),
+          resposta: part.slice(separatorIndex + 2).trim(),
+        })
+        continue
+      }
+
+      const previous = cards.at(-1)
+
+      if (previous) {
+        previous.resposta = `${previous.resposta} | ${part}`.trim()
+      } else {
+        cards.push({
+          pergunta: part,
+          resposta: '',
+        })
+      }
+    }
+
+    return cards.map((card) => ({
+      pergunta: card.pergunta || 'Pergunta sem título',
+      resposta: card.resposta || 'Sem resposta cadastrada',
+    }))
   }
 
   return (
