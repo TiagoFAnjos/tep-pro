@@ -4,9 +4,8 @@ const links = [
   { to: '/', label: 'Dashboard' },
   { to: '/protocolos', label: 'Protocolos' },
   { to: '/flashcards', label: 'Flashcards' },
-  { to: '/simulados', label: 'Simulados' },
   { to: '/revisao', label: 'Revisão' },
-  { to: '/modo-prova', label: 'Modo Prova' },
+  { to: '/modo-prova', label: 'Simulados TEP' },
   { to: '/motor-clinico', label: 'Motor Clínico' },
 ]
 

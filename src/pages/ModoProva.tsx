@@ -1,50 +1,90 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { supabase } from '../lib/supabase'
 import type { Question } from '../types/question'
+import {
+  choices,
+  provaTituloPediatriaQuestions,
+  type Choice,
+  type ProvaQuestion,
+} from '../data/provaTituloPediatria'
+
+const provaSize = 50
 
 export default function ModoProva() {
-  const [questions, setQuestions] = useState<Question[]>([])
+  const [bankQuestions, setBankQuestions] = useState<Question[]>([])
+  const [deck, setDeck] = useState<ProvaQuestion[]>([])
   const [current, setCurrent] = useState(0)
+  const [selectedChoice, setSelectedChoice] = useState<Choice | null>(null)
   const [finished, setFinished] = useState(false)
   const [score, setScore] = useState(0)
+  const [loading, setLoading] = useState(true)
 
   async function fetchQuestions() {
+    setLoading(true)
+
     const { data, error } = await supabase
       .from('questions')
       .select('*')
       .not('simulado', 'is', null)
-      .limit(20)
+      .limit(1000)
 
     if (error) {
       console.log(error)
+      setBankQuestions([])
+      setDeck(buildDeck([]))
+      setLoading(false)
       return
     }
 
-    const shuffled = [...((data || []) as Question[])].sort(
-      () => Math.random() - 0.5
-    )
+    const loaded = (data || []) as Question[]
 
-    setQuestions(shuffled)
+    setBankQuestions(loaded)
+    setDeck(buildDeck(loaded))
+    setLoading(false)
   }
 
   useEffect(() => {
     void Promise.resolve().then(fetchQuestions)
   }, [])
 
-  function responder(acertou: boolean) {
-    if (acertou) {
+  const temas = useMemo(
+    () => new Set(deck.map((question) => question.tema)),
+    [deck]
+  )
+
+  const question = deck[current]
+  const answered = selectedChoice !== null
+  const isCorrect = selectedChoice === question?.resposta
+
+  function choose(choice: Choice) {
+    if (answered) return
+
+    setSelectedChoice(choice)
+
+    if (choice === question.resposta) {
       setScore((prev) => prev + 1)
     }
+  }
 
-    if (current + 1 >= questions.length) {
+  function nextQuestion() {
+    if (current + 1 >= deck.length) {
       setFinished(true)
       return
     }
 
     setCurrent((prev) => prev + 1)
+    setSelectedChoice(null)
   }
 
-  if (!questions.length) {
+  function restart() {
+    setDeck(buildDeck(bankQuestions))
+    setCurrent(0)
+    setSelectedChoice(null)
+    setFinished(false)
+    setScore(0)
+  }
+
+  if (loading) {
     return (
       <div className="p-8">
         <h1 className="text-3xl font-bold text-slate-900">
@@ -54,16 +94,29 @@ export default function ModoProva() {
     )
   }
 
-  if (finished) {
-    const percentual = Math.round(
-      (score / questions.length) * 100
+  if (!deck.length) {
+    return (
+      <div className="p-8">
+        <h1 className="text-3xl font-bold text-slate-900">
+          Nenhuma questão disponível
+        </h1>
+      </div>
     )
+  }
+
+  if (finished) {
+    const percentual = Math.round((score / deck.length) * 100)
 
     return (
       <div className="p-8">
-        <h1 className="text-4xl font-bold text-slate-900">
-          Resultado Final
-        </h1>
+        <header>
+          <p className="text-sm font-semibold uppercase tracking-wide text-blue-700">
+            Simulado unificado
+          </p>
+          <h1 className="text-4xl font-bold text-slate-900">
+            Resultado Final
+          </h1>
+        </header>
 
         <section className="bg-white rounded-lg shadow-sm border p-8 mt-8">
           <h2 className="text-5xl font-bold text-green-700">
@@ -71,7 +124,11 @@ export default function ModoProva() {
           </h2>
 
           <p className="mt-4 text-xl text-slate-700">
-            {score} acertos de {questions.length}
+            {score} acertos de {deck.length}
+          </p>
+
+          <p className="mt-3 text-slate-600">
+            Temas avaliados: {temas.size}
           </p>
 
           <div className="mt-8">
@@ -83,7 +140,7 @@ export default function ModoProva() {
 
             {percentual >= 60 && percentual < 80 && (
               <p className="text-yellow-700 font-bold text-xl">
-                Bom desempenho, mas revisar temas fracos
+                Bom desempenho, mas revise os temas fracos
               </p>
             )}
 
@@ -95,7 +152,7 @@ export default function ModoProva() {
           </div>
 
           <button
-            onClick={() => window.location.reload()}
+            onClick={restart}
             className="mt-8 bg-blue-600 text-white px-6 py-4 rounded-lg font-semibold"
           >
             Nova prova
@@ -105,54 +162,115 @@ export default function ModoProva() {
     )
   }
 
-  const q = questions[current]
-
   return (
     <div className="p-8">
-      <div className="flex justify-between items-center gap-4">
-        <h1 className="text-4xl font-bold text-slate-900">
-          Modo Prova TEP
-        </h1>
+      <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-4">
+        <div>
+          <p className="text-sm font-semibold uppercase tracking-wide text-blue-700">
+            Simulado unificado
+          </p>
+          <h1 className="text-4xl font-bold text-slate-900">
+            Modo Prova TEP
+          </h1>
+        </div>
 
-        <div className="bg-white rounded-lg px-5 py-3 shadow-sm border">
-          Questão {current + 1}/{questions.length}
+        <div className="bg-white rounded-lg px-5 py-3 shadow-sm border text-slate-700">
+          Questão {current + 1}/{deck.length}
         </div>
       </div>
 
       <section className="bg-white rounded-lg shadow-sm border p-8 mt-8">
-        <h2 className="text-3xl font-bold text-slate-900">
-          {q.title}
-        </h2>
-
-        <p className="text-slate-500 mt-2">
-          Tema: {q.tema}
-        </p>
-
-        <div className="mt-8">
-          <Section
-            title="Simulado"
-            content={q.simulado}
-          />
-
-          <Section
-            title="Dica TEP"
-            content={q.dica_tep}
-          />
+        <div className="flex flex-wrap items-center gap-2">
+          <span className="rounded-lg bg-blue-50 text-blue-700 px-3 py-1 text-sm font-semibold">
+            {question.tema}
+          </span>
+          <span className="rounded-lg bg-slate-100 text-slate-700 px-3 py-1 text-sm font-semibold">
+            {question.origem}
+          </span>
         </div>
 
-        <div className="flex gap-4 mt-10">
-          <button
-            onClick={() => responder(false)}
-            className="bg-red-600 text-white px-6 py-4 rounded-lg font-semibold"
-          >
-            Errei
-          </button>
+        <h2 className="text-3xl font-bold text-slate-900 mt-5">
+          {question.title}
+        </h2>
+
+        <p className="text-slate-800 whitespace-pre-line leading-relaxed mt-6">
+          {question.enunciado}
+        </p>
+
+        <div className="grid gap-3 mt-8">
+          {choices.map((choice) => {
+            const isAnswer = question.resposta === choice
+            const isSelected = selectedChoice === choice
+
+            return (
+              <button
+                key={choice}
+                onClick={() => choose(choice)}
+                className={`text-left rounded-lg border px-4 py-4 transition ${
+                  answered && isAnswer
+                    ? 'border-green-600 bg-green-50 text-green-900'
+                    : ''
+                } ${
+                  answered && isSelected && !isAnswer
+                    ? 'border-red-600 bg-red-50 text-red-900'
+                    : ''
+                } ${
+                  !answered
+                    ? 'border-slate-200 hover:border-blue-500 hover:bg-blue-50'
+                    : ''
+                }`}
+              >
+                <span className="font-bold">{choice})</span>{' '}
+                {question.alternativas[choice]}
+              </button>
+            )
+          })}
+        </div>
+
+        {answered && (
+          <div className="mt-8 bg-slate-50 rounded-lg p-5 border">
+            <h3
+              className={`text-xl font-bold ${
+                isCorrect ? 'text-green-700' : 'text-red-700'
+              }`}
+            >
+              {isCorrect ? 'Resposta correta' : 'Resposta incorreta'}
+            </h3>
+
+            <p className="text-slate-800 mt-3 leading-relaxed">
+              Gabarito: {question.resposta}){' '}
+              {question.alternativas[question.resposta]}
+            </p>
+
+            <p className="text-slate-700 whitespace-pre-line leading-relaxed mt-4">
+              {question.explicacao}
+            </p>
+
+            {question.dica && (
+              <p className="text-blue-800 mt-4 font-medium">
+                Dica TEP: {question.dica}
+              </p>
+            )}
+
+            {question.referencia && (
+              <p className="text-slate-500 mt-4 text-sm">
+                Referência: {question.referencia}
+              </p>
+            )}
+          </div>
+        )}
+
+        <div className="flex justify-between items-center gap-4 mt-10">
+          <p className="text-slate-600">
+            Pontuação atual: {score}/{answered ? current + 1 : current}
+          </p>
 
           <button
-            onClick={() => responder(true)}
-            className="bg-green-700 text-white px-6 py-4 rounded-lg font-semibold"
+            onClick={nextQuestion}
+            disabled={!answered}
+            className="bg-blue-600 text-white px-6 py-4 rounded-lg font-semibold disabled:bg-slate-300 disabled:cursor-not-allowed"
           >
-            Acertei
+            {current + 1 >= deck.length ? 'Finalizar' : 'Próxima'}
           </button>
         </div>
       </section>
@@ -160,24 +278,65 @@ export default function ModoProva() {
   )
 }
 
-function Section({
-  title,
-  content,
-}: {
-  title: string
-  content?: string
-}) {
-  if (!content) return null
+function buildDeck(bankQuestions: Question[]) {
+  const parsedBank = bankQuestions
+    .map(parseBankQuestion)
+    .filter((question): question is ProvaQuestion => Boolean(question))
 
-  return (
-    <div className="mt-6 bg-slate-50 rounded-lg p-5 border">
-      <h2 className="text-xl font-bold mb-3 text-slate-900">
-        {title}
-      </h2>
+  return shuffle([
+    ...parsedBank,
+    ...provaTituloPediatriaQuestions,
+  ]).slice(0, provaSize)
+}
 
-      <p className="text-slate-700 whitespace-pre-line leading-relaxed">
-        {content}
-      </p>
-    </div>
+function parseBankQuestion(question: Question): ProvaQuestion | null {
+  if (!question.simulado?.trim()) return null
+
+  const lines = question.simulado
+    .split(/\r?\n/)
+    .map((line) => line.trim())
+    .filter(Boolean)
+
+  const firstAlternativeIndex = lines.findIndex((line) =>
+    /^[A-D]\)/.test(line)
   )
+
+  const answer = question.simulado.match(/Resposta correta:\s*([A-D])/i)?.[1] as
+    | Choice
+    | undefined
+
+  if (firstAlternativeIndex < 0 || !answer) return null
+
+  const alternativas = {} as Record<Choice, string>
+
+  for (const line of lines) {
+    const match = line.match(/^([A-D])\)\s*(.+)$/)
+
+    if (match) {
+      alternativas[match[1] as Choice] = match[2]
+    }
+  }
+
+  if (choices.some((choice) => !alternativas[choice])) return null
+
+  const explanation =
+    question.simulado.match(/Explica(?:ç|c)[ãa]o:\s*([\s\S]*)/i)?.[1] ||
+    question.dica_tep ||
+    'Revise o protocolo relacionado para consolidar a justificativa.'
+
+  return {
+    id: `bank-${question.id}`,
+    title: question.title || 'Questão do banco',
+    tema: question.tema || 'Geral',
+    enunciado: lines.slice(0, firstAlternativeIndex).join('\n'),
+    alternativas,
+    resposta: answer,
+    explicacao: explanation.trim(),
+    dica: question.dica_tep,
+    origem: 'Banco TEP PRO',
+  }
+}
+
+function shuffle<T>(items: T[]) {
+  return [...items].sort(() => Math.random() - 0.5)
 }
