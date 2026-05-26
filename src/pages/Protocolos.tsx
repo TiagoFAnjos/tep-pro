@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import Papa from 'papaparse'
 import { supabase } from '../lib/supabase'
 import type { Question } from '../types/question'
+import { getDoseCalculatorGroups, type DoseRule } from '../data/doseCalculators'
 
 const searchableFields: Array<keyof Question> = [
   'title',
@@ -242,6 +243,8 @@ function ProtocolDetail({
   protocol: Question
   onBack: () => void
 }) {
+  const [weight, setWeight] = useState('')
+  const calculators = getDoseCalculatorGroups(protocol.title, protocol.tema)
   const sections = [
     ['Definição', protocol.definicao],
     ['Fisiopatologia', protocol.fisiopatologia],
@@ -294,6 +297,14 @@ function ProtocolDetail({
         </div>
       </section>
 
+      {calculators.length > 0 && (
+        <DoseCalculator
+          groups={calculators}
+          weight={weight}
+          onWeightChange={setWeight}
+        />
+      )}
+
       <div className="grid gap-5">
         {sections.map(([title, content]) => (
           <Section key={title} title={title} content={content} />
@@ -311,6 +322,8 @@ function Section({
   content?: string
 }) {
   if (!content) return null
+  const table = parseTable(content)
+  const chart = parseChart(content)
 
   return (
     <section className="bg-white rounded-lg shadow-sm border p-6">
@@ -318,11 +331,195 @@ function Section({
         {title}
       </h3>
 
-      <p className="whitespace-pre-line leading-relaxed text-slate-700">
-        {content}
-      </p>
+      {chart ? (
+        <div className="grid gap-3">
+          {chart.map((item) => (
+            <div key={item.label}>
+              <div className="flex justify-between gap-4 text-sm text-slate-600">
+                <span>{item.label}</span>
+                <span>{item.value}</span>
+              </div>
+              <div className="mt-1 h-3 rounded-full bg-slate-100 overflow-hidden">
+                <div
+                  className="h-full rounded-full bg-blue-600"
+                  style={{ width: `${Math.min(item.value, 100)}%` }}
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+      ) : table ? (
+        <div className="overflow-x-auto">
+          <table className="min-w-full border border-slate-200 text-sm">
+            <thead className="bg-slate-100 text-slate-900">
+              <tr>
+                {table.headers.map((header) => (
+                  <th key={header} className="border border-slate-200 px-3 py-2 text-left">
+                    {header}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+
+            <tbody>
+              {table.rows.map((row, index) => (
+                <tr key={`${row.join('-')}-${index}`} className="odd:bg-white even:bg-slate-50">
+                  {row.map((cell, cellIndex) => (
+                    <td key={`${cell}-${cellIndex}`} className="border border-slate-200 px-3 py-2 align-top text-slate-700">
+                      {cell}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      ) : (
+        <p className="whitespace-pre-line leading-relaxed text-slate-700">
+          {content}
+        </p>
+      )}
     </section>
   )
+}
+
+function DoseCalculator({
+  groups,
+  weight,
+  onWeightChange,
+}: {
+  groups: Array<{ title: string; rules: DoseRule[] }>
+  weight: string
+  onWeightChange: (value: string) => void
+}) {
+  const parsedWeight = Number(weight.replace(',', '.'))
+  const hasValidWeight = Number.isFinite(parsedWeight) && parsedWeight > 0
+
+  return (
+    <section className="bg-white rounded-lg shadow-sm border p-6">
+      <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4">
+        <div>
+          <h3 className="text-xl font-bold text-slate-900">
+            Calculadora de doses por peso
+          </h3>
+
+          <p className="text-slate-600 mt-2">
+            Cálculo educacional. Conferir apresentação, dose máxima, idade, função renal/hepática e protocolo local antes de prescrever.
+          </p>
+        </div>
+
+        <label className="grid gap-2 text-sm font-semibold text-slate-700">
+          Peso da criança (kg)
+          <input
+            type="number"
+            min="0"
+            step="0.1"
+            value={weight}
+            onChange={(event) => onWeightChange(event.target.value)}
+            placeholder="Ex.: 12"
+            className="w-44 rounded-lg border p-3 outline-none focus:border-blue-500"
+          />
+        </label>
+      </div>
+
+      <div className="grid gap-5 mt-6">
+        {groups.map((group) => (
+          <div key={group.title} className="rounded-lg border bg-slate-50 p-4">
+            <h4 className="font-bold text-slate-900">
+              {group.title}
+            </h4>
+
+            <div className="overflow-x-auto mt-3">
+              <table className="min-w-full text-sm">
+                <thead>
+                  <tr className="text-left text-slate-500">
+                    <th className="py-2 pr-4">Medicação</th>
+                    <th className="py-2 pr-4">Regra</th>
+                    <th className="py-2 pr-4">Dose calculada</th>
+                    <th className="py-2 pr-4">Observação</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  {group.rules.map((rule) => (
+                    <tr key={`${group.title}-${rule.medication}`} className="border-t border-slate-200">
+                      <td className="py-3 pr-4 font-semibold text-slate-900">
+                        {rule.medication}
+                        <span className="block text-xs font-normal text-slate-500">
+                          {rule.route}
+                        </span>
+                      </td>
+                      <td className="py-3 pr-4 text-slate-700">
+                        {rule.dosePerKg} {rule.unit}/kg {rule.interval}
+                      </td>
+                      <td className="py-3 pr-4 font-bold text-blue-700">
+                        {hasValidWeight ? formatDose(rule, parsedWeight) : 'Informe o peso'}
+                      </td>
+                      <td className="py-3 pr-4 text-slate-600">
+                        {rule.observation || 'Conferir dose máxima e apresentação disponível.'}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  )
+}
+
+function formatDose(rule: DoseRule, weight: number) {
+  const raw = rule.dosePerKg * weight
+  const limited = rule.maxDose ? Math.min(raw, rule.maxDose) : raw
+  const floored = rule.minDose ? Math.max(limited, rule.minDose) : limited
+  const rounded = floored >= 100 ? Math.round(floored) : Math.round(floored * 100) / 100
+  const maxText = rule.maxDose && raw > rule.maxDose ? ` (limitado ao máximo de ${rule.maxDose} ${rule.unit})` : ''
+
+  return `${rounded} ${rule.unit}${maxText}`
+}
+
+function parseTable(content: string) {
+  const rows = content
+    .split(/\r?\n/)
+    .map((line) => line.trim())
+    .filter((line) => line.includes('|'))
+    .map((line) =>
+      line
+        .split('|')
+        .map((cell) => cell.trim())
+        .filter(Boolean)
+    )
+    .filter((row) => row.length >= 2)
+
+  if (rows.length < 2) return null
+
+  const [headers, ...bodyRows] = rows
+
+  if (!bodyRows.length) return null
+
+  return {
+    headers,
+    rows: bodyRows.map((row) => headers.map((_, index) => row[index] || '')),
+  }
+}
+
+function parseChart(content: string) {
+  const rows = content
+    .split(/\r?\n/)
+    .map((line) => line.trim())
+    .filter((line) => line.toLowerCase().startsWith('chart|'))
+    .map((line) => {
+      const [, label, value] = line.split('|').map((cell) => cell.trim())
+      return {
+        label,
+        value: Number(value),
+      }
+    })
+    .filter((item) => item.label && Number.isFinite(item.value))
+
+  return rows.length ? rows : null
 }
 
 function Metric({
