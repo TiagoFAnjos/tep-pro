@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { supabase } from '../lib/supabase'
 import type { Question } from '../types/question'
+import { cleanQuestions } from '../utils/questions'
 
 export default function Revisao() {
   const [questions, setQuestions] = useState<Question[]>([])
@@ -22,7 +23,7 @@ export default function Revisao() {
       return
     }
 
-    setQuestions((data || []) as Question[])
+    setQuestions(cleanQuestions(data))
   }
 
   async function responder(q: Question, acertou: boolean) {

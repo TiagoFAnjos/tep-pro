@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { supabase } from '../lib/supabase'
 import type { Question } from '../types/question'
+import { cleanQuestions } from '../utils/questions'
 
 export default function Flashcards() {
   const [questions, setQuestions] = useState<Question[]>([])
@@ -21,7 +22,7 @@ export default function Flashcards() {
       return
     }
 
-    setQuestions((data || []) as Question[])
+    setQuestions(cleanQuestions(data))
   }
 
   useEffect(() => {

@@ -7,6 +7,7 @@ import {
   type Choice,
   type ProvaQuestion,
 } from '../data/provaTituloPediatria'
+import { cleanQuestions } from '../utils/questions'
 
 const provaSize = 50
 
@@ -36,7 +37,7 @@ export default function ModoProva() {
       return
     }
 
-    const loaded = (data || []) as Question[]
+    const loaded = cleanQuestions(data)
 
     setBankQuestions(loaded)
     setDeck(buildDeck(loaded))
@@ -292,7 +293,8 @@ function buildDeck(bankQuestions: Question[]) {
 function parseBankQuestion(question: Question): ProvaQuestion | null {
   if (!question.simulado?.trim()) return null
 
-  const lines = question.simulado
+  const normalizedSimulado = normalizeInlineAlternatives(question.simulado)
+  const lines = normalizedSimulado
     .split(/\r?\n/)
     .map((line) => line.trim())
     .filter(Boolean)
@@ -301,7 +303,7 @@ function parseBankQuestion(question: Question): ProvaQuestion | null {
     /^[A-D]\)/.test(line)
   )
 
-  const answer = question.simulado.match(/Resposta correta:\s*([A-D])/i)?.[1] as
+  const answer = normalizedSimulado.match(/Resposta correta:\s*([A-D])/i)?.[1] as
     | Choice
     | undefined
 
@@ -320,7 +322,7 @@ function parseBankQuestion(question: Question): ProvaQuestion | null {
   if (choices.some((choice) => !alternativas[choice])) return null
 
   const explanation =
-    question.simulado.match(/Explica(?:ç|c)[ãa]o:\s*([\s\S]*)/i)?.[1] ||
+    normalizedSimulado.match(/Explica(?:ç|c)[ãa]o:\s*([\s\S]*)/i)?.[1] ||
     question.dica_tep ||
     'Revise o protocolo relacionado para consolidar a justificativa.'
 
@@ -339,4 +341,14 @@ function parseBankQuestion(question: Question): ProvaQuestion | null {
 
 function shuffle<T>(items: T[]) {
   return [...items].sort(() => Math.random() - 0.5)
+}
+
+function normalizeInlineAlternatives(value: string) {
+  return value
+    .replace(/\s+(A\))/g, '\n$1')
+    .replace(/\s+(B\))/g, '\n$1')
+    .replace(/\s+(C\))/g, '\n$1')
+    .replace(/\s+(D\))/g, '\n$1')
+    .replace(/\s+(Resposta correta:)/i, '\n$1')
+    .replace(/\s+(Explica(?:ç|c)[ãa]o:)/i, '\n$1')
 }

@@ -1,11 +1,73 @@
 title,simulado
-RN com SDR,"Prematuro de 30 semanas apresenta gemência, retrações e necessidade crescente de O2 nas primeiras horas de vida. RX mostra padrão reticulogranular difuso com broncogramas aéreos. Qual a melhor conduta inicial?\nA) Antibioticoterapia isolada\nB) Salbutamol inalatório\nC) CPAP nasal precoce\nD) Restrição hídrica\nResposta correta: C\nExplicação: SDR neonatal é causada por deficiência de surfactante. O tratamento inicial envolve suporte respiratório precoce com CPAP e avaliação de surfactante."
-Sepse neonatal precoce,"RN com 18 horas de vida apresenta hipotermia, apneia e recusa alimentar. Mãe teve febre intraparto e rotura de membranas prolongada. Qual a melhor conduta?\nA) Observar por 24h\nB) Alta com retorno precoce\nC) Hemocultura e antibiótico EV precoce\nD) Apenas glicemia capilar\nResposta correta: C\nExplicação: RN instável com fatores de risco maternos exige investigação e antibiótico imediato."
-Asma grave,"Criança de 6 anos chega ao PS com Sat 89%, tiragem intensa, fala entrecortada e sibilância difusa. Após salbutamol inicial mantém desconforto importante. Qual medicação deve ser considerada?\nA) Amoxicilina\nB) Sulfato de magnésio\nC) Furosemida\nD) Loratadina\nResposta correta: B\nExplicação: Sulfato de magnésio está indicado em crise asmática grave ou refratária."
-Choque séptico,"Lactente febril apresenta taquicardia, TEC 5 segundos, extremidades frias e oligúria, mas pressão arterial normal. Qual afirmação é correta?\nA) Não há choque sem hipotensão\nB) Deve receber apenas observação\nC) Choque compensado pode ocorrer sem hipotensão\nD) Antibiótico pode esperar exames\nResposta correta: C\nExplicação: Em pediatria, hipotensão é sinal tardio de choque."
-Cetoacidose diabética,"Adolescente com poliúria, polidipsia e Kussmaul apresenta glicemia 480 mg/dL e acidose metabólica. Qual erro deve ser evitado?\nA) Hidratação inicial\nB) Avaliação do potássio\nC) Bolus de insulina EV\nD) Monitorização neurológica\nResposta correta: C\nExplicação: Bolus de insulina aumenta risco de edema cerebral."
-Convulsão febril,"Criança de 2 anos apresenta crise tônico-clônica generalizada de 3 minutos associada à febre, retornando rapidamente ao basal. Qual a classificação?\nA) Epilepsia\nB) Convulsão febril complexa\nC) Estado de mal epiléptico\nD) Convulsão febril simples\nResposta correta: D\nExplicação: Crise generalizada, curta e única em 24h caracteriza convulsão febril simples."
-Desidratação grave,"Lactente com diarreia apresenta letargia, olhos fundos, TEC aumentado e pulso fino. Qual a melhor abordagem inicial?\nA) Apenas SRO\nB) Restrição hídrica\nC) Cristaloide isotônico EV\nD) Antibiótico oral imediato\nResposta correta: C\nExplicação: Desidratação grave com má perfusão exige expansão volêmica EV."
-Icterícia neonatal,"RN de 18 horas apresenta icterícia intensa. Qual afirmação é correta?\nA) Icterícia fisiológica é a hipótese mais provável\nB) Icterícia antes de 24h é sempre fisiológica\nC) Deve-se dosar bilirrubina imediatamente\nD) Não há necessidade de investigação\nResposta correta: C\nExplicação: Icterícia antes de 24h é patológica até prova em contrário."
-Hipoglicemia neonatal,"RN filho de mãe diabética apresenta tremores e sucção fraca. Qual exame deve ser realizado imediatamente?\nA) Bilirrubina\nB) Glicemia\nC) Gasometria\nD) Hemograma\nResposta correta: B\nExplicação: Tremores no RN exigem exclusão imediata de hipoglicemia."
-Prematuridade,"Qual complicação está mais associada ao prematuro extremo?\nA) Obesidade\nB) Doença celíaca\nC) SDR neonatal\nD) Hipertensão arterial essencial\nResposta correta: C\nExplicação: Prematuridade extrema aumenta muito o risco de SDR por deficiência de surfactante."
+RN com SDR,"Prematuro de 30 semanas evolui nas primeiras horas com gemencia, retracoes, SatO2 baixa e RX com baixo volume pulmonar, vidro fosco difuso e broncogramas aereos. Qual a melhor conduta inicial?
+A) Antibiotico isolado e observacao
+B) Oxigenio livre sem pressao positiva
+C) CPAP nasal precoce, controle termico e avaliacao de surfactante se falha/FiO2 crescente
+D) Alta apos melhora da cor
+Resposta correta: C
+Explicacao: O quadro e SDR neonatal. A conduta inicial e suporte com CPAP precoce, oxigenio titulado e reavaliacao para surfactante, alem de controle termico e avaliacao de diferenciais."
+Sepse neonatal precoce,"RN de 16 horas apresenta hipotermia, hipoatividade, apneia e ma perfusao. Mae teve febre intraparto e rotura prolongada de membranas. Qual conduta e mais adequada?
+A) Aguardar febre para investigar
+B) Hemograma e alta se leucocitos normais
+C) Monitorizar, coletar hemocultura se nao atrasar e iniciar antibiotico EV empirico imediatamente
+D) Apenas fototerapia preventiva
+Resposta correta: C
+Explicacao: RN sintomatico com fatores de risco tem suspeita de sepse neonatal precoce. Exames nao devem atrasar antibiotico e suporte."
+Asma grave,"Escolar asmatico chega com SatO2 89%, fala entrecortada, tiragem intensa e sibilos difusos. Apos SABA inicial e corticoide, mantem desconforto importante. Qual droga deve ser considerada na crise grave refrataria?
+A) Loratadina
+B) Furosemida
+C) Sulfato de magnesio IV
+D) Amoxicilina de rotina
+Resposta correta: C
+Explicacao: Na asma grave ou refrataria, apos tratamento inicial adequado, MgSO4 IV e uma opcao de escalonamento. Silencio toracico ou sonolencia indicam gravidade extrema."
+Choque séptico,"Lactente febril chega sonolento, taquicardico, TEC 5 segundos, extremidades frias e diurese reduzida. PA ainda normal. Qual alternativa e correta?
+A) Nao ha choque porque nao ha hipotensao
+B) Choque compensado e possivel; iniciar sepsis bundle com acesso, antibiotico, fluidos reavaliados e UTI se refratario
+C) Aguardar lactato para iniciar antibiotico
+D) Dar alta apos antitermico se febre baixar
+Resposta correta: B
+Explicacao: Hipotensao e tardia na crianca. Perfusao ruim em contexto infeccioso define alto risco e exige tratamento imediato."
+Cetoacidose diabética,"CAD pediátrica é protocolo: fluido, K, insulina sem bolus e vigilância neurológica.
+
+Qual é a melhor conduta inicial diante de um caso típico com sinais de gravidade?
+A) Alta sem reavaliação
+B) Conduta guiada por gravidade, conforme protocolo clínico
+C) Tratar apenas sintomas e ignorar sinais de alarme
+D) Aguardar piora para investigar
+Resposta correta: B
+Explicação: Em Cetoacidose diabética, a decisão segura depende de reconhecer o padrão clínico, classificar gravidade e aplicar a conduta adequada: Glicemia/cetonas/gasometria, hidratar com cautela, checar K antes da insulina, iniciar insulina EV sem bolus, monitorar sinais de edema cerebral."
+Convulsão febril,"Crianca de 2 anos teve crise tonico-clonica generalizada de 4 minutos durante febre, unica em 24h, recuperou completamente e exame neurologico esta normal. Qual conduta e adequada?
+A) TC de cranio e EEG obrigatorios
+B) Anticonvulsivante cronico
+C) Investigar foco da febre, orientar familia e reconhecer como convulsao febril simples se sem sinais de alarme
+D) Punção lombar em todos os casos
+Resposta correta: C
+Explicacao: Convulsao febril simples e generalizada, <15 min, unica em 24h e com recuperacao completa. Exames neurologicos de rotina nao sao indicados sem sinais de alerta."
+Desidratação grave,"Lactente com diarreia apresenta letargia, olhos fundos, incapacidade de beber, TEC 5 segundos e pulso fino. Qual conduta inicial?
+A) SRO domiciliar e retorno se piorar
+B) Cristaloide isotônico EV/IO em bolus com reavaliacao da perfusao
+C) Antibiotico oral isolado
+D) Antiemetico e alta
+Resposta correta: B
+Explicacao: Sinais de choque/ma perfusao exigem ressuscitacao com cristaloide e reavaliacao. SRO entra quando houver seguranca para via oral."
+Icterícia neonatal,"RN de 18 horas apresenta ictericia visivel. Esta mamando pouco e tem incompatibilidade ABO suspeita. Qual conduta e correta?
+A) Banho de sol e retorno em 7 dias
+B) Usar apenas escala de Kramer
+C) Dosar bilirrubina total e fracoes, interpretar por idade em horas/IG/risco e tratar conforme curva
+D) Fototerapia domiciliar sem dosagem
+Resposta correta: C
+Explicacao: Ictericia antes de 24h e patologica ate prova em contrario. A decisao depende de bilirrubina, idade em horas, idade gestacional e fatores de risco."
+Hipoglicemia neonatal,"RN filho de mae diabetica apresenta tremores e glicemia capilar baixa na primeira hora de vida. Qual e a melhor conduta inicial?
+A) Aguardar a proxima mamada sem repetir glicemia
+B) Corrigir imediatamente com dextrose 10% EV e iniciar monitorizacao
+C) Administrar dextrose 50% pura em bolus rapido
+D) Solicitar TC de cranio antes de tratar
+Resposta correta: B
+Explicacao: RN sintomatico com hipoglicemia exige correcao imediata. D10 EV e a solucao usada em neonatos; solucoes hipertônicas concentradas devem ser evitadas."
+Prematuridade,"RN de 33 semanas aparentemente estavel fica em alojamento conjunto. Nas primeiras horas apresenta hipotermia e dificuldade de sucção. Qual afirmacao e correta?
+A) Prematuro tardio nao precisa vigilancia se nasceu chorando
+B) Deve-se avaliar temperatura, glicemia, alimentacao, ictericia e risco respiratorio de forma ativa
+C) Agua glicosada previne todas as complicacoes
+D) Alta precoce e indicada se SatO2 normal uma vez
+Resposta correta: B
+Explicacao: Prematuros, inclusive tardios, tem risco de hipoglicemia, hipotermia, ictericia, dificuldade alimentar e desconforto respiratorio."

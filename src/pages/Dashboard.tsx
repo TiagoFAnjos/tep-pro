@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { supabase } from '../lib/supabase'
 import type { Question } from '../types/question'
+import { cleanQuestions } from '../utils/questions'
 
 export default function Dashboard() {
   const [questions, setQuestions] = useState<Question[]>([])
@@ -18,7 +19,7 @@ export default function Dashboard() {
       return
     }
 
-    setQuestions((data || []) as Question[])
+    setQuestions(cleanQuestions(data))
     setLoading(false)
   }
 

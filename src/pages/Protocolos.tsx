@@ -3,6 +3,7 @@ import Papa from 'papaparse'
 import { supabase } from '../lib/supabase'
 import type { Question } from '../types/question'
 import { getDoseCalculatorGroups, type DoseRule } from '../data/doseCalculators'
+import { cleanQuestions } from '../utils/questions'
 
 const searchableFields: Array<keyof Question> = [
   'title',
@@ -35,7 +36,7 @@ export default function Protocolos() {
       return
     }
 
-    setQuestions((data || []) as Question[])
+    setQuestions(cleanQuestions(data))
   }
 
   useEffect(() => {

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { supabase } from '../lib/supabase'
 import type { Question } from '../types/question'
+import { cleanQuestions } from '../utils/questions'
 
 type ResultadoClinico = Question & {
   pontos: number
@@ -23,7 +24,7 @@ export default function MotorClinico() {
       return
     }
 
-    setQuestions((data || []) as Question[])
+    setQuestions(cleanQuestions(data))
   }
 
   useEffect(() => {
