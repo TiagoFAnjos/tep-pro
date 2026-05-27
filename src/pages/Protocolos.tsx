@@ -270,8 +270,8 @@ function ProtocolDetail({
     ['Mini aula', protocol.mini_aula],
     ['Checklist', protocol.checklist],
     ['Palavras-chave clínicas', protocol.palavras_chave_clinicas],
-    ['Fontes', protocol.fontes],
   ] as const
+  const bibliography = parseBibliography(protocol.fontes)
 
   return (
     <div className="grid gap-5">
@@ -306,12 +306,63 @@ function ProtocolDetail({
         />
       )}
 
-      <div className="grid gap-5">
-        {sections.map(([title, content]) => (
-          <Section key={title} title={title} content={content} />
-        ))}
+      <div className="grid gap-5 xl:grid-cols-[minmax(0,1fr)_22rem] xl:items-start">
+        <div className="grid gap-5">
+          {sections.map(([title, content]) => (
+            <Section key={title} title={title} content={content} />
+          ))}
+        </div>
+
+        <BibliographyPanel items={bibliography} />
       </div>
     </div>
+  )
+}
+
+function BibliographyPanel({
+  items,
+}: {
+  items: BibliographyItem[]
+}) {
+  if (!items.length) return null
+
+  return (
+    <aside className="bg-white rounded-lg shadow-sm border p-5 xl:sticky xl:top-6">
+      <h3 className="text-xl font-bold text-slate-900">
+        Bibliografia
+      </h3>
+
+      <p className="text-sm text-slate-600 mt-2">
+        Fontes usadas para orientar a síntese. Excertos longos não são reproduzidos; o conteúdo clínico foi reescrito em linguagem própria.
+      </p>
+
+      <div className="grid gap-4 mt-5">
+        {items.map((item, index) => (
+          <div key={`${item.title}-${index}`} className="border rounded-lg p-4 bg-slate-50">
+            <p className="font-bold text-slate-900">
+              {item.title}
+            </p>
+
+            {item.note && (
+              <p className="text-sm text-slate-700 mt-2 leading-relaxed">
+                {item.note}
+              </p>
+            )}
+
+            {item.url && (
+              <a
+                href={item.url}
+                target="_blank"
+                rel="noreferrer"
+                className="text-sm text-blue-700 font-semibold mt-3 inline-block break-all"
+              >
+                Abrir fonte
+              </a>
+            )}
+          </div>
+        ))}
+      </div>
+    </aside>
   )
 }
 
@@ -521,6 +572,35 @@ function parseChart(content: string) {
     .filter((item) => item.label && Number.isFinite(item.value))
 
   return rows.length ? rows : null
+}
+
+type BibliographyItem = {
+  title: string
+  note?: string
+  url?: string
+}
+
+function parseBibliography(content?: string): BibliographyItem[] {
+  if (!content) return []
+
+  return content
+    .split('|')
+    .map((item) => item.trim())
+    .filter(Boolean)
+    .map((item) => {
+      const [title, note, urlFromStructured] = item
+        .split('::')
+        .map((part) => part.trim())
+
+      const url = urlFromStructured || item.match(/https?:\/\/\S+/)?.[0]
+      const cleanTitle = title.replace(/https?:\/\/\S+/, '').trim()
+
+      return {
+        title: cleanTitle || 'Fonte',
+        note,
+        url,
+      }
+    })
 }
 
 function Metric({
