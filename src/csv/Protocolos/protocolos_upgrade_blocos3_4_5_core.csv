@@ -1,0 +1,743 @@
+title,tema,dificuldade,definicao,fisiopatologia,fatores_risco,sinais_sintomas,diagnostico,conduta,tratamento,medicacoes_doses,diagnosticos_diferenciais,nivel_risco,palavras_chave_clinicas,conduta_emergencia,sinais_gravidade,criterios_internacao,criterios_uti,erros_comuns,pegadinhas,dica_tep,resumo,fluxograma,algoritmo,tabela_resumo,score_clinico,checklist,mini_aula,fontes
+Infecção do trato urinário,Nefrologia,4,"Infecção bacteriana do trato urinário, comum em pediatria, podendo ser cistite ou pielonefrite febril com risco de bacteremia e cicatriz renal.
+
+Complemento Bloco 3: infecção bacteriana do trato urinário, baixa ou alta, comum em lactentes e crianças pequenas, cuja gravidade depende de idade, febre, toxemia, hidratação, malformação urinária e risco de cicatriz renal.","Ascensão bacteriana, principalmente por E. coli, coloniza bexiga e pode atingir rim. Refluxo vesicoureteral, disfunção miccional e constipação aumentam recorrência.","Lactente, sexo feminino após infância inicial, menino não circuncidado no primeiro ano, malformação urinária, refluxo, constipação, disfunção miccional, ITU prévia.","Febre sem foco em lactente, irritabilidade, vômitos, baixa ingesta, dor abdominal/lombar, disúria, polaciúria, urgência, enurese nova, urina fétida.","Urina tipo 1 e urocultura por coleta adequada antes do antibiótico. Saco coletor não confirma cultura. Pielonefrite é sugerida por febre/toxemia/dor lombar.
+
+Confirmar com urina coletada adequadamente: jato médio em continentes; cateterismo/punção em lactentes quando decisão terapêutica é relevante. Saco coletor serve para triagem, não para cultura diagnóstica positiva. Febre sem foco em lactente exige pensar ITU.","Coletar urina antes do antibiótico quando possível, iniciar antimicrobiano se suspeita forte, avaliar hidratação, idade e necessidade de internação. Investigar imagem conforme idade, recorrência e evolução.
+
+PA: avaliar sepse, idade e hidratação; colher EAS/urocultura antes do antibiótico se possível. Enfermaria: EV se lactente pequeno, vômitos, toxemia, pielonefrite grave ou falha VO. Investigar imagem conforme idade, recorrência, germe atípico ou evolução ruim.","Antibiótico por via oral se estável e tolera, EV se lactente pequeno, toxemia, vômitos ou sepse. Ajustar por cultura e sensibilidade.
+
+PA: avaliar sepse, idade e hidratação; colher EAS/urocultura antes do antibiótico se possível. Enfermaria: EV se lactente pequeno, vômitos, toxemia, pielonefrite grave ou falha VO. Investigar imagem conforme idade, recorrência, germe atípico ou evolução ruim.","Cefalexina 50-100 mg/kg/dia VO, amoxicilina-clavulanato 40-50 mg/kg/dia, ceftriaxona 50-75 mg/kg/dia EV/IM em casos graves. Escolha depende de perfil local e cultura.
+
+Cefalexina 50-100 mg/kg/dia VO dividida 6/6h ou 8/8h para cistite/ITU baixa conforme sensibilidade. Amoxicilina-clavulanato 40-50 mg/kg/dia de amoxicilina. Ceftriaxona 50-75 mg/kg/dia EV/IM em pielonefrite grave ou vômitos. Ajustar por cultura e função renal.","Vulvovaginite, balanopostite, pielonefrite, apendicite, gastroenterite, litíase, sepse, febre viral.",Moderado/Alto,"itu,febre sem foco,lactente,urocultura,disuria,pielonefrite,cefalexina,ceftriaxona","Lactente febril/toxemiado: urina adequada e cultura, hemocultura se sepse, antibiótico EV, hidratação e internação. Não atrasar antibiótico em instável.
+
+Se grave: ABCDE, sinais vitais, glicemia quando aplicável, acesso, suporte específico do protocolo e acionar especialista/UTI sem atrasar terapia tempo-dependente.","Lactente <3 meses, toxemia, vômitos persistentes, desidratação, sepse, dor lombar intensa, imunossupressão, malformação urinária.","Lactente pequeno, toxemia, vômitos/baixa ingesta, desidratação, falha ambulatorial, suspeita de sepse, barreira social.
+
+Lactente pequeno, toxemia, vômitos/desidratação, pielonefrite grave, uropatia, imunossupressão, falha VO ou risco social.","Choque séptico, necessidade de vasoativo, rebaixamento, insuficiência renal aguda grave, sepse grave.
+
+Sepse/choque, insuficiência renal aguda grave, distúrbio hidroeletrolítico importante ou necessidade vasoativa.","Confirmar ITU por saco coletor, tratar sem cultura quando estável, ignorar constipação/disfunção miccional, não ajustar antibiótico por cultura.","Febre sem foco em lactente pode ser ITU. Nitrito negativo não exclui em lactente por micção frequente.
+
+Saco coletor positivo não fecha ITU. Nitrito negativo não exclui em lactente. Não tratar bacteriúria assintomática como ITU febril.","Cultura precisa de coleta adequada; saco coletor serve para triagem, não confirmação.","ITU pediátrica exige urina bem coletada, antibiótico guiado por gravidade e prevenção de recorrência.","Suspeita -> coleta adequada -> EAS/cultura -> estável VO vs grave EV -> ajustar cultura -> imagem se indicado.
+
+Febre sem foco/disúria -> coletar urina válida -> EAS sugestivo? urocultura + ATB -> reavaliar 48h -> ajustar cultura -> imagem se indicado.","1. Suspeitar. 2. Coletar corretamente. 3. Classificar gravidade. 4. ATB. 5. Revisar cultura. 6. Investigar recorrência.
+
+1. Classificar gravidade. 2. Confirmar critérios diagnósticos. 3. Checar dose por peso quando houver medicação. 4. Decidir ambulatório/enfermaria/UTI. 5. Orientar retorno e seguimento.","Lactente: febre sem foco. Diagnóstico: urocultura. Grave: EV/internar. Recorrência: constipação e disfunção.
+
+Cenário|Coleta|Tratamento
+Lactente febril|Cateter/punção se não continente|ATB após cultura se suspeita
+Cistite afebril|Jato médio se continente|VO curto conforme protocolo
+Pielonefrite|Urocultura obrigatória|VO/EV 7-14 dias conforme gravidade
+Recorrente/atípica|Imagem e nefro/uroped|Investigar anomalia",Usar critérios clínicos/laboratoriais e protocolos de imagem por idade/recorrência.,"Idade | Febre | Coleta | EAS | Cultura | Hidratação | ATB | Sensibilidade | Recorrência | Constipação
+
+Idade | Peso | Sinais vitais | Gravidade | Diagnóstico diferencial | Dose por kg | Critério internação | Critério UTI | Orientação de retorno | Seguimento","A qualidade da coleta define o diagnóstico. Tratar contaminação como ITU gera excesso de antibiótico; perder pielonefrite em lactente gera risco sistêmico.
+
+Complemento bibliográfico: conteúdo revisado à luz do Nelson/Tratado SBP e documentos SBP/MS priorizados para TEP; manter foco em idade, gravidade, exceções, doses por peso, critérios de internação/UTI e pegadinhas de prova.
+
+Complemento Bloco 3: este tema deve ser estudado como decisão prática: reconhecer a apresentação típica, achar o detalhe que muda gravidade, calcular dose quando existir e saber quando o ambulatório deixou de ser seguro.","Tratado de Pediatria SBP 6ª edição.docx::Base local analisada: pediatria geral, crescimento, DNPM, imunizações, neonatologia, icterícia, suplementação, telas e temas estratégicos para TEP. | Livro Nelson.docx::Base local analisada: panorama da pediatria, desenvolvimento, comportamento, nutrição, fluidoterapia, farmacologia e segurança da prescrição pediátrica. | SBP - Questões comentadas TEP::Usado para orientar estilo de cobrança, pegadinhas e forma de raciocínio, sem reprodução literal de questões.::https://www.sbp.com.br/concursos-de-titulos/questoes-comentadas/
+
+SBP - materiais científicos e questões comentadas TEP: https://www.sbp.com.br/concursos-de-titulos/questoes-comentadas/ | Ministério da Saúde - Caderneta da Criança: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/caderneta | AHA Kawasaki Scientific Statement: https://www.ahajournals.org/doi/10.1161/CIR.0000000000000484 | KDIGO Glomerular Diseases Guidelines: https://kdigo.org/guidelines/gd/ | ISPAD Pediatric Diabetes Guidelines: https://www.ispad.org/ | AAP Autism Clinical Report: https://publications.aap.org/pediatrics/article/145/1/e20193447/36917/Identification-Evaluation-and-Management-of | AAP Obesity Clinical Practice Guideline 2023 | NASPGHAN/ESPGHAN Constipation Guideline | WHO Breastfeeding and Infant Feeding Guidance"
+Anemia ferropriva,Hematologia,3,"Anemia por deficiência de ferro, principal causa de anemia na infância, associada a baixa ingestão, crescimento acelerado ou perdas.
+
+Complemento Bloco 4: anemia por deficiência de ferro, geralmente nutricional ou por perdas, com impacto cognitivo e motor; em pediatria é doença clínica e de saúde pública, não apenas hemoglobina baixa.","Depleção de estoques reduz síntese de hemoglobina, causando microcitose, hipocromia e impacto neurocognitivo quando prolongada.","Prematuridade, baixo peso, leite de vaca precoce/excessivo, baixa ingestão de ferro, adolescência/menstruação, parasitoses, sangramento GI.","Palidez, fadiga, irritabilidade, pica, queda de rendimento, taquicardia se grave. Muitas crianças são assintomáticas.","Hemograma com microcitose/hipocromia, ferritina baixa interpretada com inflamação, RDW alto, resposta ao ferro. Investigar perdas se recorrente/grave.
+
+Hemograma microcítico/hipocrômico, RDW alto, ferritina baixa (interpretar com inflamação), saturação de transferrina baixa. Investigar dieta, leite de vaca excessivo, prematuridade, sangramento, parasitoses e falha de resposta.","Tratar com ferro oral, orientar dieta, corrigir causa, reavaliar reticulócitos/Hb. Encaminhar se grave, refratária ou sinais de outra etiologia.
+
+Ambulatório: orientar dieta rica em ferro, reduzir leite de vaca excessivo, ferro terapêutico e reavaliar reticulócitos/Hb. PA/enfermaria se anemia grave sintomática, insuficiência cardíaca, sangramento ou diagnóstico duvidoso.","Ferro oral por dose terapêutica, manter após normalizar Hb para repor estoques. Ferro EV em falha/intolerância selecionada. Transfusão só se instabilidade/anemia muito grave.
+
+Ambulatório: orientar dieta rica em ferro, reduzir leite de vaca excessivo, ferro terapêutico e reavaliar reticulócitos/Hb. PA/enfermaria se anemia grave sintomática, insuficiência cardíaca, sangramento ou diagnóstico duvidoso.","Ferro elementar 3-6 mg/kg/dia VO, 1-2 tomadas, por 3 meses ou até repor estoques conforme protocolo. Evitar com leite; vitamina C pode ajudar absorção.
+
+Ferro elementar terapêutico 3-6 mg/kg/dia VO, em 1-2 tomadas, por pelo menos 3 meses após normalizar Hb para repor estoque. Profilaxia conforme idade/risco. Transfusão só se instabilidade/anemia grave sintomática.","Talassemia, anemia da inflamação, intoxicação por chumbo, doença celíaca, perdas crônicas, anemia hemolítica.",Moderado,"anemia ferropriva,ferro,microcitose,ferritina,leite vaca,pica,palidez","Se anemia grave com taquicardia, dispneia, síncope ou insuficiência cardíaca: avaliar transfusão hospitalar e investigação urgente.
+
+Se grave: ABCDE, sinais vitais, glicemia quando aplicável, acesso, suporte específico do protocolo e acionar especialista/UTI sem atrasar terapia tempo-dependente.","Hb muito baixa, sinais cardiovasculares, síncope, dispneia, sangramento ativo, falha terapêutica, hepatoesplenomegalia.","Instabilidade, anemia grave sintomática, necessidade transfusional, sangramento ativo, investigação complexa.
+
+Anemia grave sintomática, insuficiência cardíaca, sangramento ativo, suspeita onco-hematológica ou impossibilidade de acompanhamento.","Choque, insuficiência cardíaca de alto débito, sangramento maciço, instabilidade transfusional.
+
+Choque, insuficiência cardíaca grave, hipóxia, sangramento maciço ou necessidade transfusional urgente instável.","Dosear sal de ferro em vez de ferro elementar, não orientar leite de vaca, parar ferro ao normalizar Hb, não pensar talassemia.","Ferritina sobe na inflamação; ferritina normal não exclui deficiência se PCR alta.
+
+Ferritina sobe na inflamação. Não culpar “verme” sem avaliar dieta/leite. Falha terapêutica muitas vezes é dose errada ou má adesão.",Microcitose + RDW alto + dieta pobre/leite de vaca = ferropriva.,"Anemia ferropriva é comum e tratável: ferro correto, dieta e reavaliação.","Anemia microcítica -> ferritina/dieta -> ferro VO -> reticulócito/Hb -> falha? adesão/perdas/diferenciais.
+
+Anemia microcítica -> ferritina/dieta/perdas -> ferro VO -> reticulócito/Hb sobem? continuar -> não sobe? adesão, dose, diagnóstico alternativo.","1. Confirmar anemia. 2. Microcitose. 3. Ferritina/PCR. 4. Ferro. 5. Dieta. 6. Reavaliar.
+
+1. Classificar gravidade. 2. Confirmar critérios diagnósticos. 3. Checar dose por peso quando houver medicação. 4. Decidir ambulatório/enfermaria/UTI. 5. Orientar retorno e seguimento.","Causa: baixa ingesta/perda. Exame: microcitose/ferritina. Tratamento: ferro elementar.
+
+Achado|Ferropriva|Talassemia traço|Inflamação
+VCM|Baixo|Muito baixo|Normal/baixo
+RDW|Alto|Normal|Variável
+Ferritina|Baixa|Normal|Normal/alta
+Resposta ferro|Boa|Ruim|Parcial
+Conduta|Ferro + dieta|Confirmar eletroforese|Tratar inflamação",Classificar gravidade por Hb e sintomas.,"Hb | VCM | RDW | Ferritina/PCR | Dieta | Leite | Ferro elementar | Adesão | Retorno | Perdas
+
+Idade | Peso | Sinais vitais | Gravidade | Diagnóstico diferencial | Dose por kg | Critério internação | Critério UTI | Orientação de retorno | Seguimento","O tratamento falha mais por dose errada, adesão ruim ou leite em excesso do que por doença rara. Mas falha verdadeira precisa investigação.
+
+Complemento bibliográfico: conteúdo revisado à luz do Nelson/Tratado SBP e documentos SBP/MS priorizados para TEP; manter foco em idade, gravidade, exceções, doses por peso, critérios de internação/UTI e pegadinhas de prova.
+
+Complemento Bloco 4: este tema deve ser estudado como decisão prática: reconhecer a apresentação típica, achar o detalhe que muda gravidade, calcular dose quando existir e saber quando o ambulatório deixou de ser seguro.","Tratado de Pediatria SBP 6ª edição.docx::Base local analisada: pediatria geral, crescimento, DNPM, imunizações, neonatologia, icterícia, suplementação, telas e temas estratégicos para TEP. | Livro Nelson.docx::Base local analisada: panorama da pediatria, desenvolvimento, comportamento, nutrição, fluidoterapia, farmacologia e segurança da prescrição pediátrica. | SBP - Questões comentadas TEP::Usado para orientar estilo de cobrança, pegadinhas e forma de raciocínio, sem reprodução literal de questões.::https://www.sbp.com.br/concursos-de-titulos/questoes-comentadas/
+
+SBP - materiais científicos e questões comentadas TEP: https://www.sbp.com.br/concursos-de-titulos/questoes-comentadas/ | Ministério da Saúde - Caderneta da Criança: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/caderneta | AHA Kawasaki Scientific Statement: https://www.ahajournals.org/doi/10.1161/CIR.0000000000000484 | KDIGO Glomerular Diseases Guidelines: https://kdigo.org/guidelines/gd/ | ISPAD Pediatric Diabetes Guidelines: https://www.ispad.org/ | AAP Autism Clinical Report: https://publications.aap.org/pediatrics/article/145/1/e20193447/36917/Identification-Evaluation-and-Management-of | AAP Obesity Clinical Practice Guideline 2023 | NASPGHAN/ESPGHAN Constipation Guideline | WHO Breastfeeding and Infant Feeding Guidance"
+Obesidade pediátrica,Ambulatorial,4,"Doença crônica multifatorial definida por IMC por idade/sexo, associada a risco cardiometabólico, psicossocial, ortopédico e hepático.
+
+Complemento Bloco 5: doença crônica multifatorial definida por IMC por idade/sexo elevado, associada a risco cardiometabólico, ortopédico, hepático, respiratório e psicossocial; exige cuidado longitudinal sem estigma.","Interação entre genética, ambiente alimentar, sono, atividade, medicamentos, saúde mental e determinantes sociais leva a balanço energético positivo e inflamação metabólica.","História familiar, obesidade parental, insegurança alimentar, ultraprocessados, bebidas açucaradas, sedentarismo, sono curto, trauma, medicamentos, endocrinopatias raras.","IMC elevado, acantose, hipertensão, ronco/apneia, dor articular, puberdade alterada, esteatose, baixa autoestima, ansiedade/depressão.","IMC por percentil/score z; avaliar PA, história familiar, sono, alimentação, atividade, saúde mental e exames para comorbidades conforme idade/gravidade.
+
+IMC em curva adequada, PA, história familiar, sono, alimentação, atividade, telas, medicamentos, saúde mental e determinantes sociais. Investigar comorbidades: dislipidemia, glicemia/HbA1c, TGP/esteatose, apneia do sono, SOP e hipertensão conforme idade/risco.","Abordagem sem estigma, centrada na família. Tratamento intensivo de estilo de vida, metas realistas, sono, alimentação, atividade e comorbidades. Não usar espera passiva.
+
+Entrevista motivacional, metas familiares, sono, redução de ultraprocessados/bebidas açucaradas, atividade diária, manejo de tela e acompanhamento frequente. Tratar comorbidades e encaminhar equipe multiprofissional; não usar “esperar crescer”.","Intervenção comportamental intensiva; farmacoterapia em adolescentes selecionados; cirurgia bariátrica em obesidade grave selecionada conforme guideline e equipe especializada.
+
+Entrevista motivacional, metas familiares, sono, redução de ultraprocessados/bebidas açucaradas, atividade diária, manejo de tela e acompanhamento frequente. Tratar comorbidades e encaminhar equipe multiprofissional; não usar “esperar crescer”.","Medicamentos antiobesidade dependem de idade/indicação e especialista. Evitar prescrição casual. Tratar comorbidades como HAS, dislipidemia, DM2 e esteatose conforme protocolos.
+
+Base é intervenção intensiva em estilo de vida. Farmacoterapia e cirurgia bariátrica são para adolescentes selecionados, por especialista e critérios estritos. Não prescrever anorexígeno/suplemento sem indicação formal.","Hipotireoidismo, Cushing, síndromes genéticas, deficiência de GH, medicamentos, edema/ascite, compulsão alimentar.",Moderado/Alto,"obesidade,imc,percentil,acantose,esteatose,hipertensao,sono,atividade,ultraprocessados","Cefaleia com hipertensão grave, dispneia/hipoventilação, DM descompensado, ideação suicida ou dor abdominal intensa exigem avaliação urgente.
+
+Se grave: ABCDE, sinais vitais, glicemia quando aplicável, acesso, suporte específico do protocolo e acionar especialista/UTI sem atrasar terapia tempo-dependente.","Obesidade grave, HAS, apneia, DM2, esteatose avançada, pseudotumor cerebral, depressão grave, limitação funcional.","Complicações agudas, hipertensão grave, descompensação metabólica, risco psiquiátrico, investigação de síndrome rara com instabilidade.
+
+Complicação aguda: hipertensão grave, diabetes descompensado, apneia grave, esteato-hepatite grave, sofrimento psíquico com risco ou comorbidade aguda.","Hipoventilação grave, insuficiência respiratória, crise hipertensiva com órgão-alvo, cetoacidose/estado hiperosmolar.
+
+Crise hipertensiva, insuficiência respiratória/hipoventilação grave, CAD/estado hiperosmolar, arritmia ou choque.","Culpar paciente, dizer para “fechar a boca”, não calcular IMC, não rastrear comorbidades, esperar sem intervenção.","Obesidade é doença crônica; abordagem estigmatizante piora adesão. Endocrinopatia geralmente cursa com baixa velocidade de crescimento.
+
+Obesidade não é “falta de vergonha”. IMC isolado não mede comorbidade. Criança com obesidade e baixa estatura/queda de crescimento pede causa endócrina/genética.",IMC deve ser plotado; obesidade com baixa estatura/velocidade baixa sugere causa endócrina.,"Obesidade pediátrica exige diagnóstico por IMC, rastreio de comorbidades e cuidado familiar intensivo sem estigma.","IMC elevado -> classificar -> comorbidades -> intervenção familiar intensiva -> especialista/fármaco/cirurgia se grave.
+
+IMC elevado -> comorbidades + contexto familiar -> metas pactuadas -> retorno frequente -> falha/obesidade grave? equipe/especialista.","1. IMC. 2. PA. 3. Comorbidades. 4. Família/ambiente. 5. Plano intensivo. 6. Seguimento.
+
+1. Classificar gravidade. 2. Confirmar critérios diagnósticos. 3. Checar dose por peso quando houver medicação. 4. Decidir ambulatório/enfermaria/UTI. 5. Orientar retorno e seguimento.","Rastrear: PA, glicose/HbA1c, lipídios, ALT, sono, saúde mental. Tratamento: intensivo e longitudinal.
+
+Eixo|O que avaliar|Ação
+IMC|Curva por idade|Classificar
+PA|Manguito correto|Confirmar/seguir
+Metabólico|HbA1c/lipídios/TGP|Tratar risco
+Sono|Ronco/apneia|Investigar
+Psicossocial|Bullying/compulsão|Cuidado sem estigma",IMC por percentil/score z; estágio de obesidade e comorbidades guiam intensidade.,"IMC | PA | Acantose | Sono | Alimentação | Atividade | ALT | Lipídios | Glicose | Saúde mental
+
+Idade | Peso | Sinais vitais | Gravidade | Diagnóstico diferencial | Dose por kg | Critério internação | Critério UTI | Orientação de retorno | Seguimento","A mudança de abordagem é tratar obesidade como doença crônica, não como falha moral. Isso muda linguagem, metas e adesão.
+
+Complemento bibliográfico: conteúdo revisado à luz do Nelson/Tratado SBP e documentos SBP/MS priorizados para TEP; manter foco em idade, gravidade, exceções, doses por peso, critérios de internação/UTI e pegadinhas de prova.
+
+Complemento Bloco 5: este tema deve ser estudado como decisão prática: reconhecer a apresentação típica, achar o detalhe que muda gravidade, calcular dose quando existir e saber quando o ambulatório deixou de ser seguro.","Tratado de Pediatria SBP 6ª edição.docx::Base local analisada: pediatria geral, crescimento, DNPM, imunizações, neonatologia, icterícia, suplementação, telas e temas estratégicos para TEP. | Livro Nelson.docx::Base local analisada: panorama da pediatria, desenvolvimento, comportamento, nutrição, fluidoterapia, farmacologia e segurança da prescrição pediátrica. | SBP - Questões comentadas TEP::Usado para orientar estilo de cobrança, pegadinhas e forma de raciocínio, sem reprodução literal de questões.::https://www.sbp.com.br/concursos-de-titulos/questoes-comentadas/ | Ministério da Saúde - Caderneta da Criança::Base para puericultura, crescimento, desenvolvimento, vigilância e orientação familiar.::https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/caderneta
+
+SBP - materiais científicos e questões comentadas TEP: https://www.sbp.com.br/concursos-de-titulos/questoes-comentadas/ | Ministério da Saúde - Caderneta da Criança: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/caderneta | AHA Kawasaki Scientific Statement: https://www.ahajournals.org/doi/10.1161/CIR.0000000000000484 | KDIGO Glomerular Diseases Guidelines: https://kdigo.org/guidelines/gd/ | ISPAD Pediatric Diabetes Guidelines: https://www.ispad.org/ | AAP Autism Clinical Report: https://publications.aap.org/pediatrics/article/145/1/e20193447/36917/Identification-Evaluation-and-Management-of | AAP Obesity Clinical Practice Guideline 2023 | NASPGHAN/ESPGHAN Constipation Guideline | WHO Breastfeeding and Infant Feeding Guidance"
+Doença de Kawasaki,Cardiologia,5,"Vasculite sistêmica de médios vasos, típica de crianças pequenas, com risco de aneurismas coronarianos quando não tratada precocemente.
+
+Complemento Bloco 3: vasculite sistêmica aguda de médios vasos, típica de lactentes e pré-escolares, cuja prioridade é prevenir lesão coronariana com diagnóstico clínico rápido, IVIG precoce e seguimento ecocardiográfico.","Inflamação vascular imunomediada afeta artérias coronárias e outros vasos. A janela terapêutica com imunoglobulina reduz complicações coronarianas, especialmente quando feita até o 10º dia.","Idade <5 anos, sexo masculino, ascendência asiática, febre prolongada, lactentes com apresentação incompleta, marcadores inflamatórios elevados.","Febre ≥5 dias associada a conjuntivite bilateral não purulenta, alterações orais, exantema, edema/eritema de extremidades, linfonodo cervical. Pode haver irritabilidade, dor abdominal, artrite e descamação tardia.","Clínico; considerar forma incompleta em lactentes com febre prolongada e inflamação. Solicitar hemograma, PCR/VHS, albumina, TGO/TGP, urina, ecocardiograma e ECG conforme disponibilidade.
+
+Febre por pelo menos 5 dias com critérios mucocutâneos; considerar Kawasaki incompleto em lactente com febre prolongada, inflamação elevada, anemia, hipoalbuminemia, plaquetose tardia ou alteração coronariana. Ecocardiograma normal inicial não exclui.","Suspeitar cedo, internar para avaliação, iniciar tratamento se critérios completos ou incompletos com suporte laboratorial/ecocardiográfico. Acionar cardiologia pediátrica.
+
+PA/enfermaria: internar suspeita relevante, colher inflamatórios, hemograma, albumina, transaminases, urina, ECG/eco e iniciar IVIG se critérios completos ou incompletos sustentados. UTI se choque, miocardite, arritmia ou MIS-C grave no diferencial.","Imunoglobulina IV e AAS conforme fase/risco. Corticoide ou biológico em alto risco ou refratário conforme especialista. Seguimento com ecocardiograma seriado.
+
+PA/enfermaria: internar suspeita relevante, colher inflamatórios, hemograma, albumina, transaminases, urina, ECG/eco e iniciar IVIG se critérios completos ou incompletos sustentados. UTI se choque, miocardite, arritmia ou MIS-C grave no diferencial.","IVIG 2 g/kg IV dose única. AAS anti-inflamatório em fase aguda conforme protocolo e depois dose antiagregante 3-5 mg/kg/dia quando afebril. Confirmar dose local e risco de influenza/varicela.
+
+IVIG 2 g/kg EV em dose única idealmente até o 10º dia, sem atrasar se alto risco após esse período. AAS em dose anti-inflamatória na fase aguda conforme protocolo, depois antiagregante 3-5 mg/kg/dia quando afebril. Corticoide/biológico se alto risco ou refratário com especialista.","MIS-C, escarlatina, adenovirose, sarampo, reação medicamentosa, síndrome do choque tóxico, artrite idiopática juvenil sistêmica.",Alto,"kawasaki,febre prolongada,conjuntivite,exantema,coronaria,ivig,aas,linfonodo,descamacao","Criança com febre prolongada e sinais mucocutâneos: avaliar critérios, colher inflamatórios, ecocardiograma, internar e iniciar IVIG se indicado sem atrasar por eco indisponível quando suspeita forte.
+
+Se grave: ABCDE, sinais vitais, glicemia quando aplicável, acesso, suporte específico do protocolo e acionar especialista/UTI sem atrasar terapia tempo-dependente.","Lactente <6 meses, choque, miocardite, alterações coronarianas, PCR muito elevada, hipoalbuminemia, anemia, plaquetose tardia, refratariedade à IVIG.","Suspeita diagnóstica para investigação/tratamento, febre persistente, Kawasaki incompleto, alterações laboratoriais importantes ou necessidade de IVIG.
+
+Suspeita diagnóstica relevante, necessidade de IVIG, forma incompleta em investigação, alterações cardíacas, febre persistente ou alto risco social.","Choque, miocardite, disfunção ventricular, arritmia, instabilidade hemodinâmica, MIS-C grave no diferencial.
+
+Choque, miocardite, disfunção ventricular, arritmia, hipotensão, necessidade vasoativa ou MIS-C grave.","Esperar todos os critérios clássicos, não pensar em Kawasaki incompleto no lactente, atrasar IVIG, não pedir/seguir ecocardiograma.","Febre prolongada com conjuntivite e boca alterada não é sempre virose. Kawasaki incompleto é o que mais perde coronária.
+
+Não esperar todos os critérios no mesmo dia; lactente pequeno faz forma incompleta e perde coronária. Febre que persiste 36h após IVIG sugere refratariedade.",Febre ≥5 dias + sinais mucocutâneos = pensar Kawasaki e proteger coronárias.,"Kawasaki é vasculite febril pediátrica: reconhecer cedo, tratar com IVIG e acompanhar coronárias.","Febre prolongada -> critérios clínicos -> completo ou incompleto com inflamação -> internar -> IVIG/AAS -> eco seriado.
+
+Febre prolongada -> critérios clínicos -> completo? IVIG/AAS/eco -> incompleto? labs inflamatórios + eco -> sustenta? tratar -> choque/MIS-C? UTI.","1. Suspeitar. 2. Avaliar critérios. 3. Labs inflamatórios. 4. Eco. 5. IVIG. 6. Seguimento cardiológico.
+
+1. Classificar gravidade. 2. Confirmar critérios diagnósticos. 3. Checar dose por peso quando houver medicação. 4. Decidir ambulatório/enfermaria/UTI. 5. Orientar retorno e seguimento.","Febre, conjuntivite, boca, exantema, extremidades, linfonodo. Complicação: coronária. Tratamento: IVIG.
+
+Achado|Kawasaki clássico|Kawasaki incompleto|MIS-C
+Febre|Prolongada|Prolongada, poucos critérios|Prolongada, pós-Covid
+Mucosa/pele|Típico|Parcial|Variável
+Coronária|Risco central|Pode ser pista|Pode alterar
+Choque|Menos comum|Possível|Mais comum
+Tratamento|IVIG + AAS|IVIG se algoritmo sustenta|Imuno + suporte",Não há score único; usar algoritmo de Kawasaki incompleto e avaliação cardiológica.,"Febre dias | Conjuntivite | Boca | Exantema | Extremidades | Linfonodo | PCR/VHS | Eco | IVIG | Seguimento
+
+Idade | Peso | Sinais vitais | Gravidade | Diagnóstico diferencial | Dose por kg | Critério internação | Critério UTI | Orientação de retorno | Seguimento","O objetivo no Kawasaki é não perder a janela coronariana. A criança pode não ter todos os sinais no mesmo dia; reexaminar e valorizar lactentes muda desfecho.
+
+Complemento bibliográfico: conteúdo revisado à luz do Nelson/Tratado SBP e documentos SBP/MS priorizados para TEP; manter foco em idade, gravidade, exceções, doses por peso, critérios de internação/UTI e pegadinhas de prova.
+
+Complemento Bloco 3: este tema deve ser estudado como decisão prática: reconhecer a apresentação típica, achar o detalhe que muda gravidade, calcular dose quando existir e saber quando o ambulatório deixou de ser seguro.","Tratado de Pediatria SBP 6ª edição.docx::Base local analisada: pediatria geral, crescimento, DNPM, imunizações, neonatologia, icterícia, suplementação, telas e temas estratégicos para TEP. | Livro Nelson.docx::Base local analisada: panorama da pediatria, desenvolvimento, comportamento, nutrição, fluidoterapia, farmacologia e segurança da prescrição pediátrica. | SBP - Questões comentadas TEP::Usado para orientar estilo de cobrança, pegadinhas e forma de raciocínio, sem reprodução literal de questões.::https://www.sbp.com.br/concursos-de-titulos/questoes-comentadas/
+
+SBP - materiais científicos e questões comentadas TEP: https://www.sbp.com.br/concursos-de-titulos/questoes-comentadas/ | Ministério da Saúde - Caderneta da Criança: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/caderneta | AHA Kawasaki Scientific Statement: https://www.ahajournals.org/doi/10.1161/CIR.0000000000000484 | KDIGO Glomerular Diseases Guidelines: https://kdigo.org/guidelines/gd/ | ISPAD Pediatric Diabetes Guidelines: https://www.ispad.org/ | AAP Autism Clinical Report: https://publications.aap.org/pediatrics/article/145/1/e20193447/36917/Identification-Evaluation-and-Management-of | AAP Obesity Clinical Practice Guideline 2023 | NASPGHAN/ESPGHAN Constipation Guideline | WHO Breastfeeding and Infant Feeding Guidance"
+Síndrome nefrótica,Nefrologia,4,"Quadro de proteinúria maciça, hipoalbuminemia, edema e frequentemente hiperlipidemia, geralmente por lesão mínima em crianças.
+
+Complemento Bloco 3: síndrome de proteinúria maciça, hipoalbuminemia, edema e hiperlipidemia; na criança, doença de lesões mínimas é frequente, mas a segurança depende de reconhecer infecção, trombose, hipovolemia e resistência a corticoide.","Aumento de permeabilidade glomerular leva à perda urinária de proteína, queda oncótica, edema, ativação neuro-hormonal e risco de trombose/infecção.","Idade 2-6 anos, história prévia, infecções, baixa adesão ao corticoide, sinais atípicos como hematúria persistente, hipertensão ou queda de função renal.","Edema periorbitário matinal, edema de membros, ascite, ganho ponderal, urina espumosa, oligúria. Pode complicar com peritonite, celulite, trombose.","Proteinúria nefrótica, albumina baixa, edema. Avaliar urina, relação proteína/creatinina, albumina, creatinina, complemento, colesterol e sinais atípicos.
+
+Edema + proteinúria nefrótica em EAS/relação proteína-creatinina, albumina baixa e lipídios elevados. Avaliar complemento, função renal, hematúria, hipertensão, idade atípica e sinais sistêmicos para diferenciar de glomerulonefrite ou causas secundárias.","Confirmar síndrome, avaliar volemia, PA, função renal, infecção e trombose. Corticoide em síndrome nefrótica idiopática típica conforme nefrologia/protocolo.
+
+PA/enfermaria: pesar, PA, diurese, edema, albumina, eletrólitos, creatinina e urina. Restrição de sal, diurético com cautela, tratar infecção. UTI se choque hipovolêmico, trombose, sepse, edema pulmonar ou IRA grave.","Prednisona/prednisolona em esquema de indução e redução. Restrição de sal, diurético com cautela se edema importante, albumina EV apenas em hipovolemia/edema grave selecionado.
+
+PA/enfermaria: pesar, PA, diurese, edema, albumina, eletrólitos, creatinina e urina. Restrição de sal, diurético com cautela, tratar infecção. UTI se choque hipovolêmico, trombose, sepse, edema pulmonar ou IRA grave.","Prednisona/prednisolona 60 mg/m²/dia ou 2 mg/kg/dia (máx 60 mg/dia) na indução em muitos protocolos, depois dias alternados. Furosemida 1 mg/kg/dose com cautela. Confirmar nefrologia.
+
+Prednisona/prednisolona 60 mg/m2/dia ou 2 mg/kg/dia (máx. usual 60 mg/dia) na indução conforme protocolo, seguida de esquema alternado/redução. Furosemida 1 mg/kg/dose com cautela. Albumina 20-25% apenas em hipovolemia/edema grave selecionado com monitorização.","Glomerulonefrite, síndrome nefrítica, doença hepática, enteropatia perdedora de proteína, insuficiência cardíaca, desnutrição.",Moderado/Alto,"sindrome nefrotica,edema,proteinuria,hipoalbuminemia,prednisona,lesao minima,albumina","Edema importante: avaliar PA, perfusão, diurese, creatinina, infecção e trombose. Se dor abdominal/febre, pensar peritonite e internar.
+
+Se grave: ABCDE, sinais vitais, glicemia quando aplicável, acesso, suporte específico do protocolo e acionar especialista/UTI sem atrasar terapia tempo-dependente.","Hipovolemia, anasarca, derrame pleural, dor abdominal/febre, celulite, trombose, hipertensão, hematúria macroscópica, creatinina elevada.","Edema grave, hipovolemia, infecção, trombose, insuficiência renal, hipertensão, diagnóstico inicial com gravidade ou dúvida diagnóstica.
+
+Anasarca, infecção, dor abdominal, hipovolemia, IRA, hipertensão, trombose suspeita, baixa adesão ou diagnóstico atípico.","Choque hipovolêmico, tromboembolismo grave, sepse/peritonite grave, insuficiência respiratória por derrame/anasarca.
+
+Choque, sepse, trombose grave/TEP, edema pulmonar, IRA com instabilidade ou hipertensão emergencial.","Diurético agressivo em hipovolemia, ignorar febre/dor abdominal, não diferenciar nefrótico de nefrítico, suspender corticoide abruptamente.","Edema não significa hipervolemia sempre; criança nefrótica pode estar intravascularmente hipovolêmica.
+
+Edema não é sempre “alergia”. Dar diurético agressivo em hipovolemia pode causar choque/trombose. Hematúria importante/complemento baixo muda diagnóstico.",Edema periorbitário + proteinúria importante = síndrome nefrótica; atenção a infecção e trombose.,"Síndrome nefrótica é proteinúria com edema: tratar, mas antes classificar gravidade e volemia.","Edema -> urina/proteinúria -> albumina baixa -> típico? corticoide -> gravidade/infecção/trombose? internar.
+
+Edema + proteinúria -> albumina/lipídios/função renal/PA -> típico? corticoide + seguimento -> atípico? nefro/investigar -> complicação? internar/UTI.","1. Confirmar proteinúria. 2. Avaliar albumina/creatinina/PA. 3. Procurar gravidade. 4. Corticoide se típico. 5. Seguimento nefro.
+
+1. Classificar gravidade. 2. Confirmar critérios diagnósticos. 3. Checar dose por peso quando houver medicação. 4. Decidir ambulatório/enfermaria/UTI. 5. Orientar retorno e seguimento.","Tríade: proteinúria, hipoalbuminemia, edema. Complicações: infecção/trombose/hipovolemia. Tratamento: corticoide.
+
+Achado|Nefrótica|Nefrítica
+Edema|Importante/generalizado|Periorbitário/moderado
+Proteinúria|Maciça|Variável
+Hematúria|Ausente/discreta|Marcante
+PA|Normal ou elevada|Frequentemente alta
+Complemento|Geralmente normal|Pode estar baixo",Monitorar fita urinária/proteinúria e resposta ao corticoide; classificar recaídas conforme protocolo.,"Edema | PA | Diurese | Urina | Albumina | Creatinina | Complemento | Infecção | Trombose | Corticoide
+
+Idade | Peso | Sinais vitais | Gravidade | Diagnóstico diferencial | Dose por kg | Critério internação | Critério UTI | Orientação de retorno | Seguimento","Na síndrome nefrótica, o edema chama atenção, mas as complicações matam: peritonite, trombose e hipovolemia. O exame da volemia guia o uso seguro de diuréticos.
+
+Complemento bibliográfico: conteúdo revisado à luz do Nelson/Tratado SBP e documentos SBP/MS priorizados para TEP; manter foco em idade, gravidade, exceções, doses por peso, critérios de internação/UTI e pegadinhas de prova.
+
+Complemento Bloco 3: este tema deve ser estudado como decisão prática: reconhecer a apresentação típica, achar o detalhe que muda gravidade, calcular dose quando existir e saber quando o ambulatório deixou de ser seguro.","Tratado de Pediatria SBP 6ª edição.docx::Base local analisada: pediatria geral, crescimento, DNPM, imunizações, neonatologia, icterícia, suplementação, telas e temas estratégicos para TEP. | Livro Nelson.docx::Base local analisada: panorama da pediatria, desenvolvimento, comportamento, nutrição, fluidoterapia, farmacologia e segurança da prescrição pediátrica. | SBP - Questões comentadas TEP::Usado para orientar estilo de cobrança, pegadinhas e forma de raciocínio, sem reprodução literal de questões.::https://www.sbp.com.br/concursos-de-titulos/questoes-comentadas/
+
+SBP - materiais científicos e questões comentadas TEP: https://www.sbp.com.br/concursos-de-titulos/questoes-comentadas/ | Ministério da Saúde - Caderneta da Criança: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/caderneta | AHA Kawasaki Scientific Statement: https://www.ahajournals.org/doi/10.1161/CIR.0000000000000484 | KDIGO Glomerular Diseases Guidelines: https://kdigo.org/guidelines/gd/ | ISPAD Pediatric Diabetes Guidelines: https://www.ispad.org/ | AAP Autism Clinical Report: https://publications.aap.org/pediatrics/article/145/1/e20193447/36917/Identification-Evaluation-and-Management-of | AAP Obesity Clinical Practice Guideline 2023 | NASPGHAN/ESPGHAN Constipation Guideline | WHO Breastfeeding and Infant Feeding Guidance"
+Estado de mal epiléptico,Neurologia,5,"Crise convulsiva prolongada ou crises repetidas sem recuperação, operacionalmente tratada como emergência a partir de 5 minutos.
+
+Complemento Bloco 4: crise prolongada ou crises repetidas sem recuperação, operacionalmente tratada a partir de 5 minutos porque a chance de cessar espontaneamente cai e o risco sistêmico aumenta.","Crise persistente recruta circuitos excitatórios, reduz resposta a benzodiazepínicos com o tempo e aumenta risco de hipóxia, acidose, hipertermia e lesão neuronal.","Epilepsia, febre/infecção, má adesão, trauma, hipoglicemia, distúrbios eletrolíticos, intoxicação, meningite/encefalite.","Crise tônico-clônica >5 min, crises repetidas, alteração persistente, desvio ocular, automatismos ou estado não convulsivo após crise aparente.","Clínico imediato. Checar glicemia, temperatura, eletrólitos, cálcio/magnésio se indicado, infecção/trauma/intoxicação. EEG quando suspeita de estado não convulsivo.
+
+Diagnóstico é clínico e por tempo. Checar glicemia imediatamente; investigar febre, trauma, intoxicação, eletrólitos, meningite/encefalite e adesão. Suspeitar estado não convulsivo se não desperta após cessar movimentos.","ABCDE, lateralizar, oxigênio, acesso IV/IO, glicemia. Benzodiazepínico precoce; se persiste, segunda linha; se refratário, UTI/anestésico.
+
+PA: lateralizar, O2, aspirar se necessário, glicemia, benzo precoce e segunda linha sem atraso. Enfermaria/UTI: monitorização, causa, EEG se disponível e via aérea se sedação/refratário.","Benzodiazepínico primeira linha, levetiracetam/fenitoína/fosfenitoína/valproato segunda linha conforme idade e contexto. Intubação e sedação contínua se refratário.
+
+PA: lateralizar, O2, aspirar se necessário, glicemia, benzo precoce e segunda linha sem atraso. Enfermaria/UTI: monitorização, causa, EEG se disponível e via aérea se sedação/refratário.","Midazolam 0,2 mg/kg IN/IM/bucal ou lorazepam 0,1 mg/kg IV. Levetiracetam 40-60 mg/kg IV, fenitoína 20 mg/kg IV ou valproato 20-40 mg/kg IV conforme protocolo/contraindicações.
+
+Midazolam 0,2 mg/kg IN/IM/bucal ou lorazepam 0,1 mg/kg IV. Segunda linha: levetiracetam 40-60 mg/kg IV, fenitoína 20 mg/kg IV ou valproato 20-40 mg/kg IV conforme contexto. Evitar repetir benzodiazepínico indefinidamente.","Síncope, calafrios, distonia, psicogênica, hipoglicemia, meningite, intoxicação, trauma, distúrbio eletrolítico.",Alto,"estado de mal,convulsao,5 minutos,midazolam,lorazepam,levetiracetam,fenitoina,status epilepticus","Tempo zero: ABC, glicemia, benzodiazepínico. 10-20 min: segunda linha se persiste. Refratário: UTI, via aérea e infusão anestésica.
+
+Se grave: ABCDE, sinais vitais, glicemia quando aplicável, acesso, suporte específico do protocolo e acionar especialista/UTI sem atrasar terapia tempo-dependente.","Crise >5 min, hipóxia, trauma, hipoglicemia, febre com rigidez, rebaixamento persistente, instabilidade, crise focal prolongada.","Estado de mal, primeira crise complexa, causa infecciosa/metabólica, ajuste terapêutico, recuperação incompleta.
+
+Status, primeira crise complexa, causa infecciosa/metabólica, recuperação incompleta ou ajuste terapêutico inseguro.","Refratário, necessidade de intubação/sedação, instabilidade, hipertensão intracraniana, encefalite/meningite grave.","Atrasar benzodiazepínico, repetir muitas doses de benzo sem segunda linha, não checar glicemia, esquecer causa tratável.","Depois de 5 minutos a crise deve ser tratada como status. Crise que parou mas criança não desperta pode ser estado não convulsivo.
+
+O erro é esperar 30 minutos para chamar de status. Glicemia vem junto do ABC. Crise que parou mas não acorda pode continuar elétrica.","Status: benzo rápido, segunda linha sem demora e glicemia sempre.",Estado de mal epiléptico é emergência tempo-dependente com algoritmo por minutos.,"Crise >5 min -> ABC/glicemia/benzo -> persiste -> segunda linha -> refratário -> UTI/anestesia/EEG.
+
+Crise >5 min -> glicemia/benzo -> persiste -> segunda linha -> persiste -> UTI, intubação se necessário, sedação contínua/EEG.","1. Tempo. 2. ABC. 3. Glicemia. 4. Benzo. 5. Segunda linha. 6. UTI se refratário.
+
+1. Classificar gravidade. 2. Confirmar critérios diagnósticos. 3. Checar dose por peso quando houver medicação. 4. Decidir ambulatório/enfermaria/UTI. 5. Orientar retorno e seguimento.","5 min: tratar. 1ª linha: benzo. 2ª linha: levetiracetam/fenitoína/valproato. Refratário: UTI.
+
+Tempo|Ação
+0-5 min|ABCDE, glicemia, preparar droga
+5 min|Benzodiazepínico
+10-20 min|Segunda linha
+30-60 min|Refratário: UTI/anestésico/EEG
+Sempre|Tratar causa",Usar tempo de crise e resposta terapêutica; Glasgow pós-ictal seriado.,"Tempo | ABC | Glicemia | Temperatura | Benzo | Acesso | Segunda linha | Causa | UTI | EEG
+
+Idade | Peso | Sinais vitais | Gravidade | Diagnóstico diferencial | Dose por kg | Critério internação | Critério UTI | Orientação de retorno | Seguimento","O maior erro no status é perder tempo. Quanto mais a crise dura, menor a resposta ao benzo e maior a chance de UTI.
+
+Complemento bibliográfico: conteúdo revisado à luz do Nelson/Tratado SBP e documentos SBP/MS priorizados para TEP; manter foco em idade, gravidade, exceções, doses por peso, critérios de internação/UTI e pegadinhas de prova.
+
+Complemento Bloco 4: este tema deve ser estudado como decisão prática: reconhecer a apresentação típica, achar o detalhe que muda gravidade, calcular dose quando existir e saber quando o ambulatório deixou de ser seguro.","Tratado de Pediatria SBP 6ª edição.docx::Base local analisada: pediatria geral, crescimento, DNPM, imunizações, neonatologia, icterícia, suplementação, telas e temas estratégicos para TEP. | Livro Nelson.docx::Base local analisada: panorama da pediatria, desenvolvimento, comportamento, nutrição, fluidoterapia, farmacologia e segurança da prescrição pediátrica. | SBP - Questões comentadas TEP::Usado para orientar estilo de cobrança, pegadinhas e forma de raciocínio, sem reprodução literal de questões.::https://www.sbp.com.br/concursos-de-titulos/questoes-comentadas/ | SBP - Distúrbios acidobásicos::Base para avaliação de acidose/alcalose e raciocínio em emergências metabólicas.::https://www.sbp.com.br/disturbios-acidobasicos-e-o-tema-de-novo-documento-cientifico-produzido-pela-sbp/
+
+SBP - materiais científicos e questões comentadas TEP: https://www.sbp.com.br/concursos-de-titulos/questoes-comentadas/ | Ministério da Saúde - Caderneta da Criança: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/caderneta | AHA Kawasaki Scientific Statement: https://www.ahajournals.org/doi/10.1161/CIR.0000000000000484 | KDIGO Glomerular Diseases Guidelines: https://kdigo.org/guidelines/gd/ | ISPAD Pediatric Diabetes Guidelines: https://www.ispad.org/ | AAP Autism Clinical Report: https://publications.aap.org/pediatrics/article/145/1/e20193447/36917/Identification-Evaluation-and-Management-of | AAP Obesity Clinical Practice Guideline 2023 | NASPGHAN/ESPGHAN Constipation Guideline | WHO Breastfeeding and Infant Feeding Guidance"
+Glomerulonefrite aguda,Nefrologia,4,"Síndrome nefrítica aguda com hematúria, edema, hipertensão e redução variável da função renal, classicamente pós-estreptocócica.
+
+Complemento Bloco 3: síndrome nefrítica aguda com hematúria, edema, hipertensão e queda variável da função renal, classicamente pós-infecciosa, em que a emergência é controlar pressão, volume e complicações neurológicas/cardiorrespiratórias.","Deposição imune glomerular ativa complemento e inflamação, reduz filtração, causa retenção de sal/água, hipertensão e hematúria glomerular.","Faringoamigdalite ou impetigo recente, idade escolar, comunidades com estreptococo, história de edema/urina escura, complemento baixo.","Urina cor de coca-cola, edema periorbitário, hipertensão, cefaleia, náuseas, oligúria, dispneia por congestão, proteinúria geralmente subnefrótica.","EAS com hematúria/cilindros, proteinúria, creatinina, ureia, eletrólitos, complemento C3, ASLO/anti-DNase B, PA seriada. Investigar causas atípicas se complemento normal/persistente ou evolução ruim.
+
+Urina cor de coca-cola, hematúria dismórfica/cilindros, proteinúria variável, C3 baixo em GN pós-estreptocócica, antiestreptolisina/anti-DNase B conforme quadro. Avaliar creatinina, ureia, eletrólitos, PA, edema pulmonar e sinais de encefalopatia.","Avaliar PA, volemia, diurese e função renal. Restrição de sal/água se congestão, diurético para edema/hipertensão, tratar foco estreptocócico se presente.
+
+PA: PA em todos, SatO2, edema, diurese e sinais neurológicos. Enfermaria: restrição hídrica/sal, diurético, anti-hipertensivo se preciso, tratar infecção estreptocócica quando indicada. UTI se emergência hipertensiva, edema pulmonar, convulsão ou IRA grave.","Suporte: controle de volume e PA. Furosemida e anti-hipertensivos conforme gravidade. Penicilina/amoxicilina se infecção estreptocócica ativa ou erradicação indicada.
+
+PA: PA em todos, SatO2, edema, diurese e sinais neurológicos. Enfermaria: restrição hídrica/sal, diurético, anti-hipertensivo se preciso, tratar infecção estreptocócica quando indicada. UTI se emergência hipertensiva, edema pulmonar, convulsão ou IRA grave.","Furosemida 1 mg/kg/dose. Nifedipina/captopril/hidralazina conforme protocolo se hipertensão. Penicilina benzatina ou amoxicilina para estreptococo conforme idade/peso.
+
+Furosemida 1 mg/kg/dose IV/VO conforme congestão. Nifedipina VO, hidralazina ou labetalol conforme protocolo para hipertensão significativa. Penicilina benzatina ou amoxicilina para erradicação estreptocócica quando indicado, não para curar a GN já instalada.","Nefropatia por IgA, lúpus, vasculite IgA, síndrome hemolítico-urêmica, nefrite intersticial, síndrome nefrótica com hematúria.",Moderado/Alto,"glomerulonefrite,sindrome nefritica,hematuria,coca cola,hipertensao,c3 baixo,edema,oliguria","Se hipertensão grave, dispneia, oligúria ou creatinina alta: monitor, restrição hídrica/salina, diurético, controle pressórico, eletrólitos e nefrologia.
+
+Se grave: ABCDE, sinais vitais, glicemia quando aplicável, acesso, suporte específico do protocolo e acionar especialista/UTI sem atrasar terapia tempo-dependente.","Hipertensão grave/encefalopatia, edema pulmonar, oligúria/anúria, hipercalemia, creatinina elevada, complemento persistentemente baixo.","Hipertensão, oligúria, insuficiência renal, distúrbio eletrolítico, edema importante, dúvida diagnóstica, necessidade de medicação EV.
+
+Hipertensão, oligúria, edema importante, alteração renal, dúvida diagnóstica, complemento baixo em seguimento ou risco social.","Emergência hipertensiva, edema agudo pulmonar, hipercalemia grave, necessidade de diálise, convulsão/rebaixamento.
+
+Emergência hipertensiva, encefalopatia, convulsão, edema agudo de pulmão, hipercalemia, acidose grave ou diálise iminente.","Confundir com ITU por hematúria, não medir PA, hidratar vigorosamente criança congesta, não checar creatinina/potássio.","A urina escura é hematúria glomerular; PA é obrigatória. Edema aqui vem de retenção de sal/água, não de hipoalbuminemia como no nefrótico.
+
+Não chamar de ITU toda urina escura. Corticoide não é rotina na GN pós-infecciosa típica. Hipertensão pode ser a ameaça principal.",Hematúria cor coca-cola + edema + hipertensão após infecção = síndrome nefrítica.,"Glomerulonefrite aguda é síndrome nefrítica: medir PA, função renal e controlar volume.","Hematuria/edema -> PA/creatinina/C3 -> suporte volume/PA -> tratar estreptococo -> investigar se atípico.
+
+Edema/hematúria -> PA + urina + renal + C3 -> controlar volume/PA -> investigar causa -> sinais graves? UTI/nefro.","1. Reconhecer nefrítica. 2. PA. 3. Função renal/K. 4. C3/ASLO. 5. Controlar volume/PA. 6. Nefro se grave.
+
+1. Classificar gravidade. 2. Confirmar critérios diagnósticos. 3. Checar dose por peso quando houver medicação. 4. Decidir ambulatório/enfermaria/UTI. 5. Orientar retorno e seguimento.","Nefrítica: hematúria, HTA, oligúria. Pós-estrepto: C3 baixo. Tratamento: suporte.
+
+Achado|GN aguda|Síndrome nefrótica
+Urina|Escura/hematúria|Espuma/proteinúria
+PA|Alta comum|Variável
+Complemento|Baixo na pós-estrepto|Normal na lesões mínimas
+Conduta urgente|Pressão/volume|Edema/proteinúria
+Complicação|Encefalopatia/edema pulmonar|Infecção/trombose","Não há score; gravidade por PA, diurese, creatinina, potássio e congestão.","PA | Diurese | Edema | Dispneia | EAS | Creatinina | K | C3 | ASLO | Restrição/diurético
+
+Idade | Peso | Sinais vitais | Gravidade | Diagnóstico diferencial | Dose por kg | Critério internação | Critério UTI | Orientação de retorno | Seguimento","A principal conduta inicial na glomerulonefrite é não perder hipertensão e congestão. O diagnóstico etiológico importa, mas a emergência é volume e pressão.
+
+Complemento bibliográfico: conteúdo revisado à luz do Nelson/Tratado SBP e documentos SBP/MS priorizados para TEP; manter foco em idade, gravidade, exceções, doses por peso, critérios de internação/UTI e pegadinhas de prova.
+
+Complemento Bloco 3: este tema deve ser estudado como decisão prática: reconhecer a apresentação típica, achar o detalhe que muda gravidade, calcular dose quando existir e saber quando o ambulatório deixou de ser seguro.","Tratado de Pediatria SBP 6ª edição.docx::Base local analisada: pediatria geral, crescimento, DNPM, imunizações, neonatologia, icterícia, suplementação, telas e temas estratégicos para TEP. | Livro Nelson.docx::Base local analisada: panorama da pediatria, desenvolvimento, comportamento, nutrição, fluidoterapia, farmacologia e segurança da prescrição pediátrica. | SBP - Questões comentadas TEP::Usado para orientar estilo de cobrança, pegadinhas e forma de raciocínio, sem reprodução literal de questões.::https://www.sbp.com.br/concursos-de-titulos/questoes-comentadas/
+
+SBP - materiais científicos e questões comentadas TEP: https://www.sbp.com.br/concursos-de-titulos/questoes-comentadas/ | Ministério da Saúde - Caderneta da Criança: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/caderneta | AHA Kawasaki Scientific Statement: https://www.ahajournals.org/doi/10.1161/CIR.0000000000000484 | KDIGO Glomerular Diseases Guidelines: https://kdigo.org/guidelines/gd/ | ISPAD Pediatric Diabetes Guidelines: https://www.ispad.org/ | AAP Autism Clinical Report: https://publications.aap.org/pediatrics/article/145/1/e20193447/36917/Identification-Evaluation-and-Management-of | AAP Obesity Clinical Practice Guideline 2023 | NASPGHAN/ESPGHAN Constipation Guideline | WHO Breastfeeding and Infant Feeding Guidance"
+Diabetes mellitus tipo 1,Endocrinologia,4,"Doença autoimune com destruição de células beta pancreáticas, deficiência absoluta de insulina e necessidade de insulinoterapia contínua.
+
+Complemento Bloco 3: doença autoimune por deficiência absoluta de insulina, com hiperglicemia crônica e risco de cetoacidose; em pediatria, o diagnóstico precoce evita que poliúria e perda ponderal virem choque metabólico.","Autoimunidade progressiva reduz secreção de insulina, levando a hiperglicemia, catabolismo, perda ponderal e risco de cetoacidose. Manejo exige insulina, contagem de carboidratos e monitorização.","História familiar, outras autoimunidades, sintomas clássicos, infecções como gatilho de apresentação, baixa percepção de poliúria/polidipsia.","Poliúria, polidipsia, perda ponderal, polifagia, enurese secundária, fadiga, candidíase, visão turva. CAD: vômitos, dor abdominal, Kussmaul, hálito cetônico.","Glicemia casual ≥200 mg/dL com sintomas, glicemia jejum ≥126, HbA1c ≥6,5% ou TOTG alterado. Avaliar cetonas, gasometria e eletrólitos se sintomático.
+
+Poliúria, polidipsia, perda de peso, enurese secundária, candidíase, fadiga e glicemia elevada. Confirmar por glicemia plasmática/HbA1c conforme critérios, mas sintomas clássicos + glicemia casual >=200 mg/dL sustentam diagnóstico. Sempre checar cetona se sintomático.","Se sem CAD, iniciar insulinoterapia basal-bolus, educação, plano alimentar e monitorização. Se cetose/acidemia, seguir protocolo de CAD.
+
+PA: glicemia capilar, cetona, hidratação, eletrólitos se grave e descartar CAD. Ambulatório especializado se estável sem cetose importante; internar se diagnóstico novo com cetose, família sem treinamento ou sinais de CAD.","Insulina basal e prandial, correção, contagem de carboidratos, educação familiar/escolar, plano para hipoglicemia e dias de doença, rastreio de tireoide/celíaca conforme protocolo.
+
+PA: glicemia capilar, cetona, hidratação, eletrólitos se grave e descartar CAD. Ambulatório especializado se estável sem cetose importante; internar se diagnóstico novo com cetose, família sem treinamento ou sinais de CAD.","Dose diária inicial muitas vezes 0,4-1,0 U/kg/dia conforme idade/puberdade/cetose, dividida em basal e bolus. Hipoglicemia grave: glucagon conforme apresentação/peso. Individualizar com endocrinologia.
+
+Insulina basal-bolus conforme fase puberal e peso; dose total diária inicial frequentemente 0,4-1,0 U/kg/dia, menor em lua de mel e maior na puberdade. Correção e relação insulina-carboidrato devem ser individualizadas. Glucagon para hipoglicemia grave conforme apresentação.","DM2, MODY, hiperglicemia de estresse, diabetes secundário, CAD por DM1 novo, polidipsia psicogênica, diabetes insipidus.",Moderado/Alto,"diabetes tipo 1,dm1,poliuria,polidipsia,perda peso,insulina,hba1c,cetonas,hipoglicemia","Sintomático com vômitos, Kussmaul ou cetonas: avaliar CAD imediatamente. Hipoglicemia: carboidrato VO se consciente ou glucagon/EV se grave.
+
+Se grave: ABCDE, sinais vitais, glicemia quando aplicável, acesso, suporte específico do protocolo e acionar especialista/UTI sem atrasar terapia tempo-dependente.","Cetonemia, acidose, vômitos, desidratação, alteração mental, hipoglicemia grave, criança pequena sem suporte, perda ponderal importante.","Diagnóstico novo com cetose/CAD, família sem treinamento, criança pequena, hipoglicemia recorrente, descompensação social ou clínica.
+
+Diagnóstico novo com cetose, CAD, vômitos, desidratação, família sem treinamento, hipoglicemia grave ou vulnerabilidade social.","CAD grave, alteração neurológica, choque, distúrbio eletrolítico grave, hipoglicemia refratária com rebaixamento.
+
+CAD moderada/grave, alteração mental, choque, distúrbio potássico grave, edema cerebral suspeito ou necessidade de monitorização intensiva.","Tratar poliúria como ITU sem glicemia, iniciar insulina sem avaliar cetonas em sintomático, não orientar hipoglicemia/dias de doença.","Enurese nova pode ser DM1. Dor abdominal e vômitos podem ser CAD, não gastroenterite.
+
+Enurese nova pode ser DM1. Não mandar para casa criança com cetose sem plano. Insulina nunca deve ser suspensa totalmente em doença intercurrente.",Poliúria + polidipsia + perda de peso = glicemia capilar na hora.,"DM1 é deficiência de insulina: diagnosticar cedo, excluir CAD e iniciar educação/insulina.","Sintomas -> glicemia -> cetonas/gasometria se risco -> CAD? protocolo -> sem CAD: basal-bolus + educação.
+
+Sintomas + glicemia alta -> cetona/gasometria se grave -> CAD? protocolo -> sem CAD: iniciar insulina, educação, plano alimentar e seguimento.","1. Suspeitar. 2. Glicemia. 3. Cetonas. 4. Classificar CAD. 5. Insulina. 6. Educação e seguimento.
+
+1. Classificar gravidade. 2. Confirmar critérios diagnósticos. 3. Checar dose por peso quando houver medicação. 4. Decidir ambulatório/enfermaria/UTI. 5. Orientar retorno e seguimento.","Sintomas: poliúria/polidipsia/perda peso. Tratamento: insulina. Emergência: CAD/hipoglicemia.
+
+Situação|Pista|Conduta
+DM1 novo estável|Hiperglicemia sem acidose|Educação + insulina SC
+Cetose sem acidose|Cetonemia, pH normal|Hidratar + insulina + observar
+CAD|Acidose/cetose|Protocolo EV/UTI ou unidade treinada
+Hipoglicemia|Sintomas/neuroglicopenia|Carboidrato ou glucagon",Usar HbA1c e tempo no alvo no seguimento; gravidade aguda por cetose/acidose.,"Glicemia | Cetonas | Gasometria se sintomas | K | Insulina | Hipoglicemia | Escola | Autoimunidade | Retorno
+
+Idade | Peso | Sinais vitais | Gravidade | Diagnóstico diferencial | Dose por kg | Critério internação | Critério UTI | Orientação de retorno | Seguimento","DM1 é diagnóstico que não pode esperar. Uma glicemia capilar em criança com enurese nova e perda de peso evita apresentação em CAD.
+
+Complemento bibliográfico: conteúdo revisado à luz do Nelson/Tratado SBP e documentos SBP/MS priorizados para TEP; manter foco em idade, gravidade, exceções, doses por peso, critérios de internação/UTI e pegadinhas de prova.
+
+Complemento Bloco 3: este tema deve ser estudado como decisão prática: reconhecer a apresentação típica, achar o detalhe que muda gravidade, calcular dose quando existir e saber quando o ambulatório deixou de ser seguro.","Tratado de Pediatria SBP 6ª edição.docx::Base local analisada: pediatria geral, crescimento, DNPM, imunizações, neonatologia, icterícia, suplementação, telas e temas estratégicos para TEP. | Livro Nelson.docx::Base local analisada: panorama da pediatria, desenvolvimento, comportamento, nutrição, fluidoterapia, farmacologia e segurança da prescrição pediátrica. | SBP - Questões comentadas TEP::Usado para orientar estilo de cobrança, pegadinhas e forma de raciocínio, sem reprodução literal de questões.::https://www.sbp.com.br/concursos-de-titulos/questoes-comentadas/
+
+SBP - materiais científicos e questões comentadas TEP: https://www.sbp.com.br/concursos-de-titulos/questoes-comentadas/ | Ministério da Saúde - Caderneta da Criança: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/caderneta | AHA Kawasaki Scientific Statement: https://www.ahajournals.org/doi/10.1161/CIR.0000000000000484 | KDIGO Glomerular Diseases Guidelines: https://kdigo.org/guidelines/gd/ | ISPAD Pediatric Diabetes Guidelines: https://www.ispad.org/ | AAP Autism Clinical Report: https://publications.aap.org/pediatrics/article/145/1/e20193447/36917/Identification-Evaluation-and-Management-of | AAP Obesity Clinical Practice Guideline 2023 | NASPGHAN/ESPGHAN Constipation Guideline | WHO Breastfeeding and Infant Feeding Guidance"
+Lúpus eritematoso sistêmico juvenil,Reumatologia,5,"Doença autoimune sistêmica iniciada na infância/adolescência, frequentemente mais grave que no adulto, com risco renal, neurológico, hematológico e cardiovascular.
+
+Complemento Bloco 4: doença autoimune multissistêmica, mais agressiva em crianças/adolescentes que em adultos, com risco renal, hematológico, neurológico, cutâneo e cardiovascular.","Perda de tolerância imunológica gera autoanticorpos, imunocomplexos e inflamação multissistêmica. Nefrite lúpica é determinante de prognóstico.","Sexo feminino, adolescência, história familiar, ancestralidade não europeia, fotossensibilidade, sintomas sistêmicos, proteinúria/hematúria.","Febre, fadiga, perda de peso, artralgia/artrite, rash malar, fotossensibilidade, úlceras orais, alopecia, serosite, citopenias, edema/hipertensão por nefrite, convulsões/psicose.","Clínico-laboratorial: FAN, anti-dsDNA, anti-Sm, complemento, hemograma, urina/proteinúria, creatinina, função hepática, Coombs, antifosfolípides conforme quadro.
+
+Suspeitar em febre/fadiga, artrite, rash fotossensível/malar, úlceras, alopecia, citopenias, proteinúria/hematúria, serosite ou sintomas neurológicos. Avaliar FAN, anti-dsDNA, complemento, hemograma, urina, relação proteína/creatinina e função renal.","Avaliar órgãos-alvo e gravidade. Todo suspeito com envolvimento renal, neuro, hematológico importante ou serosite deve ser encaminhado/referenciado com prioridade.
+
+PA/enfermaria: separar atividade de infecção, medir PA, urina e rim em toda suspeita. Encaminhar reumato/nefro. UTI se nefrite grave com hipertensão/IRA, neuro-lúpus, hemorragia alveolar, sepse ou síndrome antifosfolípide grave.","Fotoproteção e hidroxicloroquina para maioria, corticoide e imunossupressores conforme órgão/gravidade. Nefrite pode exigir micofenolato/ciclofosfamida e biópsia.
+
+PA/enfermaria: separar atividade de infecção, medir PA, urina e rim em toda suspeita. Encaminhar reumato/nefro. UTI se nefrite grave com hipertensão/IRA, neuro-lúpus, hemorragia alveolar, sepse ou síndrome antifosfolípide grave.","Hidroxicloroquina até 5 mg/kg/dia pelo peso real, com monitorização ocular. Prednisona e pulsoterapia conforme gravidade. Micofenolato/ciclofosfamida com reumatologia/nefrologia.
+
+Hidroxicloroquina 5 mg/kg/dia (máx. usual 400 mg/dia) com avaliação oftalmo. Corticoide sistêmico conforme órgão/gravidade; pulsoterapia metilprednisolona 10-30 mg/kg/dia por 1-3 dias em manifestações graves. Imunossupressor conforme órgão e especialista.","Leucemia, artrite idiopática juvenil, vasculites, dermatomiosite, infecções crônicas, mononucleose, febre reumática, síndrome antifosfolípide.",Alto,"lupus,les juvenil,fan,anti-dsdna,complemento baixo,nefrite,proteinuria,rash malar,hidroxicloroquina","Se hipertensão, edema, proteinúria, rebaixamento, convulsão, dor torácica ou citopenia grave: internar, avaliar órgão-alvo e acionar reumato/nefro/UTI.
+
+Se grave: ABCDE, sinais vitais, glicemia quando aplicável, acesso, suporte específico do protocolo e acionar especialista/UTI sem atrasar terapia tempo-dependente.","Nefrite, hipertensão, creatinina elevada, convulsão/psicose, hemorragia alveolar, citopenia grave, serosite importante, trombose.","Suspeita com órgão maior, nefrite ativa, neuropsiquiátrico, citopenia grave, infecção, serosite, necessidade de pulsoterapia.
+
+Nefrite, citopenia grave, febre sem diagnóstico, serosite importante, neuro-lúpus, hipertensão, necessidade de pulsoterapia ou infecção.","Convulsões/rebaixamento, hemorragia alveolar, choque, insuficiência renal grave, trombose crítica, sepse em imunossuprimido.
+
+Neuro-lúpus grave, hemorragia alveolar, choque/sepse, IRA grave, crise hipertensiva, trombose grave ou falência orgânica.","Diagnosticar só por FAN positivo, não fazer urina/proteinúria, subestimar adolescente com sintomas vagos, esquecer infecção antes de imunossupressão.","FAN positivo isolado não fecha LES. Urina simples é obrigatória porque nefrite pode ser silenciosa.
+
+Urina simples é exame de gravidade no LES. Febre pode ser atividade ou infecção. FAN positivo sozinho não fecha lúpus.",LES juvenil + edema/hipertensão/proteinúria = nefrite até prova em contrário.,LES juvenil é multissistêmico; a triagem de rim e neuro muda urgência.,"Suspeita LES -> FAN/autoanticorpos/complemento + urina -> órgão maior? internar/especialista -> tratamento por gravidade.
+
+Suspeita LES -> hemograma/urina/rim/complemento/autoanticorpos -> órgão grave? internar especialista -> nefrite/SNC/pulmão? UTI se instável.","1. Suspeitar. 2. Autoanticorpos. 3. Urina/rim. 4. Complemento. 5. Gravidade. 6. Reumato/nefro.
+
+1. Classificar gravidade. 2. Confirmar critérios diagnósticos. 3. Checar dose por peso quando houver medicação. 4. Decidir ambulatório/enfermaria/UTI. 5. Orientar retorno e seguimento.","Pistas: rash, artrite, citopenia, FAN. Grave: nefrite/neuro. Base: hidroxicloroquina + imunossupressão por órgão.
+
+Órgão|Pista|Risco
+Rim|Proteinúria/hematúria/PA alta|Nefrite
+SNC|Convulsão/psicose/cefaleia grave|Neuro-lúpus
+Hematológico|Citopenias|Atividade/infecção
+Pulmão|Dispneia/hemoptise|Hemorragia alveolar
+Pele/articulação|Rash/artrite|Atividade sistêmica",SLEDAI pode medir atividade em seguimento especializado.,"FAN | dsDNA/Sm | C3/C4 | Hemograma | Urina | Proteinúria | Creatinina | PA | Neuro | Reumato/nefro
+
+Idade | Peso | Sinais vitais | Gravidade | Diagnóstico diferencial | Dose por kg | Critério internação | Critério UTI | Orientação de retorno | Seguimento","No LES pediátrico, o que não pode faltar é urina e pressão. O rash chama atenção, mas rim silencioso define prognóstico.
+
+Complemento bibliográfico: conteúdo revisado à luz do Nelson/Tratado SBP e documentos SBP/MS priorizados para TEP; manter foco em idade, gravidade, exceções, doses por peso, critérios de internação/UTI e pegadinhas de prova.
+
+Complemento Bloco 4: este tema deve ser estudado como decisão prática: reconhecer a apresentação típica, achar o detalhe que muda gravidade, calcular dose quando existir e saber quando o ambulatório deixou de ser seguro.","Tratado de Pediatria SBP 6ª edição.docx::Base local analisada: pediatria geral, crescimento, DNPM, imunizações, neonatologia, icterícia, suplementação, telas e temas estratégicos para TEP. | Livro Nelson.docx::Base local analisada: panorama da pediatria, desenvolvimento, comportamento, nutrição, fluidoterapia, farmacologia e segurança da prescrição pediátrica. | SBP - Questões comentadas TEP::Usado para orientar estilo de cobrança, pegadinhas e forma de raciocínio, sem reprodução literal de questões.::https://www.sbp.com.br/concursos-de-titulos/questoes-comentadas/
+
+SBP - materiais científicos e questões comentadas TEP: https://www.sbp.com.br/concursos-de-titulos/questoes-comentadas/ | Ministério da Saúde - Caderneta da Criança: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/caderneta | AHA Kawasaki Scientific Statement: https://www.ahajournals.org/doi/10.1161/CIR.0000000000000484 | KDIGO Glomerular Diseases Guidelines: https://kdigo.org/guidelines/gd/ | ISPAD Pediatric Diabetes Guidelines: https://www.ispad.org/ | AAP Autism Clinical Report: https://publications.aap.org/pediatrics/article/145/1/e20193447/36917/Identification-Evaluation-and-Management-of | AAP Obesity Clinical Practice Guideline 2023 | NASPGHAN/ESPGHAN Constipation Guideline | WHO Breastfeeding and Infant Feeding Guidance"
+Transtorno do espectro autista,Desenvolvimento,4,"Transtorno do neurodesenvolvimento com déficits persistentes em comunicação/interação social e padrões restritos/repetitivos de comportamento, interesses ou sensorialidade.
+
+Complemento Bloco 5: transtorno do neurodesenvolvimento com prejuízo persistente de comunicação social e padrões restritos/repetitivos de comportamento, com amplo espectro de linguagem, cognição, sensorialidade e funcionalidade.","Condição neurobiológica multifatorial com forte componente genético e heterogeneidade clínica. Intervenção precoce melhora comunicação, adaptação e funcionalidade.","História familiar, prematuridade, síndromes genéticas, atraso de linguagem, regressão social/linguística, preocupação parental.","Pouco contato ocular, não responder ao nome, atraso de fala, não apontar para compartilhar, brincadeira pouco simbólica, interesses restritos, estereotipias, hiper/hiporreatividade sensorial.","Triagem com M-CHAT-R/F aos 18 e 24 meses e sempre que houver preocupação. Diagnóstico é clínico por equipe habilitada; avaliar audição, linguagem e comorbidades.
+
+Diagnóstico é clínico, por história do desenvolvimento e observação. Sinais: pouco contato social compartilhado, ausência de apontar declarativo, atraso/regressão de linguagem, brincadeira pouco simbólica, estereotipias, hiper/hiporreatividade sensorial. Rastrear audição e comorbidades.","Encaminhar para avaliação diagnóstica e intervenção precoce sem esperar laudo final. Orientar família, escola, fono, TO, psicologia e suporte comportamental.
+
+Não esperar diagnóstico fechado para intervenção. Encaminhar para estimulação precoce, fono, TO, psicologia/intervenção comportamental, escola e suporte familiar. Avaliar sono, alimentação seletiva, epilepsia, TDAH, ansiedade e deficiência intelectual.","Intervenções comportamentais/desenvolvimentais, fonoaudiologia, terapia ocupacional, suporte escolar e manejo de sono, seletividade alimentar, epilepsia, TDAH/ansiedade quando presentes.
+
+Não esperar diagnóstico fechado para intervenção. Encaminhar para estimulação precoce, fono, TO, psicologia/intervenção comportamental, escola e suporte familiar. Avaliar sono, alimentação seletiva, epilepsia, TDAH, ansiedade e deficiência intelectual.","Não há medicação para núcleo do TEA. Risperidona/aripiprazol podem ser usados para irritabilidade/agressividade grave conforme especialista. Melatonina pode ser considerada para sono em protocolos.
+
+Não há medicação para núcleo do TEA. Melatonina pode ser considerada para insônia com higiene do sono. Risperidona/aripiprazol podem ser usados por especialista para irritabilidade/agressividade grave, com dose por peso e monitorização metabólica.","Deficiência auditiva, atraso global, deficiência intelectual, transtorno de linguagem, privação psicossocial, TDAH, ansiedade, epilepsia.",Moderado,"tea,autismo,mchat,18 meses,24 meses,nao aponta,nao responde nome,regressao,intervencao precoce","Regressão aguda, convulsões, autoagressão grave ou risco familiar exigem avaliação prioritária e segurança.
+
+Se grave: ABCDE, sinais vitais, glicemia quando aplicável, acesso, suporte específico do protocolo e acionar especialista/UTI sem atrasar terapia tempo-dependente.","Regressão, ausência de comunicação funcional, auto/heteroagressão, epilepsia, distúrbio grave de sono/alimentação, risco de fuga.","Raro por TEA isolado; considerar por crise comportamental com risco, epilepsia, desnutrição/desidratação ou investigação neurológica.
+
+Risco de auto/heteroagressão, desnutrição por seletividade extrema, crise comportamental sem manejo domiciliar ou comorbidade clínica grave.","Status epiléptico, intoxicação, trauma grave, descompensação clínica.
+
+Apenas por intercorrência clínica: intoxicação, trauma, status epiléptico, choque ou insuficiência respiratória.","Esperar idade escolar para encaminhar, atribuir tudo a “menino fala tarde”, não avaliar audição, prometer cura, negligenciar família.","Contato visual presente não exclui TEA. Regressão de linguagem/socialização é alarme importante.
+
+Contato visual isolado não exclui TEA. Menina pode mascarar sintomas. “Esperar falar” atrasa neuroplasticidade.",TEA: rastrear aos 18 e 24 meses e encaminhar intervenção antes do diagnóstico fechado.,"TEA exige triagem, avaliação auditiva/desenvolvimental e intervenção precoce centrada na família.","Preocupação/triagem positiva -> audição + avaliação desenvolvimento -> intervenção precoce -> diagnóstico especializado -> plano escolar/terapias.
+
+Alerta TEA -> rastreio + audição -> encaminhar intervenção -> avaliação diagnóstica multiprofissional -> plano escolar/familiar -> tratar comorbidades.","1. Ouvir pais. 2. M-CHAT. 3. Audição. 4. Encaminhar. 5. Intervir. 6. Manejar comorbidades.
+
+1. Classificar gravidade. 2. Confirmar critérios diagnósticos. 3. Checar dose por peso quando houver medicação. 4. Decidir ambulatório/enfermaria/UTI. 5. Orientar retorno e seguimento.","Sinais: social, comunicação, repetitivos. Triagem: 18/24m. Conduta: intervenção precoce.
+
+Domínio|Sinal|Ação
+Social|Não compartilha interesse|Intervenção precoce
+Linguagem|Atraso/regressão|Fono + audição
+Comportamento|Restrito/repetitivo|TO/psicoeducação
+Sensorial|Seletividade/aversões|TO/nutrição
+Família|Sobrecarga|Rede de apoio","M-CHAT-R/F é rastreio, não diagnóstico. ADOS/ADI-R podem apoiar avaliação especializada.","Nome | Olhar | Apontar | Linguagem | Brincar | Repetitivos | Sensorial | Regressão | Audição | Intervenção
+
+Idade | Peso | Sinais vitais | Gravidade | Diagnóstico diferencial | Dose por kg | Critério internação | Critério UTI | Orientação de retorno | Seguimento","A pergunta prática não é “tenho certeza que é TEA?”, mas “há risco suficiente para intervir agora?”. Se sim, encaminhe.
+
+Complemento bibliográfico: conteúdo revisado à luz do Nelson/Tratado SBP e documentos SBP/MS priorizados para TEP; manter foco em idade, gravidade, exceções, doses por peso, critérios de internação/UTI e pegadinhas de prova.
+
+Complemento Bloco 5: este tema deve ser estudado como decisão prática: reconhecer a apresentação típica, achar o detalhe que muda gravidade, calcular dose quando existir e saber quando o ambulatório deixou de ser seguro.","Tratado de Pediatria SBP 6ª edição.docx::Base local analisada: pediatria geral, crescimento, DNPM, imunizações, neonatologia, icterícia, suplementação, telas e temas estratégicos para TEP. | Livro Nelson.docx::Base local analisada: panorama da pediatria, desenvolvimento, comportamento, nutrição, fluidoterapia, farmacologia e segurança da prescrição pediátrica. | SBP - Questões comentadas TEP::Usado para orientar estilo de cobrança, pegadinhas e forma de raciocínio, sem reprodução literal de questões.::https://www.sbp.com.br/concursos-de-titulos/questoes-comentadas/ | SBP - Programa de Reanimação Neonatal::Diretrizes e materiais do PRN-SBP para sala de parto, prematuro e cuidados pós-reanimação.::https://www.sbp.com.br/reanimacao | SBP - Diretrizes de reanimação RN ≥34 semanas 2022::Base para sequência de passos iniciais, VPP, compressões e medicações em sala de parto.::https://www.sbp.com.br/fileadmin/user_upload/sbp/2022/junho/06/DiretrizesSBP-Reanimacao-RNigualMaior34semanas-MAIO2022a.pdf | SBP - Diretrizes de reanimação RN <34 semanas 2022::Base para termorregulação, CPAP/VPP, oxigênio e particularidades do prematuro.::https://www.sbp.com.br/fileadmin/user_upload/sbp/2022/junho/06/DiretrizesSBP-Reanimacao-RNmenor34semanas-MAIO2022a.pdf | Ministério da Saúde - Caderneta da Criança::Base para puericultura, crescimento, desenvolvimento, vigilância e orientação familiar.::https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/caderneta
+
+SBP - materiais científicos e questões comentadas TEP: https://www.sbp.com.br/concursos-de-titulos/questoes-comentadas/ | Ministério da Saúde - Caderneta da Criança: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/caderneta | AHA Kawasaki Scientific Statement: https://www.ahajournals.org/doi/10.1161/CIR.0000000000000484 | KDIGO Glomerular Diseases Guidelines: https://kdigo.org/guidelines/gd/ | ISPAD Pediatric Diabetes Guidelines: https://www.ispad.org/ | AAP Autism Clinical Report: https://publications.aap.org/pediatrics/article/145/1/e20193447/36917/Identification-Evaluation-and-Management-of | AAP Obesity Clinical Practice Guideline 2023 | NASPGHAN/ESPGHAN Constipation Guideline | WHO Breastfeeding and Infant Feeding Guidance"
+Puberdade e Tanner,Ambulatorial,3,"Avaliação da maturação sexual por estágios de Tanner, crescimento puberal e identificação de puberdade precoce, atrasada ou variantes benignas.
+
+Complemento Bloco 5: puberdade é ativação do eixo hipotálamo-hipófise-gonadal com caracteres sexuais secundários, estirão e maturação óssea; Tanner organiza exame físico e diferencia variação normal de puberdade precoce/atrasada.",Ativação do eixo hipotálamo-hipófise-gonadal inicia gonadarca; adrenarca contribui para pelos/odor. Sequência e velocidade ajudam a diferenciar normalidade de doença.,"Puberdade antes de 8 anos em meninas ou 9 anos em meninos, ausência de sinais puberais até 13 anos em meninas ou 14 anos em meninos, progressão rápida, baixa estatura, sintomas neurológicos.","Meninas: telarca como início comum, menarca cerca de 2 anos depois. Meninos: aumento testicular é primeiro sinal. Avaliar pelos, mamas, genitais e velocidade de crescimento.","História, curva de crescimento, Tanner, idade óssea e exames hormonais se precoce/atrasada/progressiva. Meninos com puberdade precoce têm maior risco de causa orgânica.
+
+Meninas: telarca antes de 8 anos sugere precoce; ausência de telarca até 13 anos ou menarca até 15 anos sugere atraso. Meninos: aumento testicular antes de 9 anos sugere precoce; ausência de aumento testicular até 14 anos sugere atraso. Avaliar velocidade de crescimento, idade óssea e sinais neurológicos.","Distinguir variante benigna de puberdade progressiva. Encaminhar endocrinologia se precoce, atraso importante, progressão rápida, sinais neurológicos ou virilização.
+
+Puericultura: examinar Tanner com privacidade, plotar crescimento e orientar família. Encaminhar endócrino se precoce progressiva, atraso, virilização, baixa estatura, cefaleia/alteração visual ou assimetria testicular.","Observação em variantes benignas; análogos de GnRH em puberdade precoce central progressiva; tratar causa periférica ou doença crônica conforme etiologia.
+
+Puericultura: examinar Tanner com privacidade, plotar crescimento e orientar família. Encaminhar endócrino se precoce progressiva, atraso, virilização, baixa estatura, cefaleia/alteração visual ou assimetria testicular.","Tratamento hormonal deve ser conduzido por endocrinologia. Análogos de GnRH têm formulações mensais/trimestrais/semestrais conforme disponibilidade.
+
+Tratamento depende da causa. Puberdade precoce central progressiva pode usar análogo de GnRH por especialista. Não prescrever hormônio sem avaliação de idade óssea, eixo hormonal e causa.","Telarca precoce isolada, adrenarca precoce, puberdade precoce central, tumores, hiperplasia adrenal, hipotireoidismo, atraso constitucional, hipogonadismo.",Moderado,"tanner,puberdade,telarca,menarca,volume testicular,precoce,atrasada,idade ossea","Cefaleia, vômitos, alteração visual, puberdade precoce em menino ou virilização rápida exigem avaliação prioritária.
+
+Se grave: ABCDE, sinais vitais, glicemia quando aplicável, acesso, suporte específico do protocolo e acionar especialista/UTI sem atrasar terapia tempo-dependente.","Progressão rápida, sintomas neurológicos, virilização, sangramento vaginal pré-puberal, puberdade precoce em menino, baixa estatura importante.","Geralmente ambulatorial; internar se tumor/sintoma neurológico agudo ou sangramento importante.
+
+Raramente; internar se tumor/SNC, sangramento grave, crise adrenal, hipertensão ou condição sistêmica aguda.","Não usual; apenas emergências neurológicas/endócrinas graves.
+
+Apenas complicação grave: crise adrenal, tumor com hipertensão intracraniana, choque ou instabilidade.","Confundir pelos pubianos com início puberal em menino, não medir testículo, ignorar velocidade de crescimento, não usar idade óssea.","Em meninos, puberdade começa com aumento testicular, não com pelos. Puberdade precoce masculina é mais preocupante.
+
+Pubarca isolada não é igual puberdade central. Menino precoce tem maior chance de causa orgânica. Obesidade pode adiantar sinais e confundir.",Tanner exige sequência: menina telarca; menino volume testicular.,"Puberdade se avalia por Tanner, curva de crescimento e velocidade de progressão.","Sinal puberal -> idade -> Tanner/crescimento -> precoce/atraso/progressivo? idade óssea/exames/endócrino.
+
+Queixa puberal -> Tanner + curva -> precoce/atraso? -> idade óssea/labs conforme -> sinais SNC/virilização? urgência endócrino.","1. Idade. 2. Tanner. 3. Crescimento. 4. Idade óssea. 5. Alarmes. 6. Encaminhar se indicado.
+
+1. Classificar gravidade. 2. Confirmar critérios diagnósticos. 3. Checar dose por peso quando houver medicação. 4. Decidir ambulatório/enfermaria/UTI. 5. Orientar retorno e seguimento.","Precoce: <8 menina, <9 menino. Atraso: sem puberdade >13 menina, >14 menino. Menino: testículo.
+
+Situação|Idade/sinal|Conduta
+Telarca <8a|Precoce feminina|Investigar
+Testículo >4 mL <9a|Precoce masculina|Investigar sempre
+Sem telarca >13a|Atraso|Avaliar eixo
+Sem testículo >14a|Atraso|Avaliar eixo
+Menarca >15a ausente|Atraso/amenorreia|Investigar",Tanner/SMR e curva de crescimento são ferramentas centrais.,"Idade | Altura | Velocidade | Tanner | Testículos | Menarca | Idade óssea | Neuro | Endócrino
+
+Idade | Peso | Sinais vitais | Gravidade | Diagnóstico diferencial | Dose por kg | Critério internação | Critério UTI | Orientação de retorno | Seguimento","A avaliação puberal não é só olhar pelos. O eixo gonadal aparece em mamas nas meninas e testículos nos meninos.
+
+Complemento bibliográfico: conteúdo revisado à luz do Nelson/Tratado SBP e documentos SBP/MS priorizados para TEP; manter foco em idade, gravidade, exceções, doses por peso, critérios de internação/UTI e pegadinhas de prova.
+
+Complemento Bloco 5: este tema deve ser estudado como decisão prática: reconhecer a apresentação típica, achar o detalhe que muda gravidade, calcular dose quando existir e saber quando o ambulatório deixou de ser seguro.","Tratado de Pediatria SBP 6ª edição.docx::Base local analisada: pediatria geral, crescimento, DNPM, imunizações, neonatologia, icterícia, suplementação, telas e temas estratégicos para TEP. | Livro Nelson.docx::Base local analisada: panorama da pediatria, desenvolvimento, comportamento, nutrição, fluidoterapia, farmacologia e segurança da prescrição pediátrica. | SBP - Questões comentadas TEP::Usado para orientar estilo de cobrança, pegadinhas e forma de raciocínio, sem reprodução literal de questões.::https://www.sbp.com.br/concursos-de-titulos/questoes-comentadas/ | Ministério da Saúde - Caderneta da Criança::Base para puericultura, crescimento, desenvolvimento, vigilância e orientação familiar.::https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/caderneta
+
+SBP - materiais científicos e questões comentadas TEP: https://www.sbp.com.br/concursos-de-titulos/questoes-comentadas/ | Ministério da Saúde - Caderneta da Criança: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/caderneta | AHA Kawasaki Scientific Statement: https://www.ahajournals.org/doi/10.1161/CIR.0000000000000484 | KDIGO Glomerular Diseases Guidelines: https://kdigo.org/guidelines/gd/ | ISPAD Pediatric Diabetes Guidelines: https://www.ispad.org/ | AAP Autism Clinical Report: https://publications.aap.org/pediatrics/article/145/1/e20193447/36917/Identification-Evaluation-and-Management-of | AAP Obesity Clinical Practice Guideline 2023 | NASPGHAN/ESPGHAN Constipation Guideline | WHO Breastfeeding and Infant Feeding Guidance"
+Constipação funcional,Ambulatorial,3,"Distúrbio funcional com evacuações infrequentes, dolorosas ou retenção fecal, sem causa orgânica na maioria dos casos.
+
+Complemento Bloco 5: distúrbio funcional de evacuação com fezes endurecidas, dor, retenção e/ou escape fecal, comum na infância e sustentado por ciclo de dor-retenção-medo.","Dor ao evacuar leva à retenção voluntária, ressecamento fecal, distensão retal, escape fecal e ciclo de medo/dor.","Desfralde, dieta pobre em fibras, baixa rotina, dor fissurária, história familiar, sedentarismo, mudanças escolares, TEA/TDAH.","Fezes endurecidas, dor, esforço, evacuações raras, escape fecal, dor abdominal, massa fecal, postura retentiva, fissura anal.","Clínico por critérios funcionais. Alarmes: início neonatal, atraso mecônio, perda peso, vômitos biliosos, distensão grave, anomalia anal, déficit neurológico, sangue sem fissura.
+
+Critérios clínicos/Roma: evacuações infrequentes, fezes volumosas/duras, dor, retenção, massa fecal, escape. Sinais de alarme: início neonatal, atraso eliminação mecônio, falha crescimento, distensão grave, vômitos biliosos, sangue sem fissura, anomalia neurológica/anorretal.","Educação, desimpactação se fecaloma, manutenção com laxativo, rotina após refeições, reforço positivo, dieta adequada. Tratamento é prolongado.
+
+Educação familiar, desimpactação se fecaloma, manutenção com laxativo osmótico, rotina pós-prandial no vaso, pés apoiados, fibra/água adequadas e seguimento prolongado. Não suspender cedo ao primeiro sucesso.","Polietilenoglicol é primeira linha para desimpactação e manutenção. Lactulose é alternativa. Evitar punição no treino evacuatório.
+
+Educação familiar, desimpactação se fecaloma, manutenção com laxativo osmótico, rotina pós-prandial no vaso, pés apoiados, fibra/água adequadas e seguimento prolongado. Não suspender cedo ao primeiro sucesso.","PEG desimpactação 1-1,5 g/kg/dia por 3-6 dias; manutenção 0,2-0,8 g/kg/dia. Lactulose 1-2 mL/kg/dia. Ajustar para fezes macias e protocolo local.
+
+Polietilenoglicol: desimpactação 1-1,5 g/kg/dia por 3-6 dias; manutenção 0,4-0,8 g/kg/dia ajustado à resposta. Lactulose 1-2 mL/kg/dia se PEG indisponível. Supositório/enema apenas em situações selecionadas.","Hirschsprung, hipotireoidismo, doença celíaca, hipercalcemia, medicações, lesão medular, abuso, malformação anorretal.",Moderado,"constipacao,fezes endurecidas,escape fecal,peg,polietilenoglicol,desimpactacao,higiene intestinal","Dor/distensão importante, vômitos biliosos, suspeita obstrução, fecaloma grave ou sangramento sem fissura exigem avaliação urgente.
+
+Se grave: ABCDE, sinais vitais, glicemia quando aplicável, acesso, suporte específico do protocolo e acionar especialista/UTI sem atrasar terapia tempo-dependente.","Atraso mecônio, falha crescimento, distensão severa, vômitos biliosos, anomalia neurológica, sangue sem fissura, febre/toxemia.","Impactação grave sem sucesso ambulatorial, desidratação, obstrução suspeita, dor importante, investigação de alarme.
+
+Fecaloma refratário grave, vômitos/desidratação, dor intensa, suspeita obstrução, falha ambulatorial complexa ou alarme.","Raro; choque, obstrução grave com instabilidade ou sepse abdominal.
+
+Não é típico; considerar se sepse, choque, perfuração/abdome agudo ou distúrbio hidroeletrolítico grave.","Tratar por poucos dias, não desimpactar antes da manutenção, culpar a criança, pedir exames sem alarme, suspender laxante cedo.","Escape fecal pode ser constipação com overflow, não diarreia. Tratamento de manutenção dura meses.
+
+Escape fecal pode ser constipação, não diarreia. Tratamento dura meses. Dieta sozinha raramente resolve fecaloma.","Constipação funcional: educação + desimpactação + manutenção, não só dieta.",Constipação funcional é ciclo retenção-dor; PEG e rotina quebram o ciclo.,"Constipação -> alarmes? investigar -> fecaloma? desimpactar -> manutenção PEG + rotina -> reduzir só após estabilidade.
+
+Constipação -> alarme? investigar -> fecaloma? desimpactar -> manutenção + rotina -> reavaliar adesão/dose -> falha real? gastro.","1. Alarmes. 2. Fecaloma. 3. Desimpactar. 4. Manutenção. 5. Rotina. 6. Seguimento.
+
+1. Classificar gravidade. 2. Confirmar critérios diagnósticos. 3. Checar dose por peso quando houver medicação. 4. Decidir ambulatório/enfermaria/UTI. 5. Orientar retorno e seguimento.","Primeira linha: PEG. Escape = overflow. Alarmes mudam investigação.
+
+Etapa|Objetivo|Ferramenta
+Desimpactar|Esvaziar fecaloma|PEG alto/enema selecionado
+Manter|Fezes macias diárias|PEG/lactulose
+Reeducar|Quebrar retenção|Vaso pós-refeição
+Retirar|Após meses estável|Redução gradual",Critérios de Roma IV auxiliam diagnóstico funcional.,"Mecônio | Crescimento | Sangue | Fecaloma | Dor | Escape | PEG | Rotina banheiro | Retorno
+
+Idade | Peso | Sinais vitais | Gravidade | Diagnóstico diferencial | Dose por kg | Critério internação | Critério UTI | Orientação de retorno | Seguimento","O tratamento falha quando se pula a desimpactação ou se para cedo. A criança precisa perder o medo de evacuar.
+
+Complemento bibliográfico: conteúdo revisado à luz do Nelson/Tratado SBP e documentos SBP/MS priorizados para TEP; manter foco em idade, gravidade, exceções, doses por peso, critérios de internação/UTI e pegadinhas de prova.
+
+Complemento Bloco 5: este tema deve ser estudado como decisão prática: reconhecer a apresentação típica, achar o detalhe que muda gravidade, calcular dose quando existir e saber quando o ambulatório deixou de ser seguro.","Tratado de Pediatria SBP 6ª edição.docx::Base local analisada: pediatria geral, crescimento, DNPM, imunizações, neonatologia, icterícia, suplementação, telas e temas estratégicos para TEP. | Livro Nelson.docx::Base local analisada: panorama da pediatria, desenvolvimento, comportamento, nutrição, fluidoterapia, farmacologia e segurança da prescrição pediátrica. | SBP - Questões comentadas TEP::Usado para orientar estilo de cobrança, pegadinhas e forma de raciocínio, sem reprodução literal de questões.::https://www.sbp.com.br/concursos-de-titulos/questoes-comentadas/ | Ministério da Saúde - Caderneta da Criança::Base para puericultura, crescimento, desenvolvimento, vigilância e orientação familiar.::https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/caderneta
+
+SBP - materiais científicos e questões comentadas TEP: https://www.sbp.com.br/concursos-de-titulos/questoes-comentadas/ | Ministério da Saúde - Caderneta da Criança: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/caderneta | AHA Kawasaki Scientific Statement: https://www.ahajournals.org/doi/10.1161/CIR.0000000000000484 | KDIGO Glomerular Diseases Guidelines: https://kdigo.org/guidelines/gd/ | ISPAD Pediatric Diabetes Guidelines: https://www.ispad.org/ | AAP Autism Clinical Report: https://publications.aap.org/pediatrics/article/145/1/e20193447/36917/Identification-Evaluation-and-Management-of | AAP Obesity Clinical Practice Guideline 2023 | NASPGHAN/ESPGHAN Constipation Guideline | WHO Breastfeeding and Infant Feeding Guidance"
+Dermatite atópica,Ambulatorial,3,"Doença inflamatória crônica da pele com prurido, xerose e eczema recorrente, comum na infância e associada à marcha atópica.
+
+Complemento Bloco 5: doença inflamatória crônica da pele com disfunção de barreira, prurido e surtos, associada a atopia; o tratamento é barreira cutânea diária mais anti-inflamatório nos surtos.","Disfunção de barreira cutânea e inflamação tipo 2 aumentam perda de água, prurido, colonização por S. aureus e sensibilização alérgica.","História familiar de atopia, xerose, clima seco, irritantes, banhos inadequados, infecção secundária, alergia alimentar em subgrupo selecionado.","Prurido, pele seca, placas eczematosas, liquenificação, escoriações. Lactentes: face/extensores; crianças: flexuras.","Clínico. Investigar infecção se exsudato/crostas/dor. Testes alérgicos não são rotina sem história compatível.
+
+Clínico: prurido, xerose, eczema típico por idade, curso crônico/recorrente e história atópica. Procurar impetiginização, eczema herpético, escabiose, psoríase, imunodeficiência se grave/refratária ou infecções recorrentes.","Hidratação intensiva, evitar irritantes, banho morno curto, corticoide tópico adequado à idade/local na crise, tratar infecção e educar família sobre segurança.
+
+Banho morno curto, sabonete suave, hidratante espesso diário, evitar irritantes, tratar surto cedo com corticoide tópico por potência/local. Enfermaria se infecção extensa, eczema herpético ou falha grave com desidratação/sono inviável.","Emolientes diários, corticoide tópico por potência/local, inibidores de calcineurina em áreas sensíveis/segunda linha, wet wrap em crise moderada/grave com orientação.
+
+Banho morno curto, sabonete suave, hidratante espesso diário, evitar irritantes, tratar surto cedo com corticoide tópico por potência/local. Enfermaria se infecção extensa, eczema herpético ou falha grave com desidratação/sono inviável.","Hidrocortisona 1-2,5% para lactentes/face em crises leves; corticoides de média potência em corpo de crianças maiores por curto período. Aplicar 1-2x/dia por poucos dias até 2-3 semanas conforme gravidade.
+
+Hidratante sem limite prático, várias vezes ao dia. Corticoide tópico baixa potência em face/dobras; média potência em corpo por curto período conforme gravidade. Anti-histamínico sedativo pode ajudar sono/prurido noturno selecionado, não trata inflamação.","Dermatite seborreica, escabiose, psoríase, dermatite de contato, imunodeficiência, micose, histiocitose.",Moderado,"dermatite atopica,eczema,prurido,xerose,emoliente,corticoide topico,wet wrap","Eczema herpético, celulite extensa, febre/toxemia ou dor intensa exigem avaliação urgente e antiviral/antibiótico conforme suspeita.
+
+Se grave: ABCDE, sinais vitais, glicemia quando aplicável, acesso, suporte específico do protocolo e acionar especialista/UTI sem atrasar terapia tempo-dependente.","Eczema herpético, infecção bacteriana extensa, falha terapêutica grave, distúrbio de sono importante, baixo ganho ponderal, eritrodermia.","Eczema herpético, celulite extensa, eritrodermia, desidratação por lesões extensas, necessidade de wet wrap supervisionado em grave.
+
+Eczema herpético, infecção bacteriana extensa, desidratação/hipotermia em lactente, dor intensa ou falha terapêutica grave.","Sepse, choque, eczema herpético disseminado com instabilidade.
+
+Sepse cutânea, choque, eczema herpético disseminado com instabilidade ou insuficiência respiratória por anafilaxia associada.","Medo excessivo de corticoide levando a subtratamento, usar corticoide potente em face, não hidratar diariamente, atribuir tudo a alergia alimentar.","Emoliente é tratamento de base, não cosmético. Corticoide tópico correto e por tempo adequado é seguro e evita piora.
+
+Corticofobia deixa criança sem dormir. Corticoide forte em face é erro. Alergia alimentar não explica toda dermatite atópica.","Dermatite atópica: hidratar sempre, corticoide tópico na crise e procurar infecção.",Dermatite atópica é doença de barreira: emoliente diário e anti-inflamatório tópico bem usado.,"Eczema/prurido -> gravidade/infecção -> emoliente + corticoide tópico -> falha/grave: wet wrap/especialista -> herpes/sepse: urgência.
+
+Eczema pruriginoso -> hidratação diária -> surto? corticoide tópico adequado -> infecção/herpes? tratar/encaminhar -> recorrente grave? dermato/alergia.","1. Confirmar eczema. 2. Hidratar. 3. Corticoide por local. 4. Evitar irritantes. 5. Tratar infecção. 6. Educação.
+
+1. Classificar gravidade. 2. Confirmar critérios diagnósticos. 3. Checar dose por peso quando houver medicação. 4. Decidir ambulatório/enfermaria/UTI. 5. Orientar retorno e seguimento.","Base: emoliente. Crise: corticoide tópico. Grave: wet wrap/especialista. Alarme: eczema herpético.
+
+Área|Preferência|Cuidado
+Face/dobras|Baixa potência|Atrofia
+Corpo surto|Média potência curta|Reavaliar
+Manutenção|Hidratante|Uso diário
+Infectado|ATB se impetigo|Cultura se recorrente
+Vesículas dolorosas|Pensar herpes|Urgência",SCORAD/EASI podem avaliar gravidade em seguimento especializado.,"Prurido | Local | Infecção | Banho | Emoliente | Corticoide potência | Face? | Sono | Retorno
+
+Idade | Peso | Sinais vitais | Gravidade | Diagnóstico diferencial | Dose por kg | Critério internação | Critério UTI | Orientação de retorno | Seguimento","A família precisa sair sabendo quanto, onde e por quanto tempo usar o corticoide. Subtratamento perpetua prurido, escoriação e infecção.
+
+Complemento bibliográfico: conteúdo revisado à luz do Nelson/Tratado SBP e documentos SBP/MS priorizados para TEP; manter foco em idade, gravidade, exceções, doses por peso, critérios de internação/UTI e pegadinhas de prova.
+
+Complemento Bloco 5: este tema deve ser estudado como decisão prática: reconhecer a apresentação típica, achar o detalhe que muda gravidade, calcular dose quando existir e saber quando o ambulatório deixou de ser seguro.","Tratado de Pediatria SBP 6ª edição.docx::Base local analisada: pediatria geral, crescimento, DNPM, imunizações, neonatologia, icterícia, suplementação, telas e temas estratégicos para TEP. | Livro Nelson.docx::Base local analisada: panorama da pediatria, desenvolvimento, comportamento, nutrição, fluidoterapia, farmacologia e segurança da prescrição pediátrica. | SBP - Questões comentadas TEP::Usado para orientar estilo de cobrança, pegadinhas e forma de raciocínio, sem reprodução literal de questões.::https://www.sbp.com.br/concursos-de-titulos/questoes-comentadas/ | Ministério da Saúde - Caderneta da Criança::Base para puericultura, crescimento, desenvolvimento, vigilância e orientação familiar.::https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/caderneta
+
+SBP - materiais científicos e questões comentadas TEP: https://www.sbp.com.br/concursos-de-titulos/questoes-comentadas/ | Ministério da Saúde - Caderneta da Criança: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/caderneta | AHA Kawasaki Scientific Statement: https://www.ahajournals.org/doi/10.1161/CIR.0000000000000484 | KDIGO Glomerular Diseases Guidelines: https://kdigo.org/guidelines/gd/ | ISPAD Pediatric Diabetes Guidelines: https://www.ispad.org/ | AAP Autism Clinical Report: https://publications.aap.org/pediatrics/article/145/1/e20193447/36917/Identification-Evaluation-and-Management-of | AAP Obesity Clinical Practice Guideline 2023 | NASPGHAN/ESPGHAN Constipation Guideline | WHO Breastfeeding and Infant Feeding Guidance"
+Aleitamento materno,Ambulatorial,3,"Prática de alimentação com leite humano, recomendada de forma exclusiva por cerca de 6 meses e mantida com alimentação complementar por 2 anos ou mais conforme desejo da família.
+
+Complemento Bloco 5: prática alimentar e de vínculo que oferece leite humano como alimento padrão do lactente, exclusivo até 6 meses e continuado com alimentação complementar até 2 anos ou mais quando possível.","Leite humano oferece nutrição, imunoglobulinas, fatores bioativos e proteção contra infecções. Produção depende de pega efetiva, esvaziamento mamário e suporte.","Dor/fissura, pega inadequada, baixa produção percebida, perda ponderal excessiva, icterícia, prematuridade, anquiloglossia significativa, retorno ao trabalho, falta de apoio.","Boa pega, sucção audível, diurese/evacuações adequadas e ganho ponderal indicam transferência. Alarme: sonolência, pouca diurese, perda >10%, dor intensa.","Avaliar mamada observada, peso, diurese, evacuações, icterícia, anatomia oral, saúde materna e medicações. Não diagnosticar baixa produção apenas por choro.
+
+Avaliação é clínica: pega, posição, dor/fissura, transferência de leite, diurese, evacuações, peso e curva. Perda de peso excessiva, icterícia, sonolência, hipoglicemia ou desidratação exigem ação.","Apoiar pega e livre demanda, corrigir posicionamento, tratar fissuras/ingurgitamento, monitorar peso e suplementar quando indicação clínica, preservando lactação.
+
+Corrigir pega, livre demanda, contato pele a pele, alojamento conjunto, ordenha se necessário e apoio à mãe. Evitar fórmula sem indicação, mas suplementar com segurança quando há risco clínico. Contraindicações dependem de protocolos, incluindo HIV no contexto brasileiro.","Ordenha, relactação, manejo de ingurgitamento, suporte de consultoria. Fórmula é indicada quando há risco clínico, não como falha moral.
+
+Corrigir pega, livre demanda, contato pele a pele, alojamento conjunto, ordenha se necessário e apoio à mãe. Evitar fórmula sem indicação, mas suplementar com segurança quando há risco clínico. Contraindicações dependem de protocolos, incluindo HIV no contexto brasileiro.","Vitamina D 400 UI/dia para lactentes conforme protocolos. Ferro em prematuros/risco conforme idade. Analgésicos/antibióticos maternos compatíveis devem ser checados em bases confiáveis.
+
+Vitamina D 400 UI/dia em lactentes conforme protocolo; ferro profilático conforme idade/risco/prematuridade. Analgesia materna compatível e tratamento de mastite conforme avaliação. Leite não é calculado em mg/kg; ganho ponderal e fraldas guiam.","Desidratação neonatal, hipoglicemia, icterícia por baixa ingesta, refluxo fisiológico, alergia alimentar, anquiloglossia, depressão materna.",Moderado,"aleitamento,amamentacao,pega,leite materno,6 meses,livre demanda,perda peso,ictericia","RN com letargia, hipoglicemia, desidratação, perda ponderal excessiva ou icterícia importante: avaliar glicemia/bilirrubina/hidratação e suplementar/tratar se necessário.
+
+Se grave: ABCDE, sinais vitais, glicemia quando aplicável, acesso, suporte específico do protocolo e acionar especialista/UTI sem atrasar terapia tempo-dependente.","Pouca diurese, letargia, perda >10%, hipoglicemia, hipernatremia, icterícia intensa, falha de ganho, mastite materna grave.","Desidratação, hipernatremia, hipoglicemia, icterícia em faixa de tratamento, perda ponderal importante, prematuridade com baixa ingesta.
+
+Desidratação, hipernatremia, hipoglicemia, perda ponderal importante, icterícia grave, mastite/abscesso grave ou vulnerabilidade extrema.","Choque/desidratação grave, hipoglicemia sintomática, encefalopatia bilirrubínica, sepse.
+
+Choque, hipoglicemia sintomática grave, sepse, desidratação hipernatrêmica grave ou encefalopatia bilirrubínica.","Culpar a mãe, não observar mamada, dar complemento sem plano, ignorar diurese/peso, contraindicar aleitamento por medicação compatível.","Choro não é sinônimo de leite fraco. Diurese, evacuações e peso são dados objetivos.
+
+Choro não é sinônimo de leite fraco. Água/chá antes de 6 meses não é necessário. Apoiar aleitamento não é ignorar hipoglicemia/desidratação.",Aleitamento exclusivo até cerca de 6 meses; avaliar pega antes de prescrever complemento.,"Aleitamento precisa apoio prático: observar mamada, monitorar peso e tratar riscos sem culpa.","Consulta -> observar mamada/peso/diurese -> adequado? apoiar -> alarme? exames/suplemento/tratar -> retorno curto.
+
+Consulta -> peso/fraldas/pega -> adequado? manter -> dor/peso ruim? corrigir técnica -> risco clínico? suplementar e reavaliar breve.","1. Ouvir. 2. Observar pega. 3. Peso/diurese. 4. Corrigir técnica. 5. Suplementar se indicado. 6. Retorno.
+
+1. Classificar gravidade. 2. Confirmar critérios diagnósticos. 3. Checar dose por peso quando houver medicação. 4. Decidir ambulatório/enfermaria/UTI. 5. Orientar retorno e seguimento.","Exclusivo ~6m. Manter 2 anos+. Alarme: pouca diurese, perda >10%, icterícia, letargia.
+
+Problema|Pista|Conduta
+Pega ruim|Dor/fissura/estalos|Reposicionar
+Baixa transferência|Poucas fraldas/peso ruim|Ordenha/suplemento se risco
+Mastite|Dor, febre, rubor|Esvaziar + ATB se bacteriana
+Icterícia/desidratação|Sonolência/perda peso|Avaliar urgência
+Retorno trabalho|Risco desmame|Plano de ordenha",Curva de peso e avaliação de mamada são centrais.,"Pega | Dor | Peso | Diurese | Evacuação | Icterícia | Glicemia se risco | Suporte | Retorno
+
+Idade | Peso | Sinais vitais | Gravidade | Diagnóstico diferencial | Dose por kg | Critério internação | Critério UTI | Orientação de retorno | Seguimento","O melhor incentivo ao aleitamento é resolver o problema concreto: dor, pega, insegurança, peso ou icterícia. Apoio sem avaliação técnica falha.
+
+Complemento bibliográfico: conteúdo revisado à luz do Nelson/Tratado SBP e documentos SBP/MS priorizados para TEP; manter foco em idade, gravidade, exceções, doses por peso, critérios de internação/UTI e pegadinhas de prova.
+
+Complemento Bloco 5: este tema deve ser estudado como decisão prática: reconhecer a apresentação típica, achar o detalhe que muda gravidade, calcular dose quando existir e saber quando o ambulatório deixou de ser seguro.","Tratado de Pediatria SBP 6ª edição.docx::Base local analisada: pediatria geral, crescimento, DNPM, imunizações, neonatologia, icterícia, suplementação, telas e temas estratégicos para TEP. | Livro Nelson.docx::Base local analisada: panorama da pediatria, desenvolvimento, comportamento, nutrição, fluidoterapia, farmacologia e segurança da prescrição pediátrica. | SBP - Questões comentadas TEP::Usado para orientar estilo de cobrança, pegadinhas e forma de raciocínio, sem reprodução literal de questões.::https://www.sbp.com.br/concursos-de-titulos/questoes-comentadas/ | SBP - Programa de Reanimação Neonatal::Diretrizes e materiais do PRN-SBP para sala de parto, prematuro e cuidados pós-reanimação.::https://www.sbp.com.br/reanimacao | SBP - Diretrizes de reanimação RN ≥34 semanas 2022::Base para sequência de passos iniciais, VPP, compressões e medicações em sala de parto.::https://www.sbp.com.br/fileadmin/user_upload/sbp/2022/junho/06/DiretrizesSBP-Reanimacao-RNigualMaior34semanas-MAIO2022a.pdf | SBP - Diretrizes de reanimação RN <34 semanas 2022::Base para termorregulação, CPAP/VPP, oxigênio e particularidades do prematuro.::https://www.sbp.com.br/fileadmin/user_upload/sbp/2022/junho/06/DiretrizesSBP-Reanimacao-RNmenor34semanas-MAIO2022a.pdf | Ministério da Saúde - Caderneta da Criança::Base para puericultura, crescimento, desenvolvimento, vigilância e orientação familiar.::https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/caderneta
+
+SBP - materiais científicos e questões comentadas TEP: https://www.sbp.com.br/concursos-de-titulos/questoes-comentadas/ | Ministério da Saúde - Caderneta da Criança: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/caderneta | AHA Kawasaki Scientific Statement: https://www.ahajournals.org/doi/10.1161/CIR.0000000000000484 | KDIGO Glomerular Diseases Guidelines: https://kdigo.org/guidelines/gd/ | ISPAD Pediatric Diabetes Guidelines: https://www.ispad.org/ | AAP Autism Clinical Report: https://publications.aap.org/pediatrics/article/145/1/e20193447/36917/Identification-Evaluation-and-Management-of | AAP Obesity Clinical Practice Guideline 2023 | NASPGHAN/ESPGHAN Constipation Guideline | WHO Breastfeeding and Infant Feeding Guidance"
+Cetoacidose diabética,Endocrinologia,5,"Emergência metabólica do diabetes com hiperglicemia, cetose e acidose, causada por deficiência de insulina e aumento de hormônios contrarreguladores.
+
+Cetoacidose diabética é emergência metabólica por deficiência absoluta/relativa de insulina, com hiperglicemia, cetose e acidose metabólica. Em criança, a maior ameaça iatrogênica e clínica é edema cerebral, além de choque, distúrbios de potássio e desidratação.
+
+Complemento Bloco 3: emergência metabólica por deficiência de insulina, hiperglicemia, cetose e acidose, com risco de choque, hipocalemia e edema cerebral; o tratamento é gradual e monitorizado, não uma corrida para normalizar glicemia.","Deficiência de insulina causa lipólise, cetogênese, diurese osmótica, desidratação e acidose. Em pediatria, lesão cerebral associada à CAD é complicação temida.","DM1 novo, omissão de insulina, falha de bomba, infecção, adolescência, dificuldade psicossocial, CAD prévia.","Poliúria, polidipsia, perda peso, vômitos, dor abdominal, desidratação, Kussmaul, hálito cetônico, letargia.","Glicemia elevada, cetonemia/cetonúria e acidose em gasometria. Dosar eletrólitos, ureia/creatinina, osmolaridade, K e monitorar neurologicamente.
+
+Glicemia elevada, cetonemia/cetonúria, pH baixo ou bicarbonato reduzido, ânion gap elevado, desidratação, vômitos, dor abdominal, Kussmaul, hálito cetônico e alteração do sensorium. Corrigir sódio pela glicemia e monitorar potássio/ECG.
+
+Hiperglicemia, pH venoso <7,3 ou bicarbonato <18, cetonemia/cetonúria e desidratação. Classificar gravidade por pH/bicarbonato e estado mental. Dosar eletrólitos, ureia/creatinina, gasometria e calcular sódio corrigido.","ABCDE, avaliar choque/consciência, acesso, hidratação inicial, potássio, insulina EV contínua sem bolus, monitorização horária e tratamento do gatilho.
+
+PA: ABC, monitor, peso, glicemia, gasometria, eletrólitos, cetonas, acesso, hidratação inicial cautelosa. Enfermaria só CAD leve muito bem protocolada; em geral precisa unidade monitorada. UTI se grave, rebaixamento, choque, alto risco de edema cerebral ou distúrbio eletrolítico.
+
+PA: ABC, monitor, acesso, volume inicial se hipoperfusão, potássio antes/durante insulina conforme diurese e K, insulina EV regular após hidratação inicial. Enfermaria treinada/UTI conforme gravidade; neurocheck para edema cerebral.","Fluidos protocolados, insulina regular EV, reposição de potássio conforme nível/diurese, dextrose quando glicemia cai, evitar bicarbonato de rotina.
+
+Hidratação controlada, insulina regular IV contínua após início de fluidos e avaliação de potássio, reposição de potássio conforme níveis/diurese, dextrose quando glicemia cai antes de fechar acidose. Bicarbonato não é rotina.
+
+PA: ABC, monitor, acesso, volume inicial se hipoperfusão, potássio antes/durante insulina conforme diurese e K, insulina EV regular após hidratação inicial. Enfermaria treinada/UTI conforme gravidade; neurocheck para edema cerebral.","Cristaloide 10-20 mL/kg se choque. Insulina regular 0,05-0,1 U/kg/h sem bolus após fase inicial. Potássio conforme níveis e diurese, frequentemente 40 mmol/L no fluido. Confirmar protocolo local.
+
+Cristaloide 10-20 mL/kg se choque/desidratação importante, com reavaliação. Insulina regular 0,05-0,1 UI/kg/h IV sem bolus. Potássio conforme nível sérico e diurese. Manitol 0,5-1 g/kg ou salina hipertônica se edema cerebral conforme protocolo.
+
+Cristaloide 10-20 mL/kg se choque/hipoperfusão. Insulina regular EV 0,05-0,1 U/kg/h sem bolus. Potássio 20-40 mEq/L na reposição se diurese e K permitir. Dextrose quando glicemia cair para faixa de segurança mantendo insulina até fechar acidose.","Gastroenterite, sepse, abdome agudo, intoxicação, crise asmática com acidose, erro inato, hiperglicemia de estresse.",Alto,"cad,cetoacidose,diabetes,kussmaul,cetonas,acidose,edema cerebral,insulina ev,potassio","Glicemia/cetonas/gasometria, hidratar com cautela, checar K antes da insulina, iniciar insulina EV sem bolus, monitorar sinais de edema cerebral.
+
+ABC, monitorização, acesso, glicemia/gasometria/eletrólitos, fluido cauteloso, insulina sem bolus após potássio, neuro horário e UTI se grave.
+
+Se grave: ABCDE, sinais vitais, glicemia quando aplicável, acesso, suporte específico do protocolo e acionar especialista/UTI sem atrasar terapia tempo-dependente.","Alteração mental, pH muito baixo, choque, hipocalemia/hipercalemia, lactente, ureia elevada, cefaleia, bradicardia, hipertensão.","Toda CAD pediátrica.
+
+Toda CAD deve internar em unidade capaz de monitorização seriada de glicemia, eletrólitos, neurologia e fluidos. DM1 novo sem CAD também pode internar para educação/insulinização.
+
+Toda CAD deve internar em local com protocolo e monitorização.","CAD grave, alteração neurológica, choque, distúrbio de potássio, lactente, suspeita de edema cerebral.
+
+CAD grave, pH muito baixo, alteração neurológica, suspeita de edema cerebral, choque, hipocalemia/hipercalemia grave, lactente, comorbidade, necessidade de monitorização intensiva.
+
+CAD moderada/grave, idade pequena, alteração mental, choque, pH muito baixo, K grave, suspeita de edema cerebral ou comorbidade importante.","Bolus de insulina, bicarbonato de rotina, esquecer potássio, corrigir osmolaridade rápido, não monitorar neurológico.
+
+Insulina em bolus, bicarbonato rotineiro, esquecer potássio, não corrigir sódio, parar insulina quando glicose melhora, hidratar agressivamente sem monitorar neurologia.","Glicose cair não significa CAD resolvida; precisa resolver cetose/acidose. Dor abdominal pode ser CAD.
+
+Não fazer bolus de insulina. Não corrigir glicemia rápido demais. Bicarbonato raramente. Quando glicemia cai, ainda pode haver acidose: entra dextrose, não para insulina automaticamente.
+
+Glicemia melhora antes da acidose; não desligar insulina cedo. Edema cerebral é clínico: cefaleia, vômitos, bradicardia, alteração mental. Bicarbonato quase nunca é resposta.","CAD: hidratação primeiro, insulina contínua sem bolus, vigiar potássio e cérebro.","CAD pediátrica é protocolo: fluido, K, insulina sem bolus e vigilância neurológica.","Hiperglicemia+cetose+acidose -> choque? fluido -> K -> insulina EV -> dextrose quando glicose cai -> fechar acidose.
+
+Suspeita CAD -> glicemia/cetonas/gaso/eletrólitos -> fluido inicial -> K e diurese -> insulina IV -> adicionar dextrose quando glicose cai -> fechar ânion gap -> transição SC.
+
+Hiperglicemia + cetose + acidose -> classificar -> fluido inicial -> K -> insulina EV -> glicose com dextrose quando cair -> fechar anion/bicarbonato -> transição SC.","1. Confirmar. 2. Classificar. 3. Fluido. 4. Potássio. 5. Insulina. 6. Neuro.
+
+1. Classificar gravidade. 2. Confirmar critérios diagnósticos. 3. Checar dose por peso quando houver medicação. 4. Decidir ambulatório/enfermaria/UTI. 5. Orientar retorno e seguimento.","Triade: hiperglicemia/cetose/acidose. Evitar: bolus/bicarbonato. Complicação: edema cerebral.
+
+Problema|Conduta
+Desidratação|Fluido cauteloso e monitorado
+Cetose/acidose|Insulina IV contínua sem bolus
+Potássio|Reposição guiada por K e diurese
+Edema cerebral|Neuro horário, manitol/Na hipertônico se suspeita
+
+Erro|Por que é perigoso|Conduta correta
+Bolus de insulina|Queda osmolar rápida|Infusão contínua
+Bicarbonato rotina|Risco neurológico/hipocalemia|Só situações extremas
+Esquecer K|Arritmia|Repor conforme K/diurese
+Alta com cetose|Recidiva|Fechar acidose e educar",Gravidade por pH/bicarbonato e estado neurológico.,"Glicemia | Cetonas | Gasometria | Na/K | Fluido | K | Insulina | Dextrose | Neuro | Gatilho
+
+Idade | Peso | Sinais vitais | Gravidade | Diagnóstico diferencial | Dose por kg | Critério internação | Critério UTI | Orientação de retorno | Seguimento","A pressa errada na CAD faz dano. A insulina precisa continuar até limpar cetonas; por isso se adiciona dextrose quando a glicose cai.
+
+Complemento bibliográfico: conteúdo revisado à luz do Nelson/Tratado SBP e documentos SBP/MS priorizados para TEP; manter foco em idade, gravidade, exceções, doses por peso, critérios de internação/UTI e pegadinhas de prova.
+
+Complemento Bloco 1: CAD é uma dança entre água, insulina e potássio. A glicose é o placar mais visível, mas o jogo acaba quando a acidose/cetose resolve com segurança.
+
+Complemento Bloco 3: este tema deve ser estudado como decisão prática: reconhecer a apresentação típica, achar o detalhe que muda gravidade, calcular dose quando existir e saber quando o ambulatório deixou de ser seguro.","Tratado de Pediatria SBP 6ª edição.docx::Base local analisada: pediatria geral, crescimento, DNPM, imunizações, neonatologia, icterícia, suplementação, telas e temas estratégicos para TEP. | Livro Nelson.docx::Base local analisada: panorama da pediatria, desenvolvimento, comportamento, nutrição, fluidoterapia, farmacologia e segurança da prescrição pediátrica. | SBP - Questões comentadas TEP::Usado para orientar estilo de cobrança, pegadinhas e forma de raciocínio, sem reprodução literal de questões.::https://www.sbp.com.br/concursos-de-titulos/questoes-comentadas/ | SBP - Distúrbios acidobásicos::Base para avaliação de acidose/alcalose e raciocínio em emergências metabólicas.::https://www.sbp.com.br/disturbios-acidobasicos-e-o-tema-de-novo-documento-cientifico-produzido-pela-sbp/
+
+SBP - materiais científicos e questões comentadas TEP: https://www.sbp.com.br/concursos-de-titulos/questoes-comentadas/ | Ministério da Saúde - Caderneta da Criança: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/caderneta | AHA Kawasaki Scientific Statement: https://www.ahajournals.org/doi/10.1161/CIR.0000000000000484 | KDIGO Glomerular Diseases Guidelines: https://kdigo.org/guidelines/gd/ | ISPAD Pediatric Diabetes Guidelines: https://www.ispad.org/ | AAP Autism Clinical Report: https://publications.aap.org/pediatrics/article/145/1/e20193447/36917/Identification-Evaluation-and-Management-of | AAP Obesity Clinical Practice Guideline 2023 | NASPGHAN/ESPGHAN Constipation Guideline | WHO Breastfeeding and Infant Feeding Guidance"
+Anemia falciforme,Hematologia,5,"Hemoglobinopatia hereditária por HbS, com hemólise crônica, vaso-oclusão, asplenia funcional e risco de infecções graves.
+
+Complemento Bloco 4: hemoglobinopatia por HbS com hemólise, vaso-oclusão e asplenia funcional, em que febre, dor torácica, sequestro esplênico e AVC são emergências.","Desoxigenação polimeriza HbS, deformando hemácias e causando vaso-oclusão, isquemia, hemólise e inflamação. Asplenia aumenta risco por encapsulados.","HbSS, baixa adesão à profilaxia/vacinas, história de sequestro esplênico, AVC, síndrome torácica, febre, desidratação, frio, hipóxia.","Dor vaso-oclusiva, dactilite, icterícia, palidez, febre, esplenomegalia aguda, dor torácica, dispneia, sinais neurológicos.","Triagem neonatal/eletroforese. Em crise, avaliar Hb/reticulócitos, SatO2, RX se respiratório, culturas se febre, tipagem se transfusão.
+
+Triagem neonatal/eletroforese. Na crise, avaliar SatO2, Hb/reticulócitos, leucócitos, bilirrubinas, RX se respiratório, culturas se febre e baço em toda criança pequena.","Febre é emergência: antibiótico parenteral após culturas se possível. Dor: analgesia rápida e hidratação cautelosa. Procurar síndrome torácica, sequestro e AVC.
+
+Febre: hemocultura se possível e antibiótico parenteral rápido. Dor: analgesia escalonada sem atraso, hidratação cautelosa e procurar síndrome torácica. PA/enfermaria/UTI conforme Sat, dor, Hb, baço e neurologia.","Penicilina profilática na infância, vacinas, hidroxiureia conforme indicação, ácido fólico em alguns protocolos, transfusão simples/troca em complicações.
+
+Febre: hemocultura se possível e antibiótico parenteral rápido. Dor: analgesia escalonada sem atraso, hidratação cautelosa e procurar síndrome torácica. PA/enfermaria/UTI conforme Sat, dor, Hb, baço e neurologia.","Ceftriaxona 50-75 mg/kg EV/IM para febre conforme protocolo. Analgesia escalonada com dipirona/paracetamol, AINE se seguro, opioide se dor intensa. Hidroxiureia 15-20 mg/kg/dia inicial com hematologia.
+
+Ceftriaxona 50-75 mg/kg EV/IM em febre conforme protocolo. Analgesia com dipirona/paracetamol, AINE se seguro e opioide se dor intensa. Hidroxiureia 15-20 mg/kg/dia inicial com hematologia; penicilina profilática na infância conforme calendário/protocolo.","Osteomielite, sepse, pneumonia, abdome agudo, crise aplástica por parvovírus, leucemia, artrite séptica.",Alto,"falciforme,hbs,dor vaso oclusiva,febre,sequestro esplenico,sindrome toracica,ceftriaxona,hidroxiureia","Febre: triagem imediata, hemocultura, ceftriaxona, avaliar gravidade. Dor torácica/hipoxemia: RX, O2, antibiótico e transfusão se síndrome torácica.
+
+Se grave: ABCDE, sinais vitais, glicemia quando aplicável, acesso, suporte específico do protocolo e acionar especialista/UTI sem atrasar terapia tempo-dependente.","Febre, toxemia, Sat baixa, dor torácica, dispneia, queda aguda Hb, esplenomegalia, déficit neurológico, priapismo prolongado.","Febre em alto risco, dor não controlada, hipoxemia, síndrome torácica, sequestro, anemia grave, AVC suspeito, baixa ingesta.","Síndrome torácica grave, AVC, choque, sepse, necessidade de ventilação, sequestro grave, transfusão de troca.
+
+Síndrome torácica grave, AVC, choque, sepse, necessidade ventilatória, sequestro grave ou transfusão de troca.","Subestimar febre, atrasar analgesia, hidratar em excesso, não palpar baço, não checar SatO2/RX em dor torácica.","Febre em falciforme é sepse até prova em contrário. Dor óssea com febre pode ser vaso-oclusão ou osteomielite.
+
+Febre é sepse até prova em contrário. Hidratação excessiva piora pulmão. Dor torácica pode ser síndrome torácica antes do RX exuberante.",Falciforme + febre = antibiótico parenteral rápido.,"Falciforme exige reconhecer emergências: febre, dor, síndrome torácica, sequestro e AVC.","Falciforme com febre/dor -> ABC/Sat/Hb/retic -> cultura/ATB se febre -> analgesia -> procurar complicações -> internar se grave.
+
+Falciforme com febre/dor -> Sat/Hb/retic/baço -> cultura + ATB se febre -> analgesia -> RX se respiratório -> transfusão/UTI se complicação.","1. Identificar emergência. 2. Sat/Hb/retic. 3. ATB se febre. 4. Analgesia. 5. RX se respiratório. 6. Hemato/UTI se grave.
+
+1. Classificar gravidade. 2. Confirmar critérios diagnósticos. 3. Checar dose por peso quando houver medicação. 4. Decidir ambulatório/enfermaria/UTI. 5. Orientar retorno e seguimento.","Emergências: febre, torácica, sequestro, AVC. Tratamento: ATB, analgesia, transfusão se indicado.
+
+Emergência|Pista|Conduta
+Febre|Asplenia funcional|ATB parenteral
+Torácica|Dor, febre, infiltrado, Sat baixa|O2, ATB, transfusão se grave
+Sequestro|Baço grande + queda Hb|Volume/transfusão
+AVC|Déficit focal|Transfusão urgente/UTI",Usar escalas de dor e avaliação seriada de SatO2/Hb/baço.,"Febre | SatO2 | Dor | Baço | Hb/retic | Culturas | ATB | RX tórax | Analgesia | Transfusão?
+
+Idade | Peso | Sinais vitais | Gravidade | Diagnóstico diferencial | Dose por kg | Critério internação | Critério UTI | Orientação de retorno | Seguimento","A criança falciforme tem pouca margem para atraso. Febre pode evoluir rápido, e dor torácica pode ser síndrome torácica antes do RX ficar exuberante.
+
+Complemento bibliográfico: conteúdo revisado à luz do Nelson/Tratado SBP e documentos SBP/MS priorizados para TEP; manter foco em idade, gravidade, exceções, doses por peso, critérios de internação/UTI e pegadinhas de prova.
+
+Complemento Bloco 4: este tema deve ser estudado como decisão prática: reconhecer a apresentação típica, achar o detalhe que muda gravidade, calcular dose quando existir e saber quando o ambulatório deixou de ser seguro.","Tratado de Pediatria SBP 6ª edição.docx::Base local analisada: pediatria geral, crescimento, DNPM, imunizações, neonatologia, icterícia, suplementação, telas e temas estratégicos para TEP. | Livro Nelson.docx::Base local analisada: panorama da pediatria, desenvolvimento, comportamento, nutrição, fluidoterapia, farmacologia e segurança da prescrição pediátrica. | SBP - Questões comentadas TEP::Usado para orientar estilo de cobrança, pegadinhas e forma de raciocínio, sem reprodução literal de questões.::https://www.sbp.com.br/concursos-de-titulos/questoes-comentadas/
+
+SBP - materiais científicos e questões comentadas TEP: https://www.sbp.com.br/concursos-de-titulos/questoes-comentadas/ | Ministério da Saúde - Caderneta da Criança: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/caderneta | AHA Kawasaki Scientific Statement: https://www.ahajournals.org/doi/10.1161/CIR.0000000000000484 | KDIGO Glomerular Diseases Guidelines: https://kdigo.org/guidelines/gd/ | ISPAD Pediatric Diabetes Guidelines: https://www.ispad.org/ | AAP Autism Clinical Report: https://publications.aap.org/pediatrics/article/145/1/e20193447/36917/Identification-Evaluation-and-Management-of | AAP Obesity Clinical Practice Guideline 2023 | NASPGHAN/ESPGHAN Constipation Guideline | WHO Breastfeeding and Infant Feeding Guidance"
+Púrpura trombocitopênica imune,Hematologia,4,"Trombocitopenia imune adquirida, geralmente isolada, com petéquias, equimoses e risco de sangramento, muitas vezes pós-viral.
+
+Complemento Bloco 4: trombocitopenia imune adquirida, geralmente isolada e pós-infecciosa em crianças, cuja conduta depende mais do sangramento e dos sinais atípicos do que do número de plaquetas isolado.","Autoanticorpos e resposta imune reduzem sobrevida plaquetária e podem reduzir produção medular. Em crianças, curso costuma ser autolimitado.","Infecção viral recente, vacinação recente, história autoimune. Sinais atípicos sugerem outro diagnóstico.","Petéquias, púrpura, equimoses, epistaxe, sangramento gengival. Estado geral preservado e sem hepatoesplenomegalia no quadro típico.","Hemograma com plaquetopenia isolada e esfregaço. Avaliar sinais de leucemia, anemia/alteração leucócitos, hepatoesplenomegalia, febre persistente.
+
+Hemograma com plaquetopenia isolada e esfregaço. Procurar febre persistente, dor óssea, hepatoesplenomegalia, linfonodos, anemia/leucócitos alterados ou blastos, que sugerem outro diagnóstico.","Se sangramento leve e criança bem, observação pode ser adequada mesmo com plaquetas baixas. Tratar se sangramento mucoso importante, risco ou plaquetas muito baixas conforme protocolo.
+
+Observação se criança bem e sangramento cutâneo leve. Tratar sangramento mucoso importante, risco de trauma/procedimento ou plaquetas muito baixas com contexto. Orientar evitar AAS/AINE/trauma e retorno se sangramento neurológico/mucoso.","Observação, corticoide, IVIG ou anti-D conforme gravidade e contexto. Evitar AAS/AINEs e trauma. Hematologia se grave/atípica.
+
+Observação se criança bem e sangramento cutâneo leve. Tratar sangramento mucoso importante, risco de trauma/procedimento ou plaquetas muito baixas com contexto. Orientar evitar AAS/AINE/trauma e retorno se sangramento neurológico/mucoso.","Prednisona 1-2 mg/kg/dia por curto curso ou dexametasona em pulso conforme protocolo. IVIG 0,8-1 g/kg dose única pode elevar plaquetas rapidamente. Confirmar hematologia.
+
+Prednisona 1-2 mg/kg/dia por curto curso, dexametasona em pulso conforme protocolo, ou IVIG 0,8-1 g/kg dose única se necessidade de elevação rápida. Plaquetas apenas em sangramento com risco de vida, junto com imunomodulação.","Leucemia, aplasia, sepse/meningococcemia, PTT/SHU, lúpus, hiperesplenismo, trombocitopenia hereditária, dengue.",Moderado,"pti,purpura,trombocitopenia,petequias,ivig,corticoide,plaquetas,sangramento mucoso","Sangramento grave ou neurológico: hospitalizar, hematologia, IVIG/corticoide, transfusão de plaquetas se risco de vida associada a imunomodulação.
+
+Se grave: ABCDE, sinais vitais, glicemia quando aplicável, acesso, suporte específico do protocolo e acionar especialista/UTI sem atrasar terapia tempo-dependente.","Sangramento de mucosa importante, gastrointestinal, urinário, menorragia grave, cefaleia/vômitos/neurológico, anemia, instabilidade.","Sangramento moderado/grave, suspeita diagnóstica alternativa, plaquetas muito baixas com risco social, necessidade IVIG, trauma.
+
+Sangramento moderado/grave, suspeita alternativa, plaquetas muito baixas com risco social, necessidade de IVIG ou trauma.","Hemorragia intracraniana suspeita/confirmada, sangramento com choque, necessidade de suporte intensivo.
+
+Hemorragia intracraniana suspeita/confirmada, sangramento com choque ou necessidade de suporte intensivo.","Tratar número de plaquetas sem olhar sangramento, não olhar esfregaço, perder leucemia, usar AINE/AAS.","PTI típica é plaquetopenia isolada em criança bem. Febre persistente, dor óssea e hepatoesplenomegalia não combinam.
+
+PTI típica não tem hepatoesplenomegalia importante nem dor óssea. A resposta correta pode ser observação. Trate sangramento, não só plaqueta.","PTI leve: observação pode ser resposta correta; trate sangramento, não só plaqueta.",PTI é trombocitopenia isolada; conduta depende de sangramento e sinais atípicos.,"Púrpura -> hemograma/esfregaço -> isolada e bem? observar/tratar conforme sangramento -> atípico/grave: internar/hemato.
+
+Púrpura -> hemograma/esfregaço -> plaqueta isolada e bem? observar -> sangramento mucoso/grave? tratar/internar -> atípico? hematologia.","1. Confirmar plaquetas. 2. Esfregaço. 3. Sangramento. 4. Atípicos. 5. Observar ou imunomodular. 6. Orientar restrições.
+
+1. Classificar gravidade. 2. Confirmar critérios diagnósticos. 3. Checar dose por peso quando houver medicação. 4. Decidir ambulatório/enfermaria/UTI. 5. Orientar retorno e seguimento.","Típico: criança bem, plaqueta baixa isolada. Grave: mucosa/ICH. Tratamento: observação, corticoide, IVIG.
+
+Cenário|Conduta
+Petéquias apenas, criança bem|Observar/orientar
+Mucosa importante|Corticoide ou IVIG
+Sangramento grave|Internar, IVIG/corticoide + plaquetas se vida
+Atípicos no hemograma/exame|Investigar leucemia/outros","Usar gravidade de sangramento, não apenas contagem plaquetária.","Plaquetas | Hb/leucos | Esfregaço | Sangramento | Febre/dor óssea | Baço/fígado | AINE? | Observação/tratamento
+
+Idade | Peso | Sinais vitais | Gravidade | Diagnóstico diferencial | Dose por kg | Critério internação | Critério UTI | Orientação de retorno | Seguimento","A prova gosta de PTI porque a resposta pode ser não tratar. O número assusta, mas mucosa, neurologia e atipias decidem.
+
+Complemento bibliográfico: conteúdo revisado à luz do Nelson/Tratado SBP e documentos SBP/MS priorizados para TEP; manter foco em idade, gravidade, exceções, doses por peso, critérios de internação/UTI e pegadinhas de prova.
+
+Complemento Bloco 4: este tema deve ser estudado como decisão prática: reconhecer a apresentação típica, achar o detalhe que muda gravidade, calcular dose quando existir e saber quando o ambulatório deixou de ser seguro.","Tratado de Pediatria SBP 6ª edição.docx::Base local analisada: pediatria geral, crescimento, DNPM, imunizações, neonatologia, icterícia, suplementação, telas e temas estratégicos para TEP. | Livro Nelson.docx::Base local analisada: panorama da pediatria, desenvolvimento, comportamento, nutrição, fluidoterapia, farmacologia e segurança da prescrição pediátrica. | SBP - Questões comentadas TEP::Usado para orientar estilo de cobrança, pegadinhas e forma de raciocínio, sem reprodução literal de questões.::https://www.sbp.com.br/concursos-de-titulos/questoes-comentadas/
+
+SBP - materiais científicos e questões comentadas TEP: https://www.sbp.com.br/concursos-de-titulos/questoes-comentadas/ | Ministério da Saúde - Caderneta da Criança: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/caderneta | AHA Kawasaki Scientific Statement: https://www.ahajournals.org/doi/10.1161/CIR.0000000000000484 | KDIGO Glomerular Diseases Guidelines: https://kdigo.org/guidelines/gd/ | ISPAD Pediatric Diabetes Guidelines: https://www.ispad.org/ | AAP Autism Clinical Report: https://publications.aap.org/pediatrics/article/145/1/e20193447/36917/Identification-Evaluation-and-Management-of | AAP Obesity Clinical Practice Guideline 2023 | NASPGHAN/ESPGHAN Constipation Guideline | WHO Breastfeeding and Infant Feeding Guidance"
+Desenvolvimento neuropsicomotor,Desenvolvimento,4,"Acompanhamento longitudinal de marcos motores, linguagem, cognição, socialização e autonomia, com vigilância em todas as consultas e triagens padronizadas em idades-chave.
+
+Complemento Bloco 5: processo progressivo de aquisição motora, linguagem, cognição, socialização e autonomia, influenciado por genética, ambiente, nutrição, vínculo, sono e saúde; vigilância é longitudinal, não foto isolada.","Atrasos podem refletir variação normal, privação ambiental, prematuridade, deficiência auditiva/visual, paralisia cerebral, TEA, síndromes genéticas, doenças metabólicas ou neuromusculares.","Prematuridade, baixo peso, UTI neonatal, asfixia, infecções congênitas, perda auditiva, vulnerabilidade social, regressão de marcos, história familiar.","Atraso motor, atraso de fala, não apontar, não brincar simbolicamente, assimetria, hipotonia/hipertonia, perda de habilidades, baixa interação social.","Vigilância contínua e instrumentos validados. AAP recomenda triagem geral aos 9, 18 e 30 meses, e TEA aos 18 e 24 meses, além de qualquer preocupação.
+
+Usar marcos por idade, corrigir prematuridade até 2 anos, medir perímetro cefálico e procurar regressão. Atraso em mais de um domínio, perda de habilidade, ausência de sorriso social, não sentar/andar/falar em janelas esperadas ou assimetria exigem investigação.","Não esperar “cada criança tem seu tempo” quando há atraso ou regressão. Encaminhar para intervenção precoce, audição/visão, fono/fisio/TO e neuropediatria conforme achados.
+
+Puericultura: rastrear, orientar estímulo, leitura, brincadeira e sono. Encaminhar precocemente para intervenção, fono/fisio/TO/neuro quando alerta; não esperar “cada criança tem seu tempo” diante de regressão ou atraso claro.","Intervenção precoce multidisciplinar, suporte familiar, tratamento da causa, reabilitação e acompanhamento longitudinal.
+
+Puericultura: rastrear, orientar estímulo, leitura, brincadeira e sono. Encaminhar precocemente para intervenção, fono/fisio/TO/neuro quando alerta; não esperar “cada criança tem seu tempo” diante de regressão ou atraso claro.","Não há medicação para atraso global em si; tratar causas específicas como epilepsia, hipotireoidismo, deficiência nutricional ou espasticidade conforme especialista.
+
+Não há medicação para marco atrasado. Tratar causas: ferro, hipotireoidismo, epilepsia, deficiência auditiva/visual, desnutrição ou doença genética conforme diagnóstico. Intervenção precoce é a “terapia” central.","TEA, deficiência auditiva, deficiência intelectual, paralisia cerebral, atraso isolado de linguagem, hipotireoidismo, síndromes genéticas, negligência.",Moderado,"desenvolvimento,marcos,atraso,regressao,triagem,9 meses,18 meses,30 meses,intervencao precoce","Regressão, convulsões, perda de contato, macro/microcefalia progressiva ou sinais neurológicos focais exigem investigação prioritária.
+
+Se grave: ABCDE, sinais vitais, glicemia quando aplicável, acesso, suporte específico do protocolo e acionar especialista/UTI sem atrasar terapia tempo-dependente.","Regressão de marcos, perda de linguagem/socialização, assimetria persistente, ausência de sorriso social, ausência de sentar/andar muito atrasada, convulsões.","Geralmente ambulatorial; internar se crise, descompensação metabólica, perda aguda de habilidades ou investigação urgente.
+
+Perda aguda de habilidade, convulsão, desnutrição grave, suspeita de maus-tratos, infecção neurológica ou doença metabólica descompensada.","Status epiléptico, encefalopatia aguda, insuficiência respiratória neuromuscular, crise metabólica.
+
+Rebaixamento, estado de mal, insuficiência respiratória, choque ou doença metabólica grave.","Esperar demais para encaminhar, não testar audição em atraso de fala, ignorar regressão, não corrigir idade em prematuros.","Regressão nunca é normal. Atraso de fala precisa avaliação auditiva mesmo que a família ache que a criança escuta.
+
+Regressão nunca é normal. Prematuro precisa idade corrigida. Triagem alterada não é diagnóstico, mas não deve ser ignorada.",Preocupação dos pais deve ser valorizada e pode indicar triagem/encaminhamento.,DNPM é vigilância ativa: reconhecer atraso cedo e encaminhar para intervenção precoce.,"Consulta -> vigilância -> atraso/preocupação? triagem -> audição/visão + intervenção -> especialista se alarme.
+
+Consulta -> marcos + PC + exame -> normal? orientar -> alerta? corrigir prematuridade, rastrear causas, encaminhar intervenção precoce.","1. Perguntar marcos. 2. Observar. 3. Triar. 4. Identificar alarme. 5. Encaminhar. 6. Reavaliar.
+
+1. Classificar gravidade. 2. Confirmar critérios diagnósticos. 3. Checar dose por peso quando houver medicação. 4. Decidir ambulatório/enfermaria/UTI. 5. Orientar retorno e seguimento.","Triagem: 9,18,30m; TEA: 18,24m. Alarme: regressão. Conduta: intervenção precoce.
+
+Alerta|Conduta
+Regressão|Investigação urgente
+Assimetria motora|Neuro/fisio
+Sem balbucio/aponta|Audição/TEA/linguagem
+Macro/microcefalia progressiva|Neuroimagem/genética
+Atraso global|Equipe multiprofissional","ASQ, SWYC, Denver II ou instrumentos locais; M-CHAT-R/F para TEA.","Idade corrigida | Motor | Linguagem | Social | Audição | Visão | Regressão | Triagem | Intervenção | Retorno
+
+Idade | Peso | Sinais vitais | Gravidade | Diagnóstico diferencial | Dose por kg | Critério internação | Critério UTI | Orientação de retorno | Seguimento","A intervenção precoce não depende de diagnóstico fechado. Se há atraso, iniciar suporte enquanto investiga é melhor que aguardar.
+
+Complemento bibliográfico: conteúdo revisado à luz do Nelson/Tratado SBP e documentos SBP/MS priorizados para TEP; manter foco em idade, gravidade, exceções, doses por peso, critérios de internação/UTI e pegadinhas de prova.
+
+Complemento Bloco 5: este tema deve ser estudado como decisão prática: reconhecer a apresentação típica, achar o detalhe que muda gravidade, calcular dose quando existir e saber quando o ambulatório deixou de ser seguro.","Tratado de Pediatria SBP 6ª edição.docx::Base local analisada: pediatria geral, crescimento, DNPM, imunizações, neonatologia, icterícia, suplementação, telas e temas estratégicos para TEP. | Livro Nelson.docx::Base local analisada: panorama da pediatria, desenvolvimento, comportamento, nutrição, fluidoterapia, farmacologia e segurança da prescrição pediátrica. | SBP - Questões comentadas TEP::Usado para orientar estilo de cobrança, pegadinhas e forma de raciocínio, sem reprodução literal de questões.::https://www.sbp.com.br/concursos-de-titulos/questoes-comentadas/ | Ministério da Saúde - Caderneta da Criança::Base para puericultura, crescimento, desenvolvimento, vigilância e orientação familiar.::https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/caderneta
+
+SBP - materiais científicos e questões comentadas TEP: https://www.sbp.com.br/concursos-de-titulos/questoes-comentadas/ | Ministério da Saúde - Caderneta da Criança: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/caderneta | AHA Kawasaki Scientific Statement: https://www.ahajournals.org/doi/10.1161/CIR.0000000000000484 | KDIGO Glomerular Diseases Guidelines: https://kdigo.org/guidelines/gd/ | ISPAD Pediatric Diabetes Guidelines: https://www.ispad.org/ | AAP Autism Clinical Report: https://publications.aap.org/pediatrics/article/145/1/e20193447/36917/Identification-Evaluation-and-Management-of | AAP Obesity Clinical Practice Guideline 2023 | NASPGHAN/ESPGHAN Constipation Guideline | WHO Breastfeeding and Infant Feeding Guidance"
+Puericultura,Ambulatorial,3,"Acompanhamento preventivo longitudinal da criança, integrando crescimento, desenvolvimento, vacinação, alimentação, segurança, vínculo familiar e rastreios.
+
+Complemento Bloco 5: seguimento preventivo estruturado por idade que integra crescimento, DNPM, vacinas, alimentação, sono, segurança, saúde bucal, vínculo, parentalidade e rastreio de vulnerabilidade.","A puericultura antecipa riscos antes que virem doença: atraso de crescimento, falhas vacinais, anemia, problemas de desenvolvimento, violência, acidentes e sofrimento familiar.","Prematuridade, baixo peso, vulnerabilidade social, atraso vacinal, insegurança alimentar, violência, depressão parental, doença crônica, faltas recorrentes.","Não é doença; sinais de alerta incluem perda de canal de crescimento, atraso de marcos, baixa ingesta, falha vacinal, negligência, alterações comportamentais.","Consulta estruturada: antropometria, curva, exame físico, DNPM, alimentação, sono, segurança, vacinação, saúde bucal, ambiente familiar e rastreios por idade.
+
+A consulta identifica risco: curva cruzando percentis, atraso/regressão, falha vacinal, anemia, insegurança alimentar, violência, depressão parental, acidentes, telas excessivas e dificuldade de vínculo.","Programar consultas por faixa etária, atualizar vacinas, orientar alimentação e prevenção de acidentes, rastrear desenvolvimento e vínculo, tratar problemas precocemente.
+
+Cada visita deve ter antropometria, exame físico direcionado, caderneta, orientação antecipatória e plano de retorno. RN/lactente: peso, icterícia, aleitamento e segurança do sono. Pré-escolar/escolar: desenvolvimento, comportamento, alimentação, atividade e acidentes.","Intervenções preventivas: vitamina D/ferro quando indicado, vacinas, orientação alimentar, leitura/brincar, sono seguro, saúde bucal, atividade física e proteção contra telas excessivas.
+
+Cada visita deve ter antropometria, exame físico direcionado, caderneta, orientação antecipatória e plano de retorno. RN/lactente: peso, icterícia, aleitamento e segurança do sono. Pré-escolar/escolar: desenvolvimento, comportamento, alimentação, atividade e acidentes.","Vitamina D 400 UI/dia em lactentes conforme protocolo; ferro profilático conforme idade/risco/PNI local; flúor conforme risco e água local. Individualizar.
+
+Vitamina D 400 UI/dia quando indicada; ferro profilático conforme idade, prematuridade, peso ao nascer e recomendação vigente; vermifugação apenas conforme epidemiologia/protocolo. Dose deve ser conferida pela apresentação do produto.","Falha de crescimento, negligência, atraso global, anemia, raquitismo, doença crônica, transtornos do sono/alimentação.",Moderado,"puericultura,crescimento,desenvolvimento,vacina,alimentacao,seguranca,curva,marcos","Suspeita de violência, desidratação, perda ponderal importante, icterícia grave, hipoglicemia, sepse ou sofrimento familiar grave exigem ação imediata.
+
+Se grave: ABCDE, sinais vitais, glicemia quando aplicável, acesso, suporte específico do protocolo e acionar especialista/UTI sem atrasar terapia tempo-dependente.","Queda de percentis, perda ponderal no RN, atraso/regressão, violência, negligência, atraso vacinal crítico, insegurança alimentar grave.","Conforme problema identificado: falha de crescimento grave, desidratação, risco social extremo, violência, doença aguda.
+
+Desidratação, falha de crescimento grave, violência/negligência com risco, icterícia grave, hipoglicemia, sepse ou condição aguda detectada.","Conforme emergência clínica identificada.
+
+Conforme emergência identificada: choque, insuficiência respiratória, sepse, convulsão, hipoglicemia grave ou intoxicação.","Consulta só para pesar, não olhar caderneta, não rastrear desenvolvimento, não orientar segurança, ignorar saúde mental parental.","Puericultura boa é ativa: se a família só sai com “está tudo bem” sem orientação por idade, perdeu oportunidade.
+
+Puericultura não é só pesar. Toda consulta é chance de atualizar vacina. Regressão de marco, violência e perda de canal de crescimento não esperam.","Em puericultura, sempre pense: crescimento, desenvolvimento, vacina, alimentação e segurança.","Puericultura é prevenção organizada por idade, com curva, marcos, vacinas e orientação familiar.","Consulta -> antropometria/curva -> DNPM -> vacina -> alimentação/sono/segurança -> rastreios -> plano/retorno.
+
+Consulta -> medidas/curvas -> caderneta/vacinas -> DNPM -> alimentação/sono/segurança -> risco social/violência -> plano e retorno.","1. Queixa/família. 2. Medidas. 3. Exame. 4. Marcos. 5. Vacina. 6. Orientações e retorno.
+
+1. Classificar gravidade. 2. Confirmar critérios diagnósticos. 3. Checar dose por peso quando houver medicação. 4. Decidir ambulatório/enfermaria/UTI. 5. Orientar retorno e seguimento.","Eixos: crescimento, DNPM, imunização, nutrição, segurança, vínculo, rastreios.
+
+Idade|Prioridade
+RN|Peso, icterícia, aleitamento, sono seguro
+2-6m|Vacinas, desenvolvimento, prevenção acidentes
+6-24m|Alimentação complementar, ferro, linguagem
+Pré-escolar|Comportamento, telas, segurança
+Escolar/adolescente|PA, saúde mental, puberdade, riscos",Curvas OMS/CDC conforme idade; instrumentos de triagem do desenvolvimento quando indicado.,"Peso | Estatura | PC | Curva | Marcos | Vacinas | Alimentação | Sono | Segurança | Saúde bucal | Família
+
+Idade | Peso | Sinais vitais | Gravidade | Diagnóstico diferencial | Dose por kg | Critério internação | Critério UTI | Orientação de retorno | Seguimento","Puericultura é onde a pediatria ganha tempo: identifica risco antes do pronto atendimento, antes da internação e antes do atraso consolidado.
+
+Complemento bibliográfico: conteúdo revisado à luz do Nelson/Tratado SBP e documentos SBP/MS priorizados para TEP; manter foco em idade, gravidade, exceções, doses por peso, critérios de internação/UTI e pegadinhas de prova.
+
+Complemento Bloco 5: este tema deve ser estudado como decisão prática: reconhecer a apresentação típica, achar o detalhe que muda gravidade, calcular dose quando existir e saber quando o ambulatório deixou de ser seguro.","Tratado de Pediatria SBP 6ª edição.docx::Base local analisada: pediatria geral, crescimento, DNPM, imunizações, neonatologia, icterícia, suplementação, telas e temas estratégicos para TEP. | Livro Nelson.docx::Base local analisada: panorama da pediatria, desenvolvimento, comportamento, nutrição, fluidoterapia, farmacologia e segurança da prescrição pediátrica. | SBP - Questões comentadas TEP::Usado para orientar estilo de cobrança, pegadinhas e forma de raciocínio, sem reprodução literal de questões.::https://www.sbp.com.br/concursos-de-titulos/questoes-comentadas/ | Ministério da Saúde - Caderneta da Criança::Base para puericultura, crescimento, desenvolvimento, vigilância e orientação familiar.::https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/caderneta
+
+SBP - materiais científicos e questões comentadas TEP: https://www.sbp.com.br/concursos-de-titulos/questoes-comentadas/ | Ministério da Saúde - Caderneta da Criança: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/caderneta | AHA Kawasaki Scientific Statement: https://www.ahajournals.org/doi/10.1161/CIR.0000000000000484 | KDIGO Glomerular Diseases Guidelines: https://kdigo.org/guidelines/gd/ | ISPAD Pediatric Diabetes Guidelines: https://www.ispad.org/ | AAP Autism Clinical Report: https://publications.aap.org/pediatrics/article/145/1/e20193447/36917/Identification-Evaluation-and-Management-of | AAP Obesity Clinical Practice Guideline 2023 | NASPGHAN/ESPGHAN Constipation Guideline | WHO Breastfeeding and Infant Feeding Guidance"
