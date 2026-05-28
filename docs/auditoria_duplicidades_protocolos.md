@@ -2,22 +2,28 @@
 
 Data: 2026-05-28
 
-## Resultado
+## Resultado atual
 
 - Não foram encontrados títulos exatamente duplicados após normalização simples de acentos, maiúsculas e pontuação.
-- Foi removida 1 linha vazia sem título, tema ou utilidade clínica.
-- Foram encontrados temas com sobreposição semântica por importações de momentos diferentes do projeto. Eles foram mantidos porque alguns têm foco distinto, mas devem ser revisados quando houver uma etapa específica de consolidação editorial.
+- Não há linhas vazias sem título.
+- As sobreposições reais antigas foram consolidadas em protocolos canônicos.
+- A única sobreposição mantida intencionalmente foi `Asma grave` x `Asma infantil`, porque representam recortes clínicos diferentes.
 
-## Sobreposições encontradas
+## Protocolos consolidados
 
-- Dengue (Infectologia) x Dengue pediátrica (Infectologia) - similaridade 100%. Motivo provável: conteúdo antigo/importação intermediária coexistindo com versão final pediátrica ou tema complementar.
-- Obesidade pediátrica (Ambulatorial) x Obesidade infantil (Endocrinologia) - similaridade 100%. Motivo provável: conteúdo antigo/importação intermediária coexistindo com versão final pediátrica ou tema complementar.
-- Asma grave (Emergência) x Asma infantil (Pneumologia) - similaridade 100%. Motivo provável: conteúdo antigo/importação intermediária coexistindo com versão final pediátrica ou tema complementar.
-- RN prematuro com SDR (Neonatologia) x RN com SDR (Neonatologia) - similaridade 86%. Motivo provável: conteúdo antigo/importação intermediária coexistindo com versão final pediátrica ou tema complementar.
-- Diabetes tipo 1 (Endocrinologia) x Diabetes mellitus tipo 1 (Endocrinologia) - similaridade 80%. Motivo provável: conteúdo antigo/importação intermediária coexistindo com versão final pediátrica ou tema complementar.
-- Kawasaki (Cardiologia) x Doença de Kawasaki (Cardiologia) - similaridade 67%. Motivo provável: conteúdo antigo/importação intermediária coexistindo com versão final pediátrica ou tema complementar.
+- `Dengue` foi incorporado em `Dengue pediátrica`.
+- `Obesidade infantil` foi incorporado em `Obesidade pediátrica`.
+- `RN prematuro com SDR` foi incorporado em `RN com SDR`.
+- `Diabetes tipo 1` foi incorporado em `Diabetes mellitus tipo 1`.
+- `Kawasaki` foi incorporado em `Doença de Kawasaki`.
+
+## Protocolos mantidos separados
+
+- `Asma grave`: crise grave, pronto atendimento, emergência e UTI.
+- `Asma infantil`: doença crônica, controle, técnica inalatória, seguimento e prevenção de exacerbações.
 
 ## Conduta adotada
 
-- Não houve mesclagem automática de protocolos, para evitar perda de conteúdo.
-- A próxima etapa editorial recomendada é escolher um título canônico para pares como Dengue/Dengue pediátrica, Kawasaki/Doença de Kawasaki e Diabetes tipo 1/Diabetes mellitus tipo 1, migrando flashcards/simulados se necessário.
+- O conteúdo textual útil das versões antigas foi incorporado nos destinos.
+- Flashcards, simulados, favoritos e contadores de revisão foram preservados no protocolo canônico quando existiam.
+- As linhas antigas consolidadas foram removidas do Supabase para não aparecerem duplicadas no app.
