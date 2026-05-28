@@ -306,20 +306,18 @@ function ProtocolDetail({
         />
       )}
 
-      <div className="grid gap-5 xl:grid-cols-[minmax(0,1fr)_22rem] xl:items-start">
-        <div className="grid gap-5">
-          {sections.map(([title, content]) => (
-            <Section key={title} title={title} content={content} />
-          ))}
-        </div>
+      <div className="grid gap-5">
+        {sections.map(([title, content]) => (
+          <Section key={title} title={title} content={content} />
+        ))}
 
-        <BibliographyPanel items={bibliography} />
+        <BibliographyFooter items={bibliography} />
       </div>
     </div>
   )
 }
 
-function BibliographyPanel({
+function BibliographyFooter({
   items,
 }: {
   items: BibliographyItem[]
@@ -327,7 +325,7 @@ function BibliographyPanel({
   if (!items.length) return null
 
   return (
-    <aside className="bg-white rounded-lg shadow-sm border p-5 xl:sticky xl:top-6">
+    <footer className="bg-white rounded-lg shadow-sm border p-6">
       <h3 className="text-xl font-bold text-slate-900">
         Bibliografia
       </h3>
@@ -336,7 +334,7 @@ function BibliographyPanel({
         Fontes usadas para orientar a síntese. Excertos longos não são reproduzidos; o conteúdo clínico foi reescrito em linguagem própria.
       </p>
 
-      <div className="grid gap-4 mt-5">
+      <div className="grid gap-4 mt-5 md:grid-cols-2 xl:grid-cols-3">
         {items.map((item, index) => (
           <div key={`${item.title}-${index}`} className="border rounded-lg p-4 bg-slate-50">
             <p className="font-bold text-slate-900">
@@ -362,7 +360,7 @@ function BibliographyPanel({
           </div>
         ))}
       </div>
-    </aside>
+    </footer>
   )
 }
 
