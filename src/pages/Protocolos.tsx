@@ -4,6 +4,7 @@ import { supabase } from '../lib/supabase'
 import type { Question } from '../types/question'
 import { getDoseCalculatorGroups, type DoseRule } from '../data/doseCalculators'
 import { cleanQuestions } from '../utils/questions'
+import { useAuth } from '../auth/useAuth'
 
 const searchableFields: Array<keyof Question> = [
   'title',
@@ -18,6 +19,7 @@ const searchableFields: Array<keyof Question> = [
 ]
 
 export default function Protocolos() {
+  const { isAdmin } = useAuth()
   const [questions, setQuestions] = useState<Question[]>([])
   const [selected, setSelected] = useState<Question | null>(null)
   const [search, setSearch] = useState('')
@@ -82,6 +84,12 @@ export default function Protocolos() {
     const file = event.target.files?.[0]
 
     if (!file) return
+
+    if (!isAdmin) {
+      alert('Somente administradores podem importar CSV.')
+      event.target.value = ''
+      return
+    }
 
     setImporting(true)
 
@@ -148,16 +156,18 @@ export default function Protocolos() {
             </p>
           </div>
 
-          <label className="bg-white border rounded-lg px-4 py-3 shadow-sm cursor-pointer text-sm font-semibold text-slate-700 hover:bg-slate-50 w-fit">
-            {importing ? 'Importando...' : 'Importar CSV'}
-            <input
-              type="file"
-              accept=".csv"
-              onChange={handleCsvImport}
-              className="hidden"
-              disabled={importing}
-            />
-          </label>
+          {isAdmin && (
+            <label className="bg-white border rounded-lg px-4 py-3 shadow-sm cursor-pointer text-sm font-semibold text-slate-700 hover:bg-slate-50 w-fit">
+              {importing ? 'Importando...' : 'Importar CSV'}
+              <input
+                type="file"
+                accept=".csv"
+                onChange={handleCsvImport}
+                className="hidden"
+                disabled={importing}
+              />
+            </label>
+          )}
         </header>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">

@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react'
+import { useAuth } from '../auth/useAuth'
 import { supabase } from '../lib/supabase'
 import type { Question } from '../types/question'
 import { cleanQuestions } from '../utils/questions'
 
 export default function Revisao() {
+  const { isAdmin } = useAuth()
   const [questions, setQuestions] = useState<Question[]>([])
   const [selected, setSelected] = useState<Question | null>(null)
 
@@ -27,6 +29,11 @@ export default function Revisao() {
   }
 
   async function responder(q: Question, acertou: boolean) {
+    if (!isAdmin) {
+      alert('A revisão adaptativa global só pode ser alterada pelo administrador.')
+      return
+    }
+
     const acertos = acertou ? (q.acertos || 0) + 1 : q.acertos || 0
     const erros = acertou ? q.erros || 0 : (q.erros || 0) + 1
 
@@ -93,21 +100,27 @@ export default function Revisao() {
           <Section title="Flashcards" content={selected.flashcards} />
           <Section title="Simulado" content={selected.simulado} />
 
-          <div className="flex gap-4 mt-8">
-            <button
-              onClick={() => responder(selected, false)}
-              className="bg-red-600 text-white px-6 py-3 rounded-lg font-semibold"
-            >
-              Errei
-            </button>
+          {isAdmin ? (
+            <div className="flex gap-4 mt-8">
+              <button
+                onClick={() => responder(selected, false)}
+                className="bg-red-600 text-white px-6 py-3 rounded-lg font-semibold"
+              >
+                Errei
+              </button>
 
-            <button
-              onClick={() => responder(selected, true)}
-              className="bg-green-700 text-white px-6 py-3 rounded-lg font-semibold"
-            >
-              Acertei
-            </button>
-          </div>
+              <button
+                onClick={() => responder(selected, true)}
+                className="bg-green-700 text-white px-6 py-3 rounded-lg font-semibold"
+              >
+                Acertei
+              </button>
+            </div>
+          ) : (
+            <p className="mt-8 rounded-lg border bg-slate-50 p-4 text-sm text-slate-600">
+              Modo somente leitura: seu login não tem permissão para alterar a revisão global.
+            </p>
+          )}
         </section>
       </div>
     )
@@ -122,6 +135,12 @@ export default function Revisao() {
       <p className="mt-2 text-slate-600">
         Temas vencidos ou ainda não revisados.
       </p>
+
+      {!isAdmin && (
+        <p className="mt-6 rounded-lg border bg-white p-4 text-sm text-slate-600">
+          Modo somente leitura: usuários comuns podem estudar os temas, mas não alteram revisão, favoritos ou banco.
+        </p>
+      )}
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
         <Card title="Revisões hoje" value={questions.length} />

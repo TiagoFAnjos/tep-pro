@@ -8,25 +8,31 @@ import Simulados from './pages/Simulados'
 import Revisao from './pages/Revisao'
 import ModoProva from './pages/ModoProva'
 import MotorClinico from './pages/MotorClinico'
+import { AuthProvider } from './auth/AuthProvider'
+import AuthGate from './auth/AuthGate'
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <div className="flex min-h-screen bg-gray-100">
-        <Sidebar />
+    <AuthProvider>
+      <AuthGate>
+        <BrowserRouter>
+          <div className="flex min-h-screen bg-gray-100">
+            <Sidebar />
 
-        <main className="flex-1">
-          <Routes>
-            <Route path="/" element={<Dashboard />} />
-            <Route path="/protocolos" element={<Protocolos />} />
-            <Route path="/flashcards" element={<Flashcards />} />
-            <Route path="/simulados" element={<Simulados />} />
-            <Route path="/revisao" element={<Revisao />} />
-            <Route path="/modo-prova" element={<ModoProva />} />
-            <Route path="/motor-clinico" element={<MotorClinico />} />
-          </Routes>
-        </main>
-      </div>
-    </BrowserRouter>
+            <main className="flex-1">
+              <Routes>
+                <Route path="/" element={<Dashboard />} />
+                <Route path="/protocolos" element={<Protocolos />} />
+                <Route path="/flashcards" element={<Flashcards />} />
+                <Route path="/simulados" element={<Simulados />} />
+                <Route path="/revisao" element={<Revisao />} />
+                <Route path="/modo-prova" element={<ModoProva />} />
+                <Route path="/motor-clinico" element={<MotorClinico />} />
+              </Routes>
+            </main>
+          </div>
+        </BrowserRouter>
+      </AuthGate>
+    </AuthProvider>
   )
 }

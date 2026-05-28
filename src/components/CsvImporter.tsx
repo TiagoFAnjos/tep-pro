@@ -1,9 +1,14 @@
 import Papa from 'papaparse'
+import { useAuth } from '../auth/useAuth'
 import { supabase } from '../lib/supabase'
 
 type CsvRow = Record<string, string>
 
 export default function CsvImporter() {
+  const { isAdmin } = useAuth()
+
+  if (!isAdmin) return null
+
   async function handleFile(
     event: React.ChangeEvent<HTMLInputElement>
   ) {
@@ -37,9 +42,9 @@ export default function CsvImporter() {
   }
 
   return (
-    <div className="bg-white rounded-2xl shadow p-6">
+    <div className="bg-white rounded-lg shadow-sm border p-6">
       <h2 className="text-2xl font-bold mb-4">
-        📥 Importar CSV
+        Importar CSV
       </h2>
 
       <input
