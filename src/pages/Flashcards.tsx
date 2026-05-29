@@ -88,8 +88,8 @@ export default function Flashcards() {
   }
 
   return (
-    <div className="p-8">
-      <h1 className="text-4xl font-bold text-slate-900">
+    <div className="p-4 sm:p-6 lg:p-8">
+      <h1 className="text-3xl font-bold text-slate-900 sm:text-4xl">
         Flashcards
       </h1>
 
@@ -131,9 +131,9 @@ export default function Flashcards() {
         {filtered.map((q) => (
           <section
             key={q.id}
-            className="bg-white rounded-lg shadow-sm border p-6"
+            className="bg-white rounded-lg shadow-sm border p-5 sm:p-6"
           >
-            <h2 className="text-2xl font-bold text-slate-900">
+            <h2 className="break-words text-xl font-bold text-slate-900 sm:text-2xl">
               {q.title}
             </h2>
 
@@ -150,7 +150,7 @@ export default function Flashcards() {
                   return (
                     <div
                       key={cardId}
-                      className="border rounded-lg p-5 bg-slate-50"
+                      className="border rounded-lg p-4 bg-slate-50 sm:p-5"
                     >
                       <button
                         onClick={() =>
@@ -158,7 +158,7 @@ export default function Flashcards() {
                         }
                         className="w-full text-left"
                       >
-                        <p className="font-bold text-lg text-slate-900">
+                        <p className="break-words text-base font-bold text-slate-900 sm:text-lg">
                           {card.pergunta}
                         </p>
 

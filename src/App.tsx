@@ -16,10 +16,10 @@ export default function App() {
     <AuthProvider>
       <AuthGate>
         <BrowserRouter>
-          <div className="flex min-h-screen bg-gray-100">
+          <div className="flex min-h-screen flex-col bg-gray-100 lg:flex-row">
             <Sidebar />
 
-            <main className="flex-1">
+            <main className="min-w-0 flex-1">
               <Routes>
                 <Route path="/" element={<Dashboard />} />
                 <Route path="/protocolos" element={<Protocolos />} />

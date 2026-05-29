@@ -76,7 +76,7 @@ export default function Revisao() {
 
   if (selected) {
     return (
-      <div className="p-8">
+      <div className="p-4 sm:p-6 lg:p-8">
         <button
           onClick={() => setSelected(null)}
           className="mb-6 bg-blue-600 text-white px-5 py-3 rounded-lg font-semibold"
@@ -84,7 +84,7 @@ export default function Revisao() {
           Voltar
         </button>
 
-        <section className="bg-white rounded-lg shadow-sm border p-8">
+        <section className="bg-white rounded-lg shadow-sm border p-5 sm:p-8">
           <h1 className="text-3xl font-bold text-slate-900">
             {selected.title}
           </h1>
@@ -101,7 +101,7 @@ export default function Revisao() {
           <Section title="Simulado" content={selected.simulado} />
 
           {isAdmin ? (
-            <div className="flex gap-4 mt-8">
+            <div className="flex flex-col gap-4 mt-8 sm:flex-row">
               <button
                 onClick={() => responder(selected, false)}
                 className="bg-red-600 text-white px-6 py-3 rounded-lg font-semibold"
@@ -127,8 +127,8 @@ export default function Revisao() {
   }
 
   return (
-    <div className="p-8">
-      <h1 className="text-4xl font-bold text-slate-900">
+    <div className="p-4 sm:p-6 lg:p-8">
+      <h1 className="text-3xl font-bold text-slate-900 sm:text-4xl">
         Revisão Adaptativa
       </h1>
 
@@ -142,7 +142,7 @@ export default function Revisao() {
         </p>
       )}
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+      <div className="grid grid-cols-1 gap-4 mt-8 sm:grid-cols-3">
         <Card title="Revisões hoje" value={questions.length} />
         <Card
           title="Baixo domínio"
@@ -213,7 +213,7 @@ function Card({
   return (
     <div className="bg-white rounded-lg shadow-sm border p-5">
       <p className="text-sm text-slate-500">{title}</p>
-      <h2 className="text-4xl font-bold text-slate-900 mt-3">
+      <h2 className="text-3xl font-bold text-slate-900 mt-3 sm:text-4xl">
         {value}
       </h2>
     </div>

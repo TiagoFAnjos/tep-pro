@@ -48,8 +48,8 @@ export default function Dashboard() {
   }))
 
   return (
-    <div className="p-8">
-      <h1 className="text-4xl font-bold text-slate-900">
+    <div className="p-4 sm:p-6 lg:p-8">
+      <h1 className="text-3xl font-bold text-slate-900 sm:text-4xl">
         Dashboard
       </h1>
 
@@ -65,7 +65,7 @@ export default function Dashboard() {
 
       {!loading && (
         <>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-8">
+          <div className="grid grid-cols-1 gap-4 mt-8 sm:grid-cols-2 xl:grid-cols-4">
             <Card title="Temas totais" value={total} />
             <Card title="Favoritos" value={favoritos} />
             <Card title="Protocolos completos" value={completos} />
@@ -138,7 +138,7 @@ function Card({
   return (
     <div className="bg-white rounded-lg shadow-sm border p-5">
       <p className="text-sm text-slate-500">{title}</p>
-      <h2 className="text-4xl font-bold text-slate-900 mt-3">
+      <h2 className="text-3xl font-bold text-slate-900 mt-3 sm:text-4xl">
         {value}
       </h2>
     </div>

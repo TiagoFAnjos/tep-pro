@@ -143,11 +143,11 @@ export default function Protocolos() {
   }
 
   return (
-    <div className="p-8">
+    <div className="p-4 sm:p-6 lg:p-8">
       <div className="flex flex-col gap-6">
         <header className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4">
           <div>
-            <h1 className="text-4xl font-bold text-slate-900">
+            <h1 className="text-3xl font-bold text-slate-900 sm:text-4xl">
               Protocolos
             </h1>
 
@@ -170,7 +170,7 @@ export default function Protocolos() {
           )}
         </header>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
           <Metric label="Protocolos" value={questions.length} />
           <Metric label="Especialidades" value={temas.length - 1} />
           <Metric label="Alto risco" value={totalAltoRisco} tone="red" />
@@ -217,8 +217,8 @@ export default function Protocolos() {
                 onClick={() => setSelected(q)}
               >
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-3">
-                  <div>
-                    <h2 className="text-2xl font-bold text-slate-900">
+                  <div className="min-w-0">
+                    <h2 className="break-words text-xl font-bold text-slate-900 sm:text-2xl">
                       {q.title}
                     </h2>
 
@@ -292,10 +292,10 @@ function ProtocolDetail({
         Voltar
       </button>
 
-      <section className="bg-white rounded-lg shadow-sm border p-8">
+      <section className="bg-white rounded-lg shadow-sm border p-5 sm:p-8">
         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
           <div>
-            <h2 className="text-4xl font-bold text-slate-900">
+            <h2 className="break-words text-3xl font-bold text-slate-900 sm:text-4xl">
               {protocol.title}
             </h2>
 
@@ -335,7 +335,7 @@ function BibliographyFooter({
   if (!items.length) return null
 
   return (
-    <footer className="bg-white rounded-lg shadow-sm border p-6">
+    <footer className="bg-white rounded-lg shadow-sm border p-5 sm:p-6">
       <h3 className="text-xl font-bold text-slate-900">
         Bibliografia
       </h3>
@@ -386,7 +386,7 @@ function Section({
   const chart = parseChart(content)
 
   return (
-    <section className="bg-white rounded-lg shadow-sm border p-6">
+    <section className="bg-white rounded-lg shadow-sm border p-5 sm:p-6">
       <h3 className="text-xl font-bold text-slate-900 mb-4">
         {title}
       </h3>
@@ -435,7 +435,7 @@ function Section({
           </table>
         </div>
       ) : (
-        <p className="whitespace-pre-line leading-relaxed text-slate-700">
+        <p className="whitespace-pre-line break-words leading-relaxed text-slate-700">
           {content}
         </p>
       )}
@@ -456,7 +456,7 @@ function DoseCalculator({
   const hasValidWeight = Number.isFinite(parsedWeight) && parsedWeight > 0
 
   return (
-    <section className="bg-white rounded-lg shadow-sm border p-6">
+    <section className="bg-white rounded-lg shadow-sm border p-5 sm:p-6">
       <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4">
         <div>
           <h3 className="text-xl font-bold text-slate-900">
@@ -477,7 +477,7 @@ function DoseCalculator({
             value={weight}
             onChange={(event) => onWeightChange(event.target.value)}
             placeholder="Ex.: 12"
-            className="w-44 rounded-lg border p-3 outline-none focus:border-blue-500"
+            className="w-full rounded-lg border p-3 outline-none focus:border-blue-500 sm:w-44"
           />
         </label>
       </div>
@@ -625,7 +625,7 @@ function Metric({
   return (
     <div className="bg-white rounded-lg shadow-sm border p-5">
       <p className="text-sm text-slate-500">{label}</p>
-      <p className={`text-4xl font-bold mt-3 ${valueClass}`}>{value}</p>
+      <p className={`text-3xl font-bold mt-3 sm:text-4xl ${valueClass}`}>{value}</p>
     </div>
   )
 }

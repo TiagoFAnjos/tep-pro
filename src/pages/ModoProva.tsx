@@ -87,7 +87,7 @@ export default function ModoProva() {
 
   if (loading) {
     return (
-      <div className="p-8">
+      <div className="p-4 sm:p-6 lg:p-8">
         <h1 className="text-3xl font-bold text-slate-900">
           Carregando prova...
         </h1>
@@ -97,7 +97,7 @@ export default function ModoProva() {
 
   if (!deck.length) {
     return (
-      <div className="p-8">
+      <div className="p-4 sm:p-6 lg:p-8">
         <h1 className="text-3xl font-bold text-slate-900">
           Nenhuma questão disponível
         </h1>
@@ -109,18 +109,18 @@ export default function ModoProva() {
     const percentual = Math.round((score / deck.length) * 100)
 
     return (
-      <div className="p-8">
+      <div className="p-4 sm:p-6 lg:p-8">
         <header>
           <p className="text-sm font-semibold uppercase tracking-wide text-blue-700">
             Simulado unificado
           </p>
-          <h1 className="text-4xl font-bold text-slate-900">
+          <h1 className="text-3xl font-bold text-slate-900 sm:text-4xl">
             Resultado Final
           </h1>
         </header>
 
-        <section className="bg-white rounded-lg shadow-sm border p-8 mt-8">
-          <h2 className="text-5xl font-bold text-green-700">
+        <section className="bg-white rounded-lg shadow-sm border p-5 mt-8 sm:p-8">
+          <h2 className="text-4xl font-bold text-green-700 sm:text-5xl">
             {percentual}%
           </h2>
 
@@ -164,13 +164,13 @@ export default function ModoProva() {
   }
 
   return (
-    <div className="p-8">
+    <div className="p-4 sm:p-6 lg:p-8">
       <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-4">
         <div>
           <p className="text-sm font-semibold uppercase tracking-wide text-blue-700">
             Simulado unificado
           </p>
-          <h1 className="text-4xl font-bold text-slate-900">
+          <h1 className="text-3xl font-bold text-slate-900 sm:text-4xl">
             Modo Prova TEP
           </h1>
         </div>
@@ -180,7 +180,7 @@ export default function ModoProva() {
         </div>
       </div>
 
-      <section className="bg-white rounded-lg shadow-sm border p-8 mt-8">
+      <section className="bg-white rounded-lg shadow-sm border p-5 mt-8 sm:p-8">
         <div className="flex flex-wrap items-center gap-2">
           <span className="rounded-lg bg-blue-50 text-blue-700 px-3 py-1 text-sm font-semibold">
             {question.tema}
@@ -190,7 +190,7 @@ export default function ModoProva() {
           </span>
         </div>
 
-        <h2 className="text-3xl font-bold text-slate-900 mt-5">
+        <h2 className="break-words text-2xl font-bold text-slate-900 mt-5 sm:text-3xl">
           {question.title}
         </h2>
 
@@ -207,7 +207,7 @@ export default function ModoProva() {
               <button
                 key={choice}
                 onClick={() => choose(choice)}
-                className={`text-left rounded-lg border px-4 py-4 transition ${
+                className={`break-words rounded-lg border px-4 py-4 text-left transition ${
                   answered && isAnswer
                     ? 'border-green-600 bg-green-50 text-green-900'
                     : ''
@@ -261,7 +261,7 @@ export default function ModoProva() {
           </div>
         )}
 
-        <div className="flex justify-between items-center gap-4 mt-10">
+        <div className="flex flex-col justify-between gap-4 mt-10 sm:flex-row sm:items-center">
           <p className="text-slate-600">
             Pontuação atual: {score}/{answered ? current + 1 : current}
           </p>

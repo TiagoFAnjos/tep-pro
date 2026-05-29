@@ -116,8 +116,8 @@ export default function MotorClinico() {
           : ''
 
   return (
-    <div className="p-8">
-      <h1 className="text-4xl font-bold text-slate-900">
+    <div className="p-4 sm:p-6 lg:p-8">
+      <h1 className="text-3xl font-bold text-slate-900 sm:text-4xl">
         Motor Clínico Interno
       </h1>
 
@@ -152,7 +152,7 @@ export default function MotorClinico() {
                   : 'bg-yellow-50 border-yellow-200'
             }`}
           >
-            <h2 className="text-3xl font-bold text-slate-900">
+            <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">
               Risco geral: {riscoGeral}
             </h2>
 
@@ -170,11 +170,11 @@ export default function MotorClinico() {
             {resultados.map((q, index) => (
               <section
                 key={q.id}
-                className="bg-white rounded-lg shadow-sm border p-6"
+                className="bg-white rounded-lg shadow-sm border p-5 sm:p-6"
               >
-                <div className="flex justify-between gap-4">
-                  <div>
-                    <h3 className="text-2xl font-bold text-slate-900">
+                <div className="flex flex-col justify-between gap-4 sm:flex-row">
+                  <div className="min-w-0">
+                    <h3 className="break-words text-xl font-bold text-slate-900 sm:text-2xl">
                       {index + 1}. {q.title}
                     </h3>
 
@@ -184,7 +184,7 @@ export default function MotorClinico() {
                   </div>
 
                   <div
-                    className={`px-4 py-2 rounded-lg font-bold h-fit ${
+                    className={`h-fit rounded-lg px-4 py-2 font-bold ${
                       q.nivel_risco === 'Alto'
                         ? 'bg-red-100 text-red-700'
                         : q.nivel_risco === 'Moderado/Alto'
@@ -268,7 +268,7 @@ function Section({
     <div className="mt-5 bg-slate-50 border rounded-lg p-4">
       <h4 className="font-bold mb-2 text-slate-900">{title}</h4>
 
-      <p className="text-slate-700 whitespace-pre-line leading-relaxed">
+      <p className="whitespace-pre-line break-words leading-relaxed text-slate-700">
         {content}
       </p>
     </div>
