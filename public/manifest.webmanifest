@@ -1,0 +1,46 @@
+{
+  "name": "TEP PRO",
+  "short_name": "TEP PRO",
+  "description": "Plataforma pediátrica de estudo, protocolos, flashcards e simulados.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f1f5f9",
+  "theme_color": "#1d4ed8",
+  "categories": ["education", "medical", "productivity"],
+  "icons": [
+    {
+      "src": "/pwa-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/maskable-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Protocolos",
+      "short_name": "Protocolos",
+      "url": "/protocolos",
+      "description": "Abrir biblioteca de protocolos pediátricos."
+    },
+    {
+      "name": "Simulados TEP",
+      "short_name": "Simulados",
+      "url": "/modo-prova",
+      "description": "Abrir simulados em modo prova."
+    }
+  ]
+}
