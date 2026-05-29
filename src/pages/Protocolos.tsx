@@ -5,6 +5,7 @@ import type { Question } from '../types/question'
 import { getDoseCalculatorGroups, type DoseRule } from '../data/doseCalculators'
 import { cleanQuestions } from '../utils/questions'
 import { useAuth } from '../auth/useAuth'
+import { normalizeQuestionRecord } from '../utils/portugueseText'
 
 const searchableFields: Array<keyof Question> = [
   'title',
@@ -105,9 +106,9 @@ export default function Protocolos() {
             return
           }
 
-          const data = results.data.filter(
-            (row) => row.title?.trim()
-          )
+          const data = results.data
+            .filter((row) => row.title?.trim())
+            .map((row) => normalizeQuestionRecord(row))
 
           if (!data.length) {
             alert('Nenhuma linha válida encontrada no CSV.')
