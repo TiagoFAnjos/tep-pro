@@ -3,11 +3,17 @@ import { useAuth } from '../auth/useAuth'
 import { supabase } from '../lib/supabase'
 import type { Question } from '../types/question'
 import { cleanQuestions } from '../utils/questions'
+import {
+  formatCacheDate,
+  loadOfflineQuestionsCache,
+  saveQuestionsToOfflineCache,
+} from '../utils/offlineQuestionsCache'
 
 export default function Revisao() {
   const { isAdmin } = useAuth()
   const [questions, setQuestions] = useState<Question[]>([])
   const [selected, setSelected] = useState<Question | null>(null)
+  const [offlineNotice, setOfflineNotice] = useState('')
 
   async function fetchRevisoes() {
     const hoje = new Date().toISOString()
@@ -21,11 +27,22 @@ export default function Revisao() {
 
     if (error) {
       console.log(error)
-      alert('Erro ao carregar revisões')
+      const cached = await loadOfflineQuestionsCache()
+
+      if (cached.questions.length) {
+        setQuestions(filterCachedReviews(cached.questions))
+        setOfflineNotice(`Modo offline: usando revisões salvas em ${formatCacheDate(cached.cachedAt)}. Alterações ficam indisponíveis até o Supabase voltar.`)
+      } else {
+        alert('Erro ao carregar revisões e nenhum cache local foi encontrado.')
+      }
+
       return
     }
 
-    setQuestions(cleanQuestions(data))
+    const loaded = cleanQuestions(data)
+    setQuestions(loaded)
+    setOfflineNotice('')
+    void saveQuestionsToOfflineCache(loaded)
   }
 
   async function responder(q: Question, acertou: boolean) {
@@ -136,6 +153,12 @@ export default function Revisao() {
         Temas vencidos ou ainda não revisados.
       </p>
 
+      {offlineNotice && (
+        <p className="mt-6 rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm font-medium text-amber-900">
+          {offlineNotice}
+        </p>
+      )}
+
       {!isAdmin && (
         <p className="mt-6 rounded-lg border bg-white p-4 text-sm text-slate-600">
           Modo somente leitura: usuários comuns podem estudar os temas, mas não alteram revisão, favoritos ou banco.
@@ -201,6 +224,19 @@ function Section({
       </p>
     </div>
   )
+}
+
+function filterCachedReviews(questions: Question[]) {
+  const now = Date.now()
+
+  return questions
+    .filter((question) => {
+      if (!question.proxima_revisao) return true
+
+      return new Date(question.proxima_revisao).getTime() <= now
+    })
+    .sort((a, b) => (Number(a.nivel_dominio) || 0) - (Number(b.nivel_dominio) || 0))
+    .slice(0, 30)
 }
 
 function Card({

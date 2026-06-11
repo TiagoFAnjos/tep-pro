@@ -2,12 +2,18 @@ import { useEffect, useState } from 'react'
 import { supabase } from '../lib/supabase'
 import type { Question } from '../types/question'
 import { cleanQuestions } from '../utils/questions'
+import {
+  formatCacheDate,
+  loadOfflineQuestionsCache,
+  saveQuestionsToOfflineCache,
+} from '../utils/offlineQuestionsCache'
 
 export default function Flashcards() {
   const [questions, setQuestions] = useState<Question[]>([])
   const [filter, setFilter] = useState('Todos')
   const [search, setSearch] = useState('')
   const [openCard, setOpenCard] = useState<string | null>(null)
+  const [offlineNotice, setOfflineNotice] = useState('')
 
   async function fetchFlashcards() {
     const { data, error } = await supabase
@@ -18,11 +24,25 @@ export default function Flashcards() {
 
     if (error) {
       console.log(error)
-      alert('Erro ao carregar flashcards')
+      const cached = await loadOfflineQuestionsCache()
+      const cachedFlashcards = cached.questions.filter((question) =>
+        question.flashcards?.trim()
+      )
+
+      if (cachedFlashcards.length) {
+        setQuestions(cachedFlashcards)
+        setOfflineNotice(`Modo offline: usando flashcards salvos em ${formatCacheDate(cached.cachedAt)}.`)
+      } else {
+        alert('Erro ao carregar flashcards e nenhum cache local foi encontrado.')
+      }
+
       return
     }
 
-    setQuestions(cleanQuestions(data))
+    const loaded = cleanQuestions(data)
+    setQuestions(loaded)
+    setOfflineNotice('')
+    void saveQuestionsToOfflineCache(loaded)
   }
 
   useEffect(() => {
@@ -96,6 +116,12 @@ export default function Flashcards() {
       <p className="mt-2 text-slate-600">
         Revisão rápida por perguntas e respostas dos protocolos.
       </p>
+
+      {offlineNotice && (
+        <p className="mt-6 rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm font-medium text-amber-900">
+          {offlineNotice}
+        </p>
+      )}
 
       <div className="mt-8">
         <input

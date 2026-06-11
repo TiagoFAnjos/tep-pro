@@ -7,6 +7,11 @@ import { cleanQuestions } from '../utils/questions'
 import { useAuth } from '../auth/useAuth'
 import { normalizeQuestionRecord } from '../utils/portugueseText'
 import ProtocolContentUpgrade from '../components/ProtocolContentUpgrade'
+import {
+  formatCacheDate,
+  loadOfflineQuestionsCache,
+  saveQuestionsToOfflineCache,
+} from '../utils/offlineQuestionsCache'
 
 const searchableFields: Array<keyof Question> = [
   'title',
@@ -27,6 +32,7 @@ export default function Protocolos() {
   const [search, setSearch] = useState('')
   const [filter, setFilter] = useState('Todos')
   const [importing, setImporting] = useState(false)
+  const [offlineNotice, setOfflineNotice] = useState('')
 
   async function fetchQuestions() {
     const { data, error } = await supabase
@@ -36,11 +42,22 @@ export default function Protocolos() {
 
     if (error) {
       console.log(error)
-      alert('Erro ao carregar protocolos')
+      const cached = await loadOfflineQuestionsCache()
+
+      if (cached.questions.length) {
+        setQuestions(cached.questions)
+        setOfflineNotice(`Modo offline: usando protocolos salvos em ${formatCacheDate(cached.cachedAt)}.`)
+      } else {
+        alert('Erro ao carregar protocolos e nenhum cache local foi encontrado.')
+      }
+
       return
     }
 
-    setQuestions(cleanQuestions(data))
+    const loaded = cleanQuestions(data)
+    setQuestions(loaded)
+    setOfflineNotice('')
+    void saveQuestionsToOfflineCache(loaded)
   }
 
   useEffect(() => {
@@ -156,6 +173,12 @@ export default function Protocolos() {
             <p className="mt-2 text-slate-600">
               Biblioteca clínica pediátrica integrada ao banco TEP PRO.
             </p>
+
+            {offlineNotice && (
+              <p className="mt-4 rounded-lg border border-amber-200 bg-amber-50 p-3 text-sm font-medium text-amber-900">
+                {offlineNotice}
+              </p>
+            )}
           </div>
 
           {isAdmin && (

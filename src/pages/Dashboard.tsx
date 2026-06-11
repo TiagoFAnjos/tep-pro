@@ -2,10 +2,16 @@ import { useEffect, useState } from 'react'
 import { supabase } from '../lib/supabase'
 import type { Question } from '../types/question'
 import { cleanQuestions } from '../utils/questions'
+import {
+  formatCacheDate,
+  loadOfflineQuestionsCache,
+  saveQuestionsToOfflineCache,
+} from '../utils/offlineQuestionsCache'
 
 export default function Dashboard() {
   const [questions, setQuestions] = useState<Question[]>([])
   const [loading, setLoading] = useState(true)
+  const [offlineNotice, setOfflineNotice] = useState('')
 
   async function fetchQuestions() {
     const { data, error } = await supabase
@@ -15,11 +21,23 @@ export default function Dashboard() {
 
     if (error) {
       console.log(error)
-      alert('Erro ao carregar dashboard')
+      const cached = await loadOfflineQuestionsCache()
+
+      if (cached.questions.length) {
+        setQuestions(cached.questions)
+        setOfflineNotice(`Modo offline: usando cache local de ${formatCacheDate(cached.cachedAt)}.`)
+      } else {
+        alert('Erro ao carregar dashboard e nenhum cache local foi encontrado.')
+      }
+
+      setLoading(false)
       return
     }
 
-    setQuestions(cleanQuestions(data))
+    const loaded = cleanQuestions(data)
+    setQuestions(loaded)
+    setOfflineNotice('')
+    void saveQuestionsToOfflineCache(loaded)
     setLoading(false)
   }
 
@@ -56,6 +74,8 @@ export default function Dashboard() {
       <p className="mt-2 text-slate-600">
         Visão geral do ecossistema pediátrico TEP PRO.
       </p>
+
+      {offlineNotice && <OfflineNotice message={offlineNotice} />}
 
       {loading && (
         <p className="mt-8 text-slate-600">
@@ -142,5 +162,13 @@ function Card({
         {value}
       </h2>
     </div>
+  )
+}
+
+function OfflineNotice({ message }: { message: string }) {
+  return (
+    <p className="mt-6 rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm font-medium text-amber-900">
+      {message}
+    </p>
   )
 }

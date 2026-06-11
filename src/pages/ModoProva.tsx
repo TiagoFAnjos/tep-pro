@@ -8,6 +8,11 @@ import {
   type ProvaQuestion,
 } from '../data/provaTituloPediatria'
 import { cleanQuestions } from '../utils/questions'
+import {
+  formatCacheDate,
+  loadOfflineQuestionsCache,
+  saveQuestionsToOfflineCache,
+} from '../utils/offlineQuestionsCache'
 
 const provaSize = 50
 
@@ -19,6 +24,7 @@ export default function ModoProva() {
   const [finished, setFinished] = useState(false)
   const [score, setScore] = useState(0)
   const [loading, setLoading] = useState(true)
+  const [offlineNotice, setOfflineNotice] = useState('')
 
   async function fetchQuestions() {
     setLoading(true)
@@ -31,8 +37,18 @@ export default function ModoProva() {
 
     if (error) {
       console.log(error)
-      setBankQuestions([])
-      setDeck(buildDeck([]))
+      const cached = await loadOfflineQuestionsCache()
+      const cachedSimulados = cached.questions.filter((question) =>
+        question.simulado?.trim()
+      )
+
+      setBankQuestions(cachedSimulados)
+      setDeck(buildDeck(cachedSimulados))
+      setOfflineNotice(
+        cachedSimulados.length
+          ? `Modo offline: usando questões salvas em ${formatCacheDate(cached.cachedAt)}.`
+          : 'Modo offline: usando apenas questões locais embutidas no app.'
+      )
       setLoading(false)
       return
     }
@@ -41,6 +57,8 @@ export default function ModoProva() {
 
     setBankQuestions(loaded)
     setDeck(buildDeck(loaded))
+    setOfflineNotice('')
+    void saveQuestionsToOfflineCache(loaded)
     setLoading(false)
   }
 
@@ -179,6 +197,12 @@ export default function ModoProva() {
           Questão {current + 1}/{deck.length}
         </div>
       </div>
+
+      {offlineNotice && (
+        <p className="mt-6 rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm font-medium text-amber-900">
+          {offlineNotice}
+        </p>
+      )}
 
       <section className="bg-white rounded-lg shadow-sm border p-5 mt-8 sm:p-8">
         <div className="flex flex-wrap items-center gap-2">

@@ -2,6 +2,11 @@ import { useEffect, useState } from 'react'
 import { supabase } from '../lib/supabase'
 import type { Question } from '../types/question'
 import { cleanQuestions } from '../utils/questions'
+import {
+  formatCacheDate,
+  loadOfflineQuestionsCache,
+  saveQuestionsToOfflineCache,
+} from '../utils/offlineQuestionsCache'
 
 type ResultadoClinico = Question & {
   pontos: number
@@ -11,6 +16,7 @@ export default function MotorClinico() {
   const [questions, setQuestions] = useState<Question[]>([])
   const [caso, setCaso] = useState('')
   const [resultados, setResultados] = useState<ResultadoClinico[]>([])
+  const [offlineNotice, setOfflineNotice] = useState('')
 
   async function fetchQuestions() {
     const { data, error } = await supabase
@@ -20,11 +26,22 @@ export default function MotorClinico() {
 
     if (error) {
       console.log(error)
-      alert('Erro ao carregar protocolos')
+      const cached = await loadOfflineQuestionsCache()
+
+      if (cached.questions.length) {
+        setQuestions(cached.questions)
+        setOfflineNotice(`Modo offline: motor clínico usando protocolos salvos em ${formatCacheDate(cached.cachedAt)}.`)
+      } else {
+        alert('Erro ao carregar protocolos e nenhum cache local foi encontrado.')
+      }
+
       return
     }
 
-    setQuestions(cleanQuestions(data))
+    const loaded = cleanQuestions(data)
+    setQuestions(loaded)
+    setOfflineNotice('')
+    void saveQuestionsToOfflineCache(loaded)
   }
 
   useEffect(() => {
@@ -124,6 +141,12 @@ export default function MotorClinico() {
       <p className="mt-2 text-slate-600">
         Busca clínica interna baseada nos protocolos do banco TEP.
       </p>
+
+      {offlineNotice && (
+        <p className="mt-6 rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm font-medium text-amber-900">
+          {offlineNotice}
+        </p>
+      )}
 
       <section className="bg-white rounded-lg shadow-sm border p-6 mt-8">
         <textarea
