@@ -29,6 +29,14 @@ export type Question = {
   checklist?: string
   mini_aula?: string
   fontes?: string
+  descricao_clinica_ampliada?: string
+  quadro_clinico_estruturado?: string
+  diagnostico_estruturado?: string
+  tratamento_estruturado?: string
+  raciocinio_tep?: string
+  conduta_pratica?: string
+  red_flags?: string
+  questoes_tep?: string
   flashcards?: string
   simulado?: string
   favorito?: boolean

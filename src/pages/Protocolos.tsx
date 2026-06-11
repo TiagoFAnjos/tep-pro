@@ -6,6 +6,7 @@ import { getDoseCalculatorGroups, type DoseRule } from '../data/doseCalculators'
 import { cleanQuestions } from '../utils/questions'
 import { useAuth } from '../auth/useAuth'
 import { normalizeQuestionRecord } from '../utils/portugueseText'
+import ProtocolContentUpgrade from '../components/ProtocolContentUpgrade'
 
 const searchableFields: Array<keyof Question> = [
   'title',
@@ -317,7 +318,18 @@ function ProtocolDetail({
         />
       )}
 
+      <ProtocolContentUpgrade protocol={protocol} />
+
       <div className="grid gap-5">
+        <section className="rounded-lg border bg-white p-5 shadow-sm sm:p-6">
+          <h3 className="text-xl font-bold text-slate-900">
+            Conteúdo original completo
+          </h3>
+          <p className="mt-2 text-sm text-slate-600">
+            Seções preservadas do banco atual, sem remoção ou simplificação.
+          </p>
+        </section>
+
         {sections.map(([title, content]) => (
           <Section key={title} title={title} content={content} />
         ))}
